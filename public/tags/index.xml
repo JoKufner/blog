@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Schulung - Freelancing</title>
+    <link>https://jonaskufner.com/tags/</link>
+    <description>Recent content in Tags on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Schulung - Freelancing</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jonaskufner.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Practice</title>
+      <link>https://jonaskufner.com/tags/best-practice/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://jonaskufner.com/tags/best-practice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Automate</title>
+      <link>https://jonaskufner.com/tags/power-automate/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://jonaskufner.com/tags/power-automate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SharePoint</title>
+      <link>https://jonaskufner.com/tags/sharepoint/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://jonaskufner.com/tags/sharepoint/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,35 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://jonaskufner.com"  # oder https://jokufner.github.io/
+languageCode = "de-de"
+title = "Jonas Kufner | M365 & Power Platform | Tutorials - Coaching - Schulung - Freelancing"
+theme = "PaperMod"
+pagination.pagerSize = 10
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+  description = "Lösungen & Best Practices rund um Microsoft Power Platform, Dataverse & SharePoint."
+  author = "Jonas Kufner"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  env = "production"  # sorgt u.a. für Minify & noindex=off
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false  # bessere Kontrolle über Syntax-Highlighting via CSS
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Über mich"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    name = "Kontakt"
+    url = "/contact/"
+    weight = 30
