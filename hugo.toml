@@ -1,6 +1,6 @@
 baseURL = "https://jonaskufner.com"  # oder https://jokufner.github.io/
 languageCode = "de-de"
-title = "Jonas Kufner | M365 & Power Platform | Tutorials - Coaching - Schulung - Freelancing"
+title = "Jonas Kufner | M365 & Power Platform | Tutorials - Coaching - Freelancing"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
@@ -33,3 +33,12 @@ canonifyURLs = true
     name = "Kontakt"
     url = "/contact/"
     weight = 30
+  [[menu.footer]]
+    name = "Impressum"
+    url = "/impressum"
+    weight = 10
+  [[menu.footer]]
+    name = "Datenschutz"
+    url = "/datenschutz"
+    weight = 10
+  
