@@ -19,11 +19,14 @@ canonifyURLs = true
 [markup]
   [markup.highlight]
     noClasses = false  # bessere Kontrolle über Syntax-Highlighting via CSS
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [menu]
   [[menu.main]]
     name = "Blog"
-    url = "/posts"
+    url = "/"
     weight = 10
   [[menu.main]]
     name = "Über mich"
