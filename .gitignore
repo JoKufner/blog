@@ -1,0 +1,15 @@
+# Hugo
+/public/
+/resources/_gen/
+
+# Python venv
+.venv/
+
+# OS/Editoren
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
