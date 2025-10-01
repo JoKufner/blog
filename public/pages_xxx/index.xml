@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Pages on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</title>
-    <link>http://localhost:1313/pages/</link>
-    <description>Recent content in Pages on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
+    <title>Pages_xxxes on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</title>
+    <link>http://localhost:1313/pages_xxx/</link>
+    <description>Recent content in Pages_xxxes on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>de-de</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/pages_xxx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Über mich</title>
-      <link>http://localhost:1313/pages/about/</link>
+      <link>http://localhost:1313/pages_xxx/about/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pages/about/</guid>
+      <guid>http://localhost:1313/pages_xxx/about/</guid>
       <description>Freiberufler &amp;amp; Coach für die Microsoft Power Platform – von Prozessberatung über Dataverse-Modellierung bis hin zu Power Apps, Power Automate und Power BI.</description>
     </item>
     <item>
