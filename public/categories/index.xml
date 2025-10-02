@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://jonaskufner.com/categories/</link>
     <description>Recent content in Categories on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Power Platform</title>
-      <link>http://localhost:1313/categories/power-platform/</link>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/power-platform/</guid>
-      <description></description>
-    </item>
+    <atom:link href="https://jonaskufner.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

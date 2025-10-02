@@ -47,26 +47,34 @@ Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderl
 
 ---
 
-## 5. Google Analytics
+## 5. Webanalyse mit GoatCounter
 
-Diese Website nutzt Funktionen des Webanalysedienstes **Google Analytics**, bereitgestellt durch:  
+Ich nutze **GoatCounter** zur Reichweitenmessung dieser Website. GoatCounter ist ein datenschutzfreundlicher Webanalyse-Dienst, der **ohne Cookies** arbeitet und **keine personenbezogenen Profile** erstellt.
 
-Google Ireland Limited  
-Gordon House, Barrow Street  
-Dublin 4, Irland  
+**Anbieter:** GoatCounter (gehosteter Dienst unter *goatcounter.com* bzw. meiner eigenen GoatCounter-Domain).
 
-Google Analytics verwendet „Cookies“ oder vergleichbare Technologien, die eine Analyse der Benutzung der Website ermöglichen. Die durch Cookies erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.  
+**Zwecke der Verarbeitung:**  
+- Zählung von Seitenaufrufen (Pageviews) und Basis-Statistiken (z. B. Seitenpfad, Referrer, ungefähre Region/Land, Bildschirmgröße, Sprache, Browsertyp).  
+- Verbesserung von Inhalt, Usability und Reichweite meiner Website.
 
-**IP-Anonymisierung:** Wir haben die Funktion IP-Anonymisierung aktiviert. Dadurch wird Ihre IP-Adresse innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übermittlung gekürzt.  
+**Welche Daten fallen an?**  
+- Aufgerufene URL/Seitenpfad und Referrer, Datum/Uhrzeit, Browser-Angaben (User-Agent), Bildschirmgröße, Sprache, ungefähre Region (aus der IP abgeleitet).  
+- **Keine Cookies, kein LocalStorage.**  
+- Zur Erkennung von Mehrfachaufrufen innerhalb kurzer Zeit bildet GoatCounter nur **temporär im Arbeitsspeicher** eine Sitzungskennung (aus Site-ID, IP und User-Agent), die durch eine Zufalls-ID ersetzt wird. **IP und User-Agent werden nicht in der Datenbank gespeichert.**
 
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
-Die Nutzung erfolgt nur, wenn Sie über den Cookie-Banner zustimmen.  
+**Rechtsgrundlage:**  
+Die Verarbeitung erfolgt auf Grundlage von **Art. 6 Abs. 1 lit. f DSGVO** (berechtigtes Interesse) an einer einfachen, datensparsamen Reichweitenmessung ohne Tracking über Websites hinweg. Nach Einschätzung des Anbieters ist hierfür **keine Einwilligung/kein Cookie-Banner erforderlich**, da keine personenbezogenen Daten gespeichert und keine Cookies gesetzt werden.
 
-**Widerruf:** Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie die Cookie-Einstellungen dieser Website anpassen oder die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern.  
+**Widerspruch / Opt-out:**  
+- Das Browser-Signal **„Do Not Track“ (DNT)** wird respektiert; bei aktiviertem DNT wird kein Zählaufruf durchgeführt.  
+- Darüber hinaus können Content-Blocker/Adblocker die Erfassung verhindern (durch Blockieren der Domains des Dienstes, z. B. `gc.zgo.at` bzw. meiner GoatCounter-Subdomain).
+
+**Hosting / Selbsthosting:**  
+GoatCounter kann als gehosteter Dienst oder selbst gehostet betrieben werden; an der oben beschriebenen Datenverarbeitung (cookielos, ohne personenbezogene Speicherung) ändert das nichts.
 
 **Weitere Informationen:**  
-- Datenschutzerklärung Google: <https://policies.google.com/privacy>  
-- Nutzungsbedingungen Google Analytics: <https://marketingplatform.google.com/about/analytics/terms/de/>  
+Details zu Datenschutz und Technik (Pixel-Fallback, JavaScript-Einbindung) stellt der Anbieter in seiner Dokumentation bereit.
+
 
 ---
 

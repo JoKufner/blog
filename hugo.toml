@@ -12,6 +12,10 @@ canonifyURLs = true
   ShowReadingTime = true
   ShowPostNavLinks = true
   env = "production"  # sorgt u.a. für Minify & noindex=off
+  [params.goatcounter]
+    host = "jonaskufnercom.goatcounter.com" # oder eigene GC-Domain
+    enable = true                     # einfacher Toggle
+
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

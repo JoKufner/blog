@@ -1,0 +1,16 @@
+{{- $enabled := and .Site.Params.goatcounter.enable (eq hugo.Environment "production") -}}
+{{- if $enabled -}}
+  {{- $host := .Site.Params.goatcounter.host | default "" -}}
+  {{- if $host -}}
+    <!-- GoatCounter -->
+    <script
+      async
+      data-goatcounter="https://{{ $host }}/count"
+      src="https://gc.zgo.at/count.js"></script>
+
+    <!-- No-JS Fallback: zählt den Seitenaufruf auch ohne JS -->
+    <noscript>
+      <img src="https://{{ $host }}/count?p={{ .RelPermalink }}" alt="" />
+    </noscript>
+  {{- end -}}
+{{- end -}}

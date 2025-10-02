@@ -2,40 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jonaskufner.com/</loc>
     <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://jonaskufner.com/about/</loc>
     <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/best-practice/</loc>
+    <loc>https://jonaskufner.com/posts/</loc>
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+    <loc>https://jonaskufner.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/power-automate-approval/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+    <loc>https://jonaskufner.com/datenschutz/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+    <loc>https://jonaskufner.com/impressum/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/power-automate/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+    <loc>https://jonaskufner.com/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/power-platform/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sharepoint/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/datenschutz/</loc>
-  </url><url>
-    <loc>http://localhost:1313/impressum/</loc>
-  </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://jonaskufner.com/tags/</loc>
   </url>
 </urlset>
