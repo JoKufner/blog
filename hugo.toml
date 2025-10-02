@@ -29,23 +29,27 @@ canonifyURLs = true
 
 [menu]
   [[menu.main]]
-    name = "Blog"
+    name = "Home"
     url = "/"
     weight = 10
   [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 20
+  [[menu.main]]
     name = "Über mich"
     url = "/about/"
-    weight = 20
+    weight = 30
   [[menu.main]]
     name = "Kontakt"
     url = "/contact/"
-    weight = 30
+    weight = 40
   [[menu.footer]]
     name = "Impressum"
     url = "/impressum"
-    weight = 10
+    weight = 50
   [[menu.footer]]
     name = "Datenschutz"
     url = "/datenschutz"
-    weight = 10
+    weight = 60
   
