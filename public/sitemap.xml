@@ -3,22 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jonaskufner.com/</loc>
-    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-02T12:24:30+02:00</lastmod>
   </url><url>
     <loc>https://jonaskufner.com/about/</loc>
     <lastmod>2025-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jonaskufner.com/posts/</loc>
+    <loc>https://jonaskufner.com/tags/best-practice/</loc>
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonaskufner.com/categories/</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonaskufner.com/posts/power-automate-approval/</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonaskufner.com/posts/</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonaskufner.com/tags/power-automate/</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonaskufner.com/categories/power-platform/</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonaskufner.com/tags/sharepoint/</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonaskufner.com/tags/</loc>
+    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonaskufner.com/datenschutz/</loc>
   </url><url>
     <loc>https://jonaskufner.com/impressum/</loc>
   </url><url>
     <loc>https://jonaskufner.com/contact/</loc>
-  </url><url>
-    <loc>https://jonaskufner.com/tags/</loc>
   </url>
 </urlset>

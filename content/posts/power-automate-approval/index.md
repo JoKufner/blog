@@ -12,7 +12,7 @@ cover:
   hidden: false              # Bild nicht global verstecken
   hiddenInList: false        # in Listenansicht zeigen
   hiddenInSingle: false      # in Einzelansicht zeigen
-draft: true
+draft: false
 ---
 
 
