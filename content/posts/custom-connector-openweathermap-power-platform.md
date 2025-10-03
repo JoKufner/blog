@@ -231,10 +231,5 @@ Custom Connector – OpenWeatherMap (YouTube)
 >}}
 
 
-
-
-
-Was möchtest du verbinden?
-
 Ich plane im nächsten Schritt eigene Schnittstellen zwischen Geschäftsanwendungen aufzubauen (z. B. Projektmanagement, Buchhaltung, KI-Dienste).
 Welche Anwendungen würdest du gerne verknüpfen? Schreib’s mir in die Kommentare!
