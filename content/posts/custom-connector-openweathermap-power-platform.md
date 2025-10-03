@@ -90,21 +90,6 @@ Optional: Symbol & Farbe für eine bessere Wiedererkennung.
 
 {{< figure src="/images/connector-security.webp" alt="Connector Sicherheit: API-Schlüssel in Query" caption="Power Apps: Bereich Sicherheit – Authentifizierungstyp API-Schlüssel, Parametername appid, Standort Query." >}}
 
-2.4 Code (optional)
-
-Hier könntest du API-Antworten transformieren (z. B. nur bestimmte Felder weiterreichen). Für das erste Setup überspringen wir diesen Teil.
-
-2.5 Testen
-
-- Connector speichern → dann im Reiter Testen eine Verbindung anlegen.
-
-- API-Key (dein appid) hinterlegen.
-
-- lat/lon eingeben, z. B. 48.17 und 11.61 (Englischer Garten, München).
-
-- Aufrufen – du solltest die JSON-Antwort sehen.
-
-{{< figure src="/images/connector-test.webp" alt="Connector Test: Verbindung & Aufruf" caption="Power Apps: Bereich Testen – Verbindung mit API-Key und Testaufruf mit lat=48.17, lon=11.61." >}}
 
 2.3 Definition (Aktionen)
 
@@ -205,19 +190,6 @@ Video: Schritt-für-Schritt ansehen
 
 👉 Hier geht’s zum Tutorial:
 Custom Connector – OpenWeatherMap (YouTube)
-<!-- Zwei-Klick YouTube Embed -->
-<div class="yt-consent" data-ytid="SPGXvE3D4cs" data-title="YouTube-Video">
-  <button class="yt-consent__btn" type="button" aria-label="Video laden und abspielen">
-    <span class="yt-consent__label">
-      Zum Schutz deiner Daten ist das Video blockiert. Mit Klick auf „Video laden“ willigst du ein,
-      dass Daten an YouTube (Google) übertragen werden. Mehr dazu in unserer Datenschutzerklärung.
-    </span>
-    <span class="yt-consent__cta">Video laden</span>
-  </button>
-  <noscript>
-    <p>JavaScript ist deaktiviert. <a href="https://www.youtube.com/watch?v=SPGXvE3D4cs" target="_blank" rel="noopener">Video direkt auf YouTube ansehen</a>.</p>
-  </noscript>
-</div>
 
 
 {{< figure
