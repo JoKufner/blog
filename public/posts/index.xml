@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>de-de</language>
-    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Oct 2025 09:00:00 +0200</lastBuildDate>
     <atom:link href="https://jonaskufner.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Genehmigungs-Flow in Power Automate: Best Practices</title>
-      <link>https://jonaskufner.com/posts/power-automate-approval/</link>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/posts/power-automate-approval/</guid>
-      <description>So baust du robuste Genehmigungs-Workflows mit Dataverse und Adaptive Cards.</description>
+      <title>Custom Connector für OpenWeatherMap in der Power Platform (Power Apps &amp; Power Automate)</title>
+      <link>https://jonaskufner.com/posts/custom-connector-openweathermap-power-platform/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>https://jonaskufner.com/posts/custom-connector-openweathermap-power-platform/</guid>
+      <description>Schritt-für-Schritt-Anleitung: Erstelle einen benutzerdefinierten Connector für die OpenWeatherMap API, teste ihn mit Postman und nutze ihn in Power Automate und Power Apps (Canvas).</description>
     </item>
   </channel>
 </rss>
