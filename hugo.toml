@@ -1,6 +1,7 @@
 baseURL = "https://jonaskufner.com"  # oder https://jokufner.github.io/
+defaultContentLanguage = "de"
 languageCode = "de-de"
-title = "Jonas Kufner | M365 & Power Platform | Tutorials - Coaching - Freelancing"
+title = "Jonas Kufner | M365 & Power Platform | Tutorials | Coaching"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
