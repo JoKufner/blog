@@ -2,45 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home on Jonas Kufner | M365 &amp; Power Platform | Tutorials | Coaching</title>
-    <link>https://jonaskufner.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on Jonas Kufner | M365 &amp; Power Platform | Tutorials | Coaching</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 02 Oct 2025 09:00:00 +0200</lastBuildDate>
-    <atom:link href="https://jonaskufner.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Oct 2025 09:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Einfaches Ticketsystem mit Microsoft Forms, Planner &amp; Power Automate – Schritt-für-Schritt zur schnellen Ticketlösung in Microsoft 365</title>
+      <link>http://localhost:1313/posts/ticketsystem-microsoft-forms-planner-power-automate/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/ticketsystem-microsoft-forms-planner-power-automate/</guid>
+      <description>Bauen Sie in &amp;lt; 60 Minuten ein schlankes Ticketsystem auf Basis von Microsoft 365: Formular in Forms, Aufgaben in Planner, Automatisierung mit Power Automate – inkl. Benachrichtigungen in Teams und Abschluss-Workflow. Anleitung mit Ausdrücken &amp;amp; Best Practices.</description>
+    </item>
     <item>
       <title>Custom Connector für OpenWeatherMap in der Power Platform (Power Apps &amp; Power Automate)</title>
-      <link>https://jonaskufner.com/posts/custom-connector-openweathermap-power-platform/</link>
+      <link>http://localhost:1313/posts/custom-connector-openweathermap-power-platform/</link>
       <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
-      <guid>https://jonaskufner.com/posts/custom-connector-openweathermap-power-platform/</guid>
+      <guid>http://localhost:1313/posts/custom-connector-openweathermap-power-platform/</guid>
       <description>Schritt-für-Schritt-Anleitung: Erstelle einen benutzerdefinierten Connector für die OpenWeatherMap API, teste ihn mit Postman und nutze ihn in Power Automate und Power Apps (Canvas).</description>
     </item>
     <item>
       <title>Über mich</title>
-      <link>https://jonaskufner.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>Freiberufler &amp;amp; Coach für die Microsoft Power Platform – von Prozessberatung über Dataverse-Modellierung bis hin zu Power Apps, Power Automate und Power BI.</description>
     </item>
     <item>
+      <title>Genehmigungs-Flow in Power Automate: Best Practices</title>
+      <link>http://localhost:1313/posts/power-automate-approval/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/power-automate-approval/</guid>
+      <description>So baust du robuste Genehmigungs-Workflows mit Dataverse und Adaptive Cards.</description>
+    </item>
+    <item>
       <title>Datenschutzerklärung</title>
-      <link>https://jonaskufner.com/datenschutz/</link>
+      <link>http://localhost:1313/datenschutz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/datenschutz/</guid>
+      <guid>http://localhost:1313/datenschutz/</guid>
       <description>Informationen zur Datenverarbeitung nach DSGVO</description>
     </item>
     <item>
       <title>Impressum</title>
-      <link>https://jonaskufner.com/impressum/</link>
+      <link>http://localhost:1313/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/impressum/</guid>
+      <guid>http://localhost:1313/impressum/</guid>
       <description>Anbieterkennzeichnung nach § 5 TMG und § 18 Abs. 2 MStV</description>
     </item>
     <item>
       <title>Kontakt</title>
-      <link>https://jonaskufner.com/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>Kontakt zu Jonas Kufner</description>
     </item>
   </channel>

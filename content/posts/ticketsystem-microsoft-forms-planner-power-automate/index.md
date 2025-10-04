@@ -16,8 +16,7 @@ keywords: ["ticketsystem microsoft 365","ticketsystem forms planner power automa
 
 > **Kurzfassung:** Dieses Tutorial zeigt, wie Sie mit **Microsoft Forms**, **Planner** und **Power Automate** in kurzer Zeit ein **einfaches Ticketsystem** aufbauen – inkl. **Teams-Benachrichtigung** bei Anlage und **Abschlussmeldung**.
 
-<!-- Falls Ihr Theme einen TOC-Shortcode hat, aktivieren Sie ihn hier: -->
-<!-- {{< toc >}} -->
+
 
 ## Zielbild & Voraussetzungen
 

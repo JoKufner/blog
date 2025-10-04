@@ -2,18 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Power Automate on Jonas Kufner | M365 &amp; Power Platform | Tutorials | Coaching</title>
-    <link>https://jonaskufner.com/tags/power-automate/</link>
+    <link>http://localhost:1313/tags/power-automate/</link>
     <description>Recent content in Power Automate on Jonas Kufner | M365 &amp; Power Platform | Tutorials | Coaching</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 02 Oct 2025 09:00:00 +0200</lastBuildDate>
-    <atom:link href="https://jonaskufner.com/tags/power-automate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Oct 2025 09:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/power-automate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Einfaches Ticketsystem mit Microsoft Forms, Planner &amp; Power Automate – Schritt-für-Schritt zur schnellen Ticketlösung in Microsoft 365</title>
+      <link>http://localhost:1313/posts/ticketsystem-microsoft-forms-planner-power-automate/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/ticketsystem-microsoft-forms-planner-power-automate/</guid>
+      <description>Bauen Sie in &amp;lt; 60 Minuten ein schlankes Ticketsystem auf Basis von Microsoft 365: Formular in Forms, Aufgaben in Planner, Automatisierung mit Power Automate – inkl. Benachrichtigungen in Teams und Abschluss-Workflow. Anleitung mit Ausdrücken &amp;amp; Best Practices.</description>
+    </item>
     <item>
       <title>Custom Connector für OpenWeatherMap in der Power Platform (Power Apps &amp; Power Automate)</title>
-      <link>https://jonaskufner.com/posts/custom-connector-openweathermap-power-platform/</link>
+      <link>http://localhost:1313/posts/custom-connector-openweathermap-power-platform/</link>
       <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
-      <guid>https://jonaskufner.com/posts/custom-connector-openweathermap-power-platform/</guid>
+      <guid>http://localhost:1313/posts/custom-connector-openweathermap-power-platform/</guid>
       <description>Schritt-für-Schritt-Anleitung: Erstelle einen benutzerdefinierten Connector für die OpenWeatherMap API, teste ihn mit Postman und nutze ihn in Power Automate und Power Apps (Canvas).</description>
+    </item>
+    <item>
+      <title>Genehmigungs-Flow in Power Automate: Best Practices</title>
+      <link>http://localhost:1313/posts/power-automate-approval/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/power-automate-approval/</guid>
+      <description>So baust du robuste Genehmigungs-Workflows mit Dataverse und Adaptive Cards.</description>
     </item>
   </channel>
 </rss>
