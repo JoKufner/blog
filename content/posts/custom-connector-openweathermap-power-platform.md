@@ -126,7 +126,7 @@ Aufrufen – du solltest die JSON-Antwort sehen.
 
 {{< figure src="/images/connector-test.webp" alt="Connector Test: Verbindung & Aufruf" caption="Power Apps: Bereich Testen – Verbindung mit API-Key und Testaufruf mit lat=48.17, lon=11.61." >}}
 
-Schritt 3: Einsatz in Power Automate
+## Schritt 3: Einsatz in Power Automate
 
 Neuen Flow erstellen (z. B. „Manuell ausgelöst“).
 
@@ -146,7 +146,7 @@ body('AktuellesWetterFuerStandort')?['main']?['temp']
 
 body('AktuellesWetterFuerStandort')?['weather']?[0]?['description']
 
-Schritt 4: Einsatz in Power Apps (Canvas)
+## Schritt 4: Einsatz in Power Apps (Canvas)
 
 Datenquelle hinzufügen → deinen OpenWeather Connector auswählen.
 
@@ -174,7 +174,7 @@ Tipp: Definiere units=metric in der Aktion oder als optionalen Query-Parameter, 
 
 
 
-Zusammenfassung
+## Zusammenfassung
 
 - Was? Eigener Connector für OpenWeatherMap
 
