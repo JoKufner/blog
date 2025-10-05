@@ -194,7 +194,7 @@ Custom Connector – OpenWeatherMap (YouTube)
 
 {{< figure
     src="/images/YouTube-Link-image.webp"
-    alt="Vorschaubild: Titel des Videos"
+    alt="Vorschaubild: Jede API mit der Power Platform verbinden 🚀 | Custom Connector Tutorial"
     caption="Videotutorial zum Blogbeitrag(YouTube | externer Link)"
     link="https://www.youtube.com/watch?v=SPGXvE3D4cs"
     target="_blank"
