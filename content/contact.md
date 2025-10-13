@@ -10,7 +10,7 @@ draft: false
 Hier finden Sie Möglichkeiten zur Kontaktaufnahme:
 
 ## Kontaktformular
-Sie finden mein Kontaktformular <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&embed=true' target='_blank'>hier</a>.
+Mein Kontaktformular findest du <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&embed=true' target='_blank'>hier</a>.
 
 ## LinkedIn
 Verlinke dich gerne mit mir auf LinkedIn. Ich freue mich auf deinen Kontakt: https://www.linkedin.com/in/jonas-kufner-972b7064/
