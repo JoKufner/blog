@@ -38,12 +38,20 @@ Die Daten werden nicht mit anderen Datenquellen zusammengeführt.
 
 ## 4. Kontaktformular
 
+Wenn Sie uns per Formular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen dort angegebenen Kontaktdaten zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.
+
+Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+
+Zur Erhebung und Verarbeitung Ihrer Anfrage nutzen wir Microsoft Forms, einen Dienst der Microsoft Corporation, der im Rahmen unserer Microsoft 365-Umgebung (Tenant) betrieben wird.
+Das Formular wird über einen Link auf unserer Website bereitgestellt und führt zu einer sicheren Formularseite unter der Domain forms.office.com.
+Die von Ihnen eingegebenen Daten werden ausschließlich innerhalb unseres Microsoft 365 Tenants verarbeitet und gespeichert.
+Microsoft verarbeitet diese Daten nur in unserem Auftrag und unter Einhaltung der geltenden Datenschutzbestimmungen der Europäischen Union (EU), insbesondere gemäß den EU-Standardvertragsklauseln und unter Nutzung von Rechenzentren innerhalb der EU.
+
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind.
+
 Wenn Sie uns per Formular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen dort angegebenen Kontaktdaten zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.  
 
-Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.  
-
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
-Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind.  
 
 ---
 
