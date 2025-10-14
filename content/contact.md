@@ -7,7 +7,7 @@ robots: "index,follow"
 draft: false
 ---
 
-Hier finden Sie Möglichkeiten zur Kontaktaufnahme:
+Hier findest Du Möglichkeiten zur Kontaktaufnahme:
 
 ## Kontaktformular
 Mein Kontaktformular findest du <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&embed=true' target='_blank'>hier</a>.
