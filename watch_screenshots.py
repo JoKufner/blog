@@ -89,10 +89,12 @@ def prompt_for_name() -> str:
         winsound.MessageBeep(BEEP_MAP.get(BEEP_KIND, winsound.MB_OK))
     while True:
         try:
-            name = input("Bitte Dateinamen (ohne Endung) eingeben: ").strip()
+            name = input("Bitte Dateinamen (ohne Endung) eingeben (c for cancel): ").strip()
         except (EOFError, KeyboardInterrupt):
             name = ""
         if 4 <= len(name) <= 50:
+            return name
+        if name == "c":
             return name
         print("Name muss zwischen 4 und 50 Zeichen lang sein.")
 
@@ -130,19 +132,22 @@ def handle_file(src: Path):
         stem = sanitize_filename(prompt_for_name())
         log(f"Benutzereingabe: '{stem}'")
 
-    # >>> NEU: <name>.webp in die Zwischenablage schreiben
-    webp_name_for_clipboard = f"{stem}.webp"
-    try:
-        pyperclip.copy(webp_name_for_clipboard)
-        log(f"Clipboard gesetzt: {webp_name_for_clipboard}")
-    except pyperclip.PyperclipException as e:
-        log(f"Clipboard konnte nicht gesetzt werden: {e}")
+    if stem == "c":  #cancel
+        print("image canceled")
+    else:
+        # >>> NEU: <name>.webp in die Zwischenablage schreiben
+        webp_name_for_clipboard = f"{stem}.webp"
+        try:
+            pyperclip.copy(webp_name_for_clipboard)
+            log(f"Clipboard gesetzt: {webp_name_for_clipboard}")
+        except pyperclip.PyperclipException as e:
+            log(f"Clipboard konnte nicht gesetzt werden: {e}")
 
-    # -------- Datei kopieren (mit Original-Endung) --------
-    TARGET_DIR.mkdir(parents=True, exist_ok=True)
-    dst = unique_path(TARGET_DIR, stem, ext)
-    shutil.copy2(src, dst)
-    log(f"Kopiert nach: {dst}")
+        # -------- Datei kopieren (mit Original-Endung) --------
+        TARGET_DIR.mkdir(parents=True, exist_ok=True)
+        dst = unique_path(TARGET_DIR, stem, ext)
+        shutil.copy2(src, dst)
+        log(f"Kopiert nach: {dst}")
 
 class Handler(FileSystemEventHandler):
     def on_created(self, event):

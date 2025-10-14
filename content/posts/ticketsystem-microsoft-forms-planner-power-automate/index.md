@@ -23,6 +23,8 @@ cover:
 
 > **Kurzfassung:** Dieses Tutorial zeigt, wie Sie mit **Microsoft Forms**, **Planner** und **Power Automate** in kurzer Zeit ein **einfaches Ticketsystem** aufbauen – inkl. **Teams-Benachrichtigung** bei Anlage und **Abschlussmeldung**.
 
+>Hier geht's zu [Teil 2]({{< ref "ticketsystem-microsoft-forms-planner-power-automate-teil-2/index.md" >}})
+
 
 
 ## Zielbild & Voraussetzungen
@@ -54,6 +56,7 @@ Für das gesamte Ticketsystem benötigstst du nur 4 einfache Komponenten:
 ## Schritt 1: Microsoft Forms – Ticketformular anlegen
 
 Die erste Komponente - Das Forms-Formular wird für die Anforderer zur Verfügung stehen, um neue Tickets anzulegen.
+
 
 1. **Forms** öffnen (z. B. über <a href="https://forms.office.com/" target="_blank">forms.office.com/</a>)
 2. Neues Formular, z. B. **„Ticketsystem – YouTube“**.  
