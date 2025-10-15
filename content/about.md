@@ -78,8 +78,7 @@ Mein Anspruch: **komplexe Aufgaben einfach nutzbar machen** – mit sauberem Dat
 - **Industrie & Bau:** Datenaufbereitung für Konsolidierung, Compliance-Checks, Prozesslandkarten, integrierte Prozessdarstellung inkl. Web-API & Rollenmodell.  
 - **Öffentlicher Sektor:** Fachkonzepte, Risikoanalyse & Tests im Kontext regulatorischer Vorgaben und Portallösungen.  
 - **Web-to-Print:** **myTriPic** – Konzeption, Automatisierung und Testing einer Plattform für personalisierte Produkte.
-
-> Hinweis: Firmennamen, personenbezogene Daten und Details zu Auftraggebenden sind bewusst anonymisiert. Erlaubte Nennungen: **GSD**, **myTriPic** (s. o.).  
+ 
 
 ---
 
@@ -95,5 +94,3 @@ Mein Anspruch: **komplexe Aufgaben einfach nutzbar machen** – mit sauberem Dat
 ## Lass uns sprechen
 
 Ich entwickle mich gezielt als **Freiberufler und Coach für die Microsoft Power Platform** weiter und freue mich über **spannende neue Projekte** – von der Prozessidee bis zur produktiven Lösung.  
-> Nächster Schritt: **Kurzer Kennenlern-Call** – Bedarf skizzieren, Ziele schärfen, Fahrplan festlegen.  
-Wenn du magst, nutze einfach die Kontaktseite dieser Webseite.
