@@ -56,7 +56,138 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="http://localhost:1313/tags/best-practice/">
+</noscript><style>
+   
+  .main.layout-3col {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+     
+    gap: 0;
+    align-items: start;
+  }
+
+   
+  .main.layout-3col .sidebar-left,
+  .main.layout-3col .sidebar-right,
+  .main.layout-3col .content {
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+   
+  .main.layout-3col .content { min-width: 0; }
+  .main.layout-3col .content * { word-wrap: break-word; overflow-wrap: anywhere; }
+
+   
+  @media (max-width: 800px) {
+    .main.layout-3col {
+      display: block;
+    }
+    .main.layout-3col .sidebar-left,
+    .main.layout-3col .sidebar-right {
+      display: none !important;
+    }
+    .main.layout-3col .content {
+      padding: 0;  
+    }
+  }
+
+   
+   
+
+   
+   
+
+    :root {
+    --main-width: 1400px;  
+  }
+</style>
+
+<style>
+  .sidebar-right-inner { display: flex; flex-direction: column; gap: 1rem; }
+
+  .sb-widget { padding: .75rem 0; border-top: 1px solid var(--border, rgba(0,0,0,.08)); }
+  .sb-widget:first-child { border-top: 0; }
+
+  .sb-title { margin: 0 0 .5rem 0; font-size: 1rem; font-weight: 600; }
+
+  .sb-input {
+    width: 100%;
+    padding: .5rem .6rem;
+    border: 1px solid var(--border, rgba(0,0,0,.15));
+    border-radius: .4rem;
+    box-sizing: border-box;
+  }
+  .sb-btn {
+    margin-top: .5rem;
+    padding: .45rem .7rem;
+    border: 1px solid var(--border, rgba(0,0,0,.15));
+    border-radius: .4rem;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .sb-taglist { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .sb-tag {
+    display: inline-flex; align-items: center; gap: .35rem;
+    padding: .25rem .5rem; border: 1px solid var(--border, rgba(0,0,0,.15));
+    border-radius: 999px; text-decoration: none;
+  }
+  .sb-tag .count { opacity: .7; font-size: .85em; }
+  .sb-empty, .sb-hint { opacity: .7; font-size: .9em; margin: .4rem 0 0; }
+</style>
+
+<style>
+  .sidebar-left-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sb-avatar-link { display: inline-block; }
+  .sb-avatar {
+    display: block;
+    width: 100%;
+    max-width: 220px;    
+    height: auto;
+    border-radius: 16px;           
+    object-fit: cover;
+  }
+
+  .sb-social {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .sb-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1px solid var(--border, rgba(0,0,0,.15));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform .1s ease, background-color .2s ease, border-color .2s ease;
+  }
+  .sb-icon:hover { transform: translateY(-1px); }
+  .sb-icon svg {
+    width: 22px; height: 22px;
+    fill: currentColor;
+  }
+
+   
+  :root { --sb-icon-fg: currentColor; }
+  .sb-icon { color: var(--sb-icon-fg); background: transparent; }
+
+   
+  @media (min-width: 801px) and (max-width: 1100px) {
+    .sb-avatar { max-width: 180px; }
+  }
+</style>
+<meta property="og:url" content="http://localhost:1313/tags/best-practice/">
   <meta property="og:site_name" content="Jonas Kufner | M365 & Power Platform | Tutorials | Coaching">
   <meta property="og:title" content="Best Practice">
   <meta property="og:description" content="Lösungen &amp; Best Practices rund um Microsoft Power Platform, Dataverse &amp; SharePoint.">
@@ -131,7 +262,57 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main layout-3col" id="content">
+        <aside class="sidebar-left">
+            <aside class="sidebar-left-inner">
+  
+  <a href="http://localhost:1313/" class="sb-avatar-link" aria-label="Zur Startseite">
+    <img
+      src="http://localhost:1313/images/Jonas_Avartar.webp"
+      alt="Profilbild"
+      class="sb-avatar"
+      width="240" height="240" loading="lazy" decoding="async"
+    />
+  </a>
+
+    
+  <p class="sb-bio">
+    <strong>Jonas Kufner</strong><br />
+    Power Platform Enthusiast<br /><br/>
+    <span class="sb-bio-sub">Bei Fragen gerne melden.</span>
+  </p>
+
+  
+  <nav class="sb-social" aria-label="Social Links">
+    
+    <a class="sb-icon" href="https://www.youtube.com/@JonasKufner"
+       target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7L16 12l-6.4 3.5z"/>
+      </svg>
+    </a>
+
+    
+    <a class="sb-icon" href="https://www.linkedin.com/in/jonas-kufner-972b7064/"
+       target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.1h.1c.5-1 1.8-2.1 3.8-2.1 4.1 0 4.9 2.7 4.9 6.1V23h-4v-6.6c0-1.6 0-3.7-2.3-3.7s-2.7 1.8-2.7 3.6V23h-4V8z"/>
+      </svg>
+    </a>
+
+    
+    <a class="sb-icon" href="https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&amp;embed=true"
+       aria-label="Kontaktformular" target="_blank">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 4H4a2 2 0 0 0-2 2v12l4-4h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-1 6H5l-1 1V7h16v3z"/>
+      </svg>
+    </a>
+  </nav>
+</aside>
+
+        </aside>
+
+        <section class="content"> 
 <header class="page-header">
   <h1>
     Best Practice
@@ -159,7 +340,184 @@
   <footer class="entry-footer"><span title='2025-09-29 00:00:00 +0000 UTC'>29. September 2025</span>&nbsp;·&nbsp;<span>1 Minute</span>&nbsp;·&nbsp;<span>Jonas Kufner</span></footer>
   <a class="entry-link" aria-label="post link to Genehmigungs-Flow in Power Automate: Best Practices" href="http://localhost:1313/posts/power-automate-approval/"></a>
 </article>
+        </section>
+
+        <aside class="sidebar-right">
+            <aside class="sidebar-right-inner">
+
+  
+  <section class="sb-widget">
+    <h3 class="sb-title">Suche</h3>
+      <form action="http://localhost:1313/search/" method="get" role="search">
+        <input
+          type="search"
+          name="q"
+          placeholder="Suche…"
+          aria-label="Search"
+          class="sb-input"
+        />
+        <button type="submit" class="sb-btn">Suchen</button>
+      </form>
+      <p class="sb-hint">
+        (Formular öffnet die Suchseite)
+      </p></section>
+
+  
+  <section class="sb-widget">
+    <h3 class="sb-title">Tags</h3><ul class="sb-taglist"><li>
+            <a href='http://localhost:1313/tags/power-automate/' class="sb-tag">
+              <span class="name">power automate</span>
+              <span class="count">3</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/power-platform/' class="sb-tag">
+              <span class="name">power platform</span>
+              <span class="count">2</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/ticketsystem/' class="sb-tag">
+              <span class="name">ticketsystem</span>
+              <span class="count">2</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/api/' class="sb-tag">
+              <span class="name">api</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/automatisierung/' class="sb-tag">
+              <span class="name">automatisierung</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/best-practice/' class="sb-tag">
+              <span class="name">best practice</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/best-practices/' class="sb-tag">
+              <span class="name">best practices</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/create-item/' class="sb-tag">
+              <span class="name">create item</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/custom-connector/' class="sb-tag">
+              <span class="name">custom connector</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/forms/' class="sb-tag">
+              <span class="name">forms</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/get-items/' class="sb-tag">
+              <span class="name">get items</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/it-support/' class="sb-tag">
+              <span class="name">it-support</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/low-code/' class="sb-tag">
+              <span class="name">low-code</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/microsoft-365/' class="sb-tag">
+              <span class="name">microsoft 365</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/microsoft-forms/' class="sb-tag">
+              <span class="name">microsoft forms</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/microsoft-planner/' class="sb-tag">
+              <span class="name">microsoft planner</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/odata/' class="sb-tag">
+              <span class="name">odata</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/openweathermap/' class="sb-tag">
+              <span class="name">openweathermap</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/planner/' class="sb-tag">
+              <span class="name">planner</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/postman/' class="sb-tag">
+              <span class="name">postman</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/power-apps/' class="sb-tag">
+              <span class="name">power apps</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/power-automate-flow/' class="sb-tag">
+              <span class="name">power automate flow</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/power-fx/' class="sb-tag">
+              <span class="name">power fx</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/sharepoint/' class="sb-tag">
+              <span class="name">sharepoint</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/sharepoint-liste/' class="sb-tag">
+              <span class="name">sharepoint-liste</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/teams/' class="sb-tag">
+              <span class="name">teams</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/tutorial/' class="sb-tag">
+              <span class="name">tutorial</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/user-profile-v2/' class="sb-tag">
+              <span class="name">user profile (v2)</span>
+              <span class="count">1</span>
+            </a>
+          </li><li>
+            <a href='http://localhost:1313/tags/workflow/' class="sb-tag">
+              <span class="name">workflow</span>
+              <span class="count">1</span>
+            </a>
+          </li></ul></section>
+
+</aside>
+
+        </aside>
     </main>
+
+
+
     
 <footer class="footer">
         <span>&copy; 2025 <a href="http://localhost:1313/">Jonas Kufner | M365 &amp; Power Platform | Tutorials | Coaching</a></span> · 

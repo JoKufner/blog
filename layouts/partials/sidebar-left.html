@@ -1,0 +1,46 @@
+{{- /* layouts/partials/sidebar-left.html */ -}}
+<aside class="sidebar-left-inner">
+  <!-- Bild -->
+  <a href="{{ "/" | relURL }}" class="sb-avatar-link" aria-label="Zur Startseite">
+    <img
+      src="{{ "/images/Jonas_Avartar.webp" | relURL }}"
+      alt="Profilbild"
+      class="sb-avatar"
+      width="240" height="240" loading="lazy" decoding="async"
+    />
+  </a>
+
+    <!-- Kurztext -->
+  <p class="sb-bio">
+    <strong>Jonas Kufner</strong><br />
+    Power Platform Enthusiast<br /><br/>
+    <span class="sb-bio-sub">Bei Fragen gerne melden.</span>
+  </p>
+
+  <!-- Social Icons -->
+  <nav class="sb-social" aria-label="Social Links">
+    <!-- YouTube -->
+    <a class="sb-icon" href="https://www.youtube.com/@JonasKufner"
+       target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7L16 12l-6.4 3.5z"/>
+      </svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a class="sb-icon" href="https://www.linkedin.com/in/jonas-kufner-972b7064/"
+       target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.1h.1c.5-1 1.8-2.1 3.8-2.1 4.1 0 4.9 2.7 4.9 6.1V23h-4v-6.6c0-1.6 0-3.7-2.3-3.7s-2.7 1.8-2.7 3.6V23h-4V8z"/>
+      </svg>
+    </a>
+
+    <!-- Kontakt -->
+    <a class="sb-icon" href="{{ "https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&embed=true" | relURL }}"
+       aria-label="Kontaktformular" target="_blank">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 4H4a2 2 0 0 0-2 2v12l4-4h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-1 6H5l-1 1V7h16v3z"/>
+      </svg>
+    </a>
+  </nav>
+</aside>

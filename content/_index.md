@@ -20,3 +20,7 @@ Mein Kontaktformular <a href='https://forms.office.com/Pages/ResponsePage.aspx?i
 YouTube Tutorials gibt es hier: [YouTube Kanal @JonasKufer](https://www.youtube.com/@JonasKufner "@JonasKufner")
 
 Verlinke dich gerne mit mir auf LinkedIn. Ich freue mich auf deinen Kontakt: https://www.linkedin.com/in/jonas-kufner-972b7064/
+
+
+Viele Grüße<br/>
+Jonas
