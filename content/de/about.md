@@ -10,7 +10,7 @@ seo:
   description: "Beratung, Coaching und Umsetzung rund um die Microsoft Power Platform. Fokus: Dataverse, Power Apps (Model-Driven & Canvas), Power Automate, Power BI, Business Central, ALM & Testmanagement."
   keywords: ["Microsoft Power Platform", "Dataverse", "Power Apps", "Power Automate", "Power BI", "Business Central", "ALM", "Testmanagement", "Prozessberatung", "Freelancer", "Coaching"]
 showBreadcrumbs: false
-url: "/about/"
+url: "/de/about/"
 ---
 
 ## Kurzprofil
