@@ -14,6 +14,10 @@ cover:
   alt: "Benutzerdefinierter OpenWeatherMap Connector in der Microsoft Power Platform"
   caption: "Aus der Praxis: Wetterdaten via Custom Connector in Power Automate & Power Apps"
   relative: true
+translationKey: "custom-connector-openweathermap-power-platform"
+
+aliases:
+  - /posts/custom-connector-openweathermap-power-platform/
 ---
 
 > **Video zum Blogpost:** 👉 [YouTube-Tutorial ansehen](https://www.youtube.com/watch?v=SPGXvE3D4cs)

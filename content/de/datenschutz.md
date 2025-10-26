@@ -4,6 +4,9 @@ description: "Informationen zur Datenverarbeitung nach DSGVO"
 url: "/de/datenschutz/"
 robots: "index,follow"
 draft: false
+
+aliases:
+  - /datenschutz/
 ---
 
 ## 1. Verantwortlicher

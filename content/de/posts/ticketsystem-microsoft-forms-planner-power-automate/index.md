@@ -14,6 +14,8 @@ cover:
   relative: true
 translationKey: "ticketsystem-microsoft-forms-planner-power-automate"
 
+aliases:
+  - /posts/ticketsystem-microsoft-forms-planner-power-automate/
 
 
 # Optional theme params commonly supported:

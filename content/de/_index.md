@@ -3,6 +3,8 @@ title: "Home"
 date: '2025-10-13T13:29:30+02:00'
 description: "Willkommen auf meinem Blog"
 draft: false
+aliases:
+  - /index.md
 ---
 # Hallo, schön, dass du hier bist.
 

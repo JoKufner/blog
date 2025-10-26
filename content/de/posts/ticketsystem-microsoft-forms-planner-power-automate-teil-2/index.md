@@ -11,6 +11,10 @@ cover:
   image: "/images/Ticketsystem_Part2_Cover.webp"
   alt: "Coverbild für Ticketsystem-Serie – Teil 2"
   caption: "Tutorial zur Erstellung eines einfachen Ticketsystems mit Microsoft 365 und Power Automate - Teil 2"
+translationKey: "ticketsystem-microsoft-365-sharepoint-referenzliste-statusbenachrichtigungen"
+
+aliases:
+  - /posts/ticketsystem-microsoft-365-sharepoint-referenzliste-statusbenachrichtigungen/
 ---
 
 > **Hinweis**: Du liest hier menschgemachten Content. Die Funktion der hier beschriebenen Logik wurde getestet und entstammt keiner "KI-Phantasie". Ich hoffe du findest hier Erkenntnis und Mehrwert für dich oder dein Unternehmen. Viel Freude beim Lesen.

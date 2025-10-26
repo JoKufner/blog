@@ -11,6 +11,9 @@ seo:
   keywords: ["Microsoft Power Platform", "Dataverse", "Power Apps", "Power Automate", "Power BI", "Business Central", "ALM", "Testmanagement", "Prozessberatung", "Freelancer", "Coaching"]
 showBreadcrumbs: false
 url: "/de/about/"
+
+aliases:
+  - /about/
 ---
 
 ## Kurzprofil

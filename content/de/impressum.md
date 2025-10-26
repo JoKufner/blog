@@ -4,6 +4,9 @@ description: "Anbieterkennzeichnung nach § 5 TMG und § 18 Abs. 2 MStV"
 url: "/de/impressum/"
 robots: "index,follow"
 draft: false
+
+aliases:
+  - /impressum/
 ---
 
 ## Angaben gemäß § 5 TMG

@@ -5,6 +5,9 @@ description: "Kontakt zu Jonas Kufner"
 url: "/de/contact/"
 robots: "index,follow"
 draft: false
+
+aliases:
+  - /contact/
 ---
 
 Hier findest Du Möglichkeiten zur Kontaktaufnahme:
