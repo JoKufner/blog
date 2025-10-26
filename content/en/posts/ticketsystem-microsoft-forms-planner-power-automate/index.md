@@ -1,7 +1,7 @@
 ---
 title: "Simple Ticket System with Microsoft Forms, Planner & Power Automate – Step-by-Step to a Quick Ticket Solution in Microsoft 365"
 date: 2025-10-04T09:00:00+02:00
-draft: false
+draft: true
 slug: "ticketsystem-microsoft-forms-planner-power-automate"
 description: "Build a lean ticket system based on Microsoft 365 in under 60 minutes: form in Forms, tasks in Planner, automation with Power Automate – including Teams notifications and a completion workflow. Tutorial with expressions & best practices."
 categories: ["Power Platform", "Microsoft 365", "Tutorials"]
