@@ -5,7 +5,7 @@ description: "Welcome to my blog"
 draft: false
 ---
 
-Welcome to my blog.
+# Hello, nice to see you here.
 
 This is about my learning process with the Microsoft Power Platform. 
 
