@@ -1,7 +1,7 @@
 ---
 title: "Datenschutzerklärung"
 description: "Informationen zur Datenverarbeitung nach DSGVO"
-url: "/datenschutz/"
+url: "/de/datenschutz/"
 robots: "index,follow"
 draft: false
 ---

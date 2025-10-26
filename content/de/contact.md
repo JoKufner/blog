@@ -2,7 +2,7 @@
 title: "Kontakt"
 date: '2025-10-13T13:56:30+02:00'
 description: "Kontakt zu Jonas Kufner"
-url: "/contact/"
+url: "/de/contact/"
 robots: "index,follow"
 draft: false
 ---

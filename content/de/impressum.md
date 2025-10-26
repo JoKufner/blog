@@ -1,7 +1,7 @@
 ---
 title: "Impressum"
 description: "Anbieterkennzeichnung nach § 5 TMG und § 18 Abs. 2 MStV"
-url: "/impressum/"
+url: "/de/impressum/"
 robots: "index,follow"
 draft: false
 ---

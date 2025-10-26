@@ -1,111 +1,108 @@
 ---
-title: "Datenschutzerklärung"
-description: "Informationen zur Datenverarbeitung nach DSGVO"
-url: "/datenschutz/"
+title: "Privacy Policy"
+description: "Information on data processing according to the GDPR"
+url: "/en/datenschutz/"
 robots: "index,follow"
-draft: false
+draft: true
 ---
 
-## 1. Verantwortlicher
+## 1. Controller
 
-Jonas Kufner Unternehmensberatung  
-Freiberufler: Jonas Kufner  
+Jonas Kufner Business Consulting  
+Freelancer: Jonas Kufner  
 Murnauer Str. 266  
-81379 München  
-Deutschland  
+81379 Munich  
+Germany  
 
-E-Mail: [info@kufner-solutions.com](mailto:info@kufner-solutions.com)  
-Telefon: +49 176 24893789  
-
----
-
-## 2. Allgemeine Hinweise zur Datenverarbeitung
-
-Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.  
-
-Beim Besuch dieser Website werden personenbezogene Daten verarbeitet. Dazu zählen z. B. die IP-Adresse, die automatisch vom Browser an den Server übermittelt wird, sowie weitere technische Daten (Datum, Uhrzeit, Browsertyp, Betriebssystem, Referrer-URL).  
+Email: [info@kufner-solutions.com](mailto:info@kufner-solutions.com)  
+Phone: +49 176 24893789  
 
 ---
 
-## 3. Hosting & Server-Logfiles
+## 2. General Information on Data Processing
 
-Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf der Seiten werden automatisch Server-Logfiles erstellt, die Informationen wie IP-Adresse, Browsertyp, Betriebssystem, Referrer-URL, Datum und Uhrzeit des Zugriffs enthalten.  
+The protection of your personal data is important to us. We treat your personal data confidentially and in accordance with the legal data protection regulations as well as this privacy policy.  
 
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an technischer Sicherheit und Stabilität).  
-Die Daten werden nicht mit anderen Datenquellen zusammengeführt.  
-
----
-
-## 4. Kontaktformular
-
-Wenn Sie uns per Formular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen dort angegebenen Kontaktdaten zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.
-
-Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-
-Zur Erhebung und Verarbeitung Ihrer Anfrage nutzen wir Microsoft Forms, einen Dienst der Microsoft Corporation, der im Rahmen unserer Microsoft 365-Umgebung (Tenant) betrieben wird.
-Das Formular wird über einen Link auf unserer Website bereitgestellt und führt zu einer sicheren Formularseite unter der Domain forms.office.com.
-Die von Ihnen eingegebenen Daten werden ausschließlich innerhalb unseres Microsoft 365 Tenants verarbeitet und gespeichert.
-Microsoft verarbeitet diese Daten nur in unserem Auftrag und unter Einhaltung der geltenden Datenschutzbestimmungen der Europäischen Union (EU), insbesondere gemäß den EU-Standardvertragsklauseln und unter Nutzung von Rechenzentren innerhalb der EU.
-
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
-Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind.
-
-Wenn Sie uns per Formular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen dort angegebenen Kontaktdaten zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.  
-
+When visiting this website, personal data is processed. This includes, for example, the IP address automatically transmitted by your browser to the server, as well as other technical data (date, time, browser type, operating system, referrer URL).  
 
 ---
 
-## 5. Webanalyse mit GoatCounter
+## 3. Hosting & Server Log Files
 
-Ich nutze **GoatCounter** zur Reichweitenmessung dieser Website. GoatCounter ist ein datenschutzfreundlicher Webanalyse-Dienst, der **ohne Cookies** arbeitet und **keine personenbezogenen Profile** erstellt.
+This website is hosted via GitHub Pages. When pages are accessed, server log files are automatically created, containing information such as IP address, browser type, operating system, referrer URL, date, and time of access.  
 
-**Anbieter:** GoatCounter (gehosteter Dienst unter *goatcounter.com* bzw. meiner eigenen GoatCounter-Domain).
-
-**Zwecke der Verarbeitung:**  
-- Zählung von Seitenaufrufen (Pageviews) und Basis-Statistiken (z. B. Seitenpfad, Referrer, ungefähre Region/Land, Bildschirmgröße, Sprache, Browsertyp).  
-- Verbesserung von Inhalt, Usability und Reichweite meiner Website.
-
-**Welche Daten fallen an?**  
-- Aufgerufene URL/Seitenpfad und Referrer, Datum/Uhrzeit, Browser-Angaben (User-Agent), Bildschirmgröße, Sprache, ungefähre Region (aus der IP abgeleitet).  
-- **Keine Cookies, kein LocalStorage.**  
-- Zur Erkennung von Mehrfachaufrufen innerhalb kurzer Zeit bildet GoatCounter nur **temporär im Arbeitsspeicher** eine Sitzungskennung (aus Site-ID, IP und User-Agent), die durch eine Zufalls-ID ersetzt wird. **IP und User-Agent werden nicht in der Datenbank gespeichert.**
-
-**Rechtsgrundlage:**  
-Die Verarbeitung erfolgt auf Grundlage von **Art. 6 Abs. 1 lit. f DSGVO** (berechtigtes Interesse) an einer einfachen, datensparsamen Reichweitenmessung ohne Tracking über Websites hinweg. Nach Einschätzung des Anbieters ist hierfür **keine Einwilligung/kein Cookie-Banner erforderlich**, da keine personenbezogenen Daten gespeichert und keine Cookies gesetzt werden.
-
-**Widerspruch / Opt-out:**  
-- Das Browser-Signal **„Do Not Track“ (DNT)** wird respektiert; bei aktiviertem DNT wird kein Zählaufruf durchgeführt.  
-- Darüber hinaus können Content-Blocker/Adblocker die Erfassung verhindern (durch Blockieren der Domains des Dienstes, z. B. `gc.zgo.at` bzw. meiner GoatCounter-Subdomain).
-
-**Hosting / Selbsthosting:**  
-GoatCounter kann als gehosteter Dienst oder selbst gehostet betrieben werden; an der oben beschriebenen Datenverarbeitung (cookielos, ohne personenbezogene Speicherung) ändert das nichts.
-
-**Weitere Informationen:**  
-Details zu Datenschutz und Technik (Pixel-Fallback, JavaScript-Einbindung) stellt der Anbieter in seiner Dokumentation bereit.
-
+**Legal basis:** Art. 6 (1) lit. f GDPR (legitimate interest in technical security and stability).  
+The data will not be merged with other data sources.  
 
 ---
 
-## 6. Ihre Rechte
+## 4. Contact Form
 
-Sie haben nach der DSGVO folgende Rechte:  
-- Recht auf Auskunft (Art. 15 DSGVO)  
-- Recht auf Berichtigung (Art. 16 DSGVO)  
-- Recht auf Löschung (Art. 17 DSGVO)  
-- Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)  
-- Recht auf Datenübertragbarkeit (Art. 20 DSGVO)  
-- Recht auf Widerspruch (Art. 21 DSGVO)  
-- Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)  
+If you send us inquiries via the contact form, the information you provide, including the contact details you enter, will be stored for the purpose of processing your inquiry and in case of follow-up questions.
 
-Zuständige Datenschutzaufsichtsbehörde in Bayern:  
-Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)  
+We do not share this data without your consent.
+
+We use Microsoft Forms, a service provided by Microsoft Corporation, within our Microsoft 365 environment (tenant) to collect and process your request.  
+The form is made available via a link on our website and leads to a secure form page under the domain forms.office.com.  
+The data you enter is processed and stored exclusively within our Microsoft 365 tenant.  
+Microsoft processes this data solely on our behalf and in compliance with the data protection laws of the European Union (EU), in particular according to the EU Standard Contractual Clauses and using data centers located within the EU.
+
+**Legal basis:** Art. 6 (1) lit. b GDPR (performance of a contract or pre-contractual measures) or Art. 6 (1) lit. a GDPR (consent).  
+The data will be deleted as soon as it is no longer required for processing your request.
+
+---
+
+## 5. Web Analytics with GoatCounter
+
+I use **GoatCounter** for simple website analytics. GoatCounter is a privacy-friendly web analytics service that operates **without cookies** and **does not create personal profiles**.
+
+**Provider:** GoatCounter (hosted service under *goatcounter.com* or my own GoatCounter domain).
+
+**Purpose of processing:**  
+- Counting page views and collecting basic statistics (e.g., page path, referrer, approximate region/country, screen size, language, browser type).  
+- Improving content, usability, and reach of my website.
+
+**What data is collected?**  
+- Accessed URL/page path and referrer, date/time, browser details (user agent), screen size, language, approximate region (derived from IP).  
+- **No cookies, no local storage.**  
+- To detect multiple requests within a short time, GoatCounter temporarily generates a session ID (from site ID, IP, and user agent) in memory only. This is replaced by a random ID. **IP and user agent are not stored in the database.**
+
+**Legal basis:**  
+Processing is based on **Art. 6 (1) lit. f GDPR** (legitimate interest) in a simple, privacy-friendly measurement of website reach without cross-site tracking.  
+According to the provider, **no consent or cookie banner is required**, as no personal data is stored and no cookies are set.
+
+**Objection / Opt-out:**  
+- The browser signal **“Do Not Track” (DNT)** is respected; if DNT is enabled, no tracking request is made.  
+- Additionally, content blockers/ad blockers can prevent tracking by blocking the service domains (e.g., `gc.zgo.at` or my GoatCounter subdomain).
+
+**Hosting / Self-hosting:**  
+GoatCounter can be operated as a hosted service or self-hosted; this does not change the type of data processing described above (cookie-free, without personal storage).
+
+**Further information:**  
+Details on privacy and technical implementation (pixel fallback, JavaScript integration) are available in the provider’s documentation.
+
+---
+
+## 6. Your Rights
+
+According to the GDPR, you have the following rights:  
+- Right of access (Art. 15 GDPR)  
+- Right to rectification (Art. 16 GDPR)  
+- Right to erasure (Art. 17 GDPR)  
+- Right to restriction of processing (Art. 18 GDPR)  
+- Right to data portability (Art. 20 GDPR)  
+- Right to object (Art. 21 GDPR)  
+- Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)  
+
+Responsible data protection authority in Bavaria:  
+Bavarian State Office for Data Protection Supervision (BayLDA)  
 Promenade 18, 91522 Ansbach  
 <https://www.lda.bayern.de>  
 
 ---
 
-## 7. Änderungen dieser Datenschutzerklärung
+## 7. Changes to This Privacy Policy
 
-Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen.  
+We reserve the right to update this privacy policy to reflect changes in legal requirements or modifications to our services and data processing practices.  
 
-Stand: Oktober 2025
+Last updated: October 2025

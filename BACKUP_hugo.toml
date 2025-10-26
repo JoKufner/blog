@@ -1,41 +1,13 @@
-baseURL = "https://jonaskufner.com/"
+baseURL = "https://jonaskufner.com/"  # oder https://jokufner.github.io/
 defaultContentLanguage = "de"
-defaultContentLanguageInSubdir = true   # /de/ und /en/ erzwingen
+defaultContentLanguageInSubdir = true  # /de/ und /en/ erzwingen
 languageCode = "de-de"
 title = "Jonas Kufner | M365 & Power Platform | Tutorials | Coaching"
 theme = "PaperMod"
 pagination.pagerSize = 10
 enableRobotsTXT = true
 canonifyURLs = true
-refLinksError = true                    # Build bricht bei kaputten {{< ref >}} ab (beim Umbau sehr hilfreich)
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]       # nötig für PaperMod-Suche je Sprache
-
-[markup]
-  [markup.highlight]
-    noClasses = false
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-[params]
-  author = "Jonas Kufner"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowLanguageSwitcher = true
-  env = "production"
-  [params.goatcounter]
-    host = "jonaskufnercom.goatcounter.com"
-    enable = true
-  [params.fuseOpts]
-    isCaseSensitive = false
-    shouldSort = true
-    location = 0
-    distance = 1000
-    threshold = 0.4
-    minMatchCharLength = 2
-    keys = ["title", "permalink", "summary", "content"]
 
 [languages]
 
@@ -46,23 +18,22 @@ refLinksError = true                    # Build bricht bei kaputten {{< ref >}} 
     languageCode = "de"
     title = "Jonas Kufner – Power Platform Blog"
 
-    [languages.de.params]
-      homeInfoParams = { Title = "Der Blog", Content = "Wissenswertes, Tipps und Tricks, Projekte und Entwicklungen." }
-      description = "Lösungen & Best Practices rund um Microsoft Power Platform, Dataverse & SharePoint."
-
     [languages.de.menu]
       [[languages.de.menu.main]]
         name = "Home"
         url = "/de/"
         weight = 10
+
       [[languages.de.menu.main]]
         name = "Blog"
         url = "/de/posts/"
         weight = 20
+
       [[languages.de.menu.main]]
         name = "Über mich"
         url = "/de/about/"
         weight = 30
+
       [[languages.de.menu.main]]
         name = "Kontakt"
         url = "/de/contact/"
@@ -72,10 +43,18 @@ refLinksError = true                    # Build bricht bei kaputten {{< ref >}} 
         name = "Impressum"
         url = "/de/impressum/"
         weight = 50
+
       [[languages.de.menu.footer]]
         name = "Datenschutz"
         url = "/de/datenschutz/"
         weight = 60
+
+    [languages.de.params]
+      homeInfoParams = { Title = "Der Blog", Content = "Wissenswertes, Tipps und Tricks, Projekte und Entwicklungen." }
+      description = "Lösungen & Best Practices rund um Microsoft Power Platform, Dataverse & SharePoint."
+
+
+
 
   [languages.en]
     languageName = "English"
@@ -84,24 +63,61 @@ refLinksError = true                    # Build bricht bei kaputten {{< ref >}} 
     languageCode = "en-us"
     title = "Jonas Kufner – Power Platform Blog"
 
-    [languages.en.params]
-      homeInfoParams = { Title = "The Blog", Content = "Interesting facts, tips and tricks, projects and developments." }
-      description = "Solutions & best practices around Microsoft Power Platform, Dataverse & SharePoint."
-
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "Home"
         url = "/en/"
         weight = 10
+
       [[languages.en.menu.main]]
         name = "Blog"
         url = "/en/posts/"
         weight = 20
+
       [[languages.en.menu.main]]
         name = "About"
         url = "/en/about/"
         weight = 30
+
       [[languages.en.menu.main]]
         name = "Contact"
         url = "/en/contact/"
         weight = 40
+
+    [languages.en.params]
+      homeInfoParams = { Title = "The Blog", Content = "Interesting facts, tips and tricks, projects and developments." }
+      description = "Solutions & best practices around Microsoft Power Platform, Dataverse & SharePoint."
+
+
+
+
+[params]
+  author = "Jonas Kufner"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  env = "production"  # sorgt u.a. für Minify & noindex=off
+  ShowLanguageSwitcher = true
+  [params.goatcounter]
+    host = "jonaskufnercom.goatcounter.com" # oder eigene GC-Domain
+    enable = true                     # einfacher Toggle
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 2
+    keys = ["title", "permalink", "summary", "content"]
+
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
+[markup]
+  [markup.highlight]
+    noClasses = false  # bessere Kontrolle über Syntax-Highlighting via CSS
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,58 +1,60 @@
 ---
-title: "Impressum"
-description: "Anbieterkennzeichnung nach § 5 TMG und § 18 Abs. 2 MStV"
-url: "/impressum/"
+title: "Legal Notice"
+description: "Provider identification according to § 5 TMG and § 18 (2) MStV"
+url: "/en/impressum/"
 robots: "index,follow"
-draft: false
+draft: true
 ---
 
-## Angaben gemäß § 5 TMG
+## Information According to § 5 TMG
 
-**Name / Firma:**  
-Jonas Kufner Unternehmensberatung  
-Freiberufler: Jonas Kufner  
+**Name / Company:**  
+Jonas Kufner Business Consulting  
+Freelancer: Jonas Kufner  
 
-**Anschrift:**  
+**Address:**  
 Murnauer Str. 266  
-81379 München  
-Deutschland  
+81379 Munich  
+Germany  
 
-**Kontakt:**  
-E-Mail: [info@kufner-solutions.com](mailto:info@kufner-solutions.com)  
-Telefon: +49 176 24893789  
+**Contact:**  
+Email: [info@kufner-solutions.com](mailto:info@kufner-solutions.com)  
+Phone: +49 176 24893789  
 
-**Wirtschafts-Identifikationsnummer:** DE271561728  
+**VAT Identification Number:** DE271561728
 
 ---
 
-## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+## Responsible for Content According to § 18 (2) MStV
 
 Jonas Kufner  
 Murnauer Str. 266  
-81379 München  
-Deutschland  
+81379 Munich  
+Germany  
 
 ---
 
-## Haftung für Inhalte
+## Liability for Content
 
-Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.  
-Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.  
-
----
-
-## Haftung für Links
-
-Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.  
+As a service provider, we are responsible for our own content on these pages under § 7 (1) TMG and general laws.  
+According to §§ 8 to 10 TMG, we are not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.  
+Obligations to remove or block the use of information under general laws remain unaffected. Liability in this respect is, however, only possible from the time of knowledge of a specific infringement. Upon becoming aware of such violations, we will remove this content immediately.  
 
 ---
 
-## Urheberrecht
+## Liability for Links
 
-Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.  
+Our website contains links to external third-party websites, over whose content we have no control. Therefore, we cannot accept any responsibility for such external content. The respective provider or operator of the linked pages is always responsible for their content.  
+The linked pages were checked for possible legal violations at the time the links were created. Illegal content was not recognizable at that time. A continuous content review of the linked pages is not reasonable without specific indications of a legal violation. Upon notification of any infringements, we will remove such links immediately.  
 
 ---
 
-## Bildnachweise
+## Copyright
 
-Sofern nicht anders angegeben, stammen alle Bilder und Grafiken von Jonas Kufner.  
+The content and works created by the site operator on these pages are subject to German copyright law. Contributions by third parties are marked as such. Reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are permitted only for private, non-commercial use.  
+
+---
+
+## Image Credits
+
+Unless otherwise stated, all images and graphics are by Jonas Kufner.  

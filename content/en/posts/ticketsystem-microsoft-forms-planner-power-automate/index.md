@@ -226,7 +226,8 @@ title="YouTube (German Version): Create a Ticket System with Microsoft 365 | For
 With Forms + Planner + Power Automate, you can quickly build an intentionally simple ticket system – ideal for small IT teams, clubs, or departments. It’s easily expandable (assignment, prioritization, Dataverse, approvals).
 
 👉 Questions or need help setting it up?
-Use my [contact form]({{<ref "/contact/">}})
+Use my 
+[Contact]({{< ref "contact" >}})
 – I can help with design, best practices, and scaling to the Power Platform.
 
 <script type="application/ld+json"> { "@context":"https://schema.org", "@type":"FAQPage", "mainEntity":[ { "@type":"Question", "name":"Can I attach files to a ticket?", "acceptedAnswer":{"@type":"Answer","text":"Yes. Enable file upload in Microsoft Forms and process the upload link in Power Automate, e.g. in the task description or as a comment."} }, { "@type":"Question", "name":"How can I automatically assign tickets?", "acceptedAnswer":{"@type":"Answer","text":"Use a switch on the category in the flow and add an 'Assign task' action after creating the task to assign specific owners per bucket."} }, { "@type":"Question", "name":"How can I notify via email instead of Teams?", "acceptedAnswer":{"@type":"Answer","text":"Replace or supplement the Teams action with 'Send an email (V2)' from Outlook and use the same extracted email address."} } ] } </script>

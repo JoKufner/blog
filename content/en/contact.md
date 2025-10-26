@@ -1,19 +1,21 @@
 ---
-title: "Kontakt"
+title: "Contact"
 date: '2025-10-13T13:56:30+02:00'
-description: "Kontakt zu Jonas Kufner"
-url: "/contact/"
+description: "Contact Jonas Kufner"
+url: "/en/contact/"
 robots: "index,follow"
-draft: false
+draft: true
 ---
 
-Hier findest Du Möglichkeiten zur Kontaktaufnahme:
+Here are some ways to get in touch:
 
-## Kontaktformular
-Mein Kontaktformular findest du <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&embed=true' target='_blank'>hier</a>.
+## Contact Form
+You can find my contact form <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&embed=true' target='_blank'>here</a>.
 
 ## LinkedIn
-Verlinke dich gerne mit mir auf LinkedIn. Ich freue mich auf deinen Kontakt: https://www.linkedin.com/in/jonas-kufner-972b7064/
+Feel free to connect with me on LinkedIn — I look forward to hearing from you: https://www.linkedin.com/in/jonas-kufner-972b7064/
 
 ## YouTube
-Ich nutze meinen YouTube-Kanal, um Tutorials lauffähiger Lösungen als Tutorials vorzustellen. Falls das, was du siehst dir weiterhilft freue ich mich über Kanal-Abos bzw. Kommentare oder Likes. Hier der Kanal: https://www.youtube.com/@JonasKufner
+I use my YouTube channel to present tutorials of working Power Platform solutions.  
+If you find the content helpful, I’d really appreciate a subscription, comment, or like.  
+Here’s the channel: https://www.youtube.com/@JonasKufner

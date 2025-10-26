@@ -17,7 +17,7 @@ cover:
 
 
 
-> **Kurzfassung:** Zweiter Teil der Reihe zum Ticketsystem mit Microsoft 265 und Power Automate. Den ersten Teil findest du hier: [Einfaches Ticketsystem mit Microsoft Forms, Planner & Power Automate – Schritt-für-Schritt zur schnellen Ticketlösung in Microsoft 365]({{< ref "ticketsystem-microsoft-forms-planner-power-automate/index.md" >}})
+> **Kurzfassung:** Zweiter Teil der Reihe zum Ticketsystem mit Microsoft 265 und Power Automate. Den ersten Teil findest du hier: [Einfaches Ticketsystem mit Microsoft Forms, Planner & Power Automate – Schritt-für-Schritt zur schnellen Ticketlösung in Microsoft 365]({{< ref "ticketsystem-microsoft-forms-planner-power-automate" >}})
 
 
 

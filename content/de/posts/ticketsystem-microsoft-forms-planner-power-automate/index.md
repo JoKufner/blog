@@ -239,7 +239,7 @@ first(body('Get_task_details')?['checklist'])?['value']['title']
 Mit Forms + Planner + Power Automate entsteht schnell ein bewusst einfaches Ticketsystem – ideal für kleine IT-Teams, Vereine oder Fachabteilungen. Es ist jederzeit erweiterbar (Zuweisung, Priorisierung, Dataverse, Genehmigungen).
 
 👉 Fragen oder Unterstützung beim Aufbau?
-Nutzen Sie gern mein [Kontaktformular]({{<ref "/contact/">}})
+Nutzen Sie gern mein [Kontaktformular]({{< ref "contact" >}})
  – ich helfe beim Design, bei Best Practices und bei der Skalierung auf die Power Platform.
 
  <script type="application/ld+json"> { "@context":"https://schema.org", "@type":"FAQPage", "mainEntity":[ { "@type":"Question", "name":"Kann ich Dateien am Ticket mitschicken?", "acceptedAnswer":{"@type":"Answer","text":"Ja. Aktivieren Sie in Microsoft Forms den Datei-Upload und verarbeiten Sie den Upload-Link in Power Automate, z. B. in der Aufgabendescription oder als Kommentar."} }, { "@type":"Question", "name":"Wie weise ich Tickets automatisch zu?", "acceptedAnswer":{"@type":"Answer","text":"Nutzen Sie im Flow einen Switch auf die Kategorie und fügen Sie nach dem Anlegen der Aufgabe eine 'Assign task'-Aktion hinzu, um je Bucket bestimmte Bearbeiter:innen zuzuweisen."} }, { "@type":"Question", "name":"Wie informiere ich per E-Mail statt Teams?", "acceptedAnswer":{"@type":"Answer","text":"Ersetzen oder ergänzen Sie die Teams-Aktion durch 'Send an email (V2)' aus Outlook und verwenden Sie die gleiche extrahierte E-Mail-Adresse."} } ] } </script>
