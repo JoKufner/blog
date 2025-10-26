@@ -6,7 +6,7 @@ description: "Zweiter Teil der Reihe zum Ticketsystem mit Microsoft 365 und Powe
 categories: ["Microsoft 365", "Power Automate", "SharePoint", "Tutorials"]
 tags: ["Ticketsystem", "Planner", "Forms", "SharePoint-Liste", "OData", "Get items", "Create item", "Power Automate Flow", "User Profile (V2)"]
 keywords: ["Ticketsystem Microsoft 365", "Power Automate", "SharePoint Referenzliste", "Planner", "Microsoft Forms", "Statusbenachrichtigungen", "OData Filter"]
-draft: true
+draft: false
 cover:
   image: "/images/Ticketsystem_Part2_Cover.webp"
   alt: "Coverbild für Ticketsystem-Serie – Teil 2"

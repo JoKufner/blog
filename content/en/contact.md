@@ -4,7 +4,7 @@ date: '2025-10-13T13:56:30+02:00'
 description: "Contact Jonas Kufner"
 url: "/en/contact/"
 robots: "index,follow"
-draft: true
+draft: false
 ---
 
 Here are some ways to get in touch:
