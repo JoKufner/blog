@@ -25,7 +25,7 @@ aliases:
 
 
 
-# Ausgangssituation und Zielbild
+## Ausgangssituation und Zielbild
 Im ersten Teil dieser Reihe wuede ein kleines Ticketsystem mittels Microsoft Forms und Microsoft Planner erstellt. Die Logik wurde in Power Automate ergänzt. Um die Kommunikation mit den Anforderern sicherzustellen wurde die übermittelte E-Mail Adresse im ersten Checklisten-Element der Planner-Aufgabe gespeichert.
 
 Im zweiten Teil wird nun eine kleine Sharepoint-Liste ergänzt. Diese hat zum Zweck die Anforderer-E-Mail sowie einen Referenzstatus zu speichern. Damit werden zwei neue Features ermöglicht:
@@ -33,7 +33,7 @@ Im zweiten Teil wird nun eine kleine Sharepoint-Liste ergänzt. Diese hat zum Zw
 - Statusänderungen können erkannt werden. Anforderer können so über Änderungen am Ticketstatus informiert werden. Z.B. "das Ticket ist nun in Bearbeitung".
 
 
-# Die Sharpoint-Liste
+## Die Sharpoint-Liste
 
 Um eine Sharepoint-Liste zu erstellen wechseln Sie auf eine geeignete Sharepoint-Seite (z.B.: [office.com]({{< ref "http://office.com" >}})) / Apps / Sharepoint / <<Eine Ihrer SP-Seiten>>. Hier finden Sie unter Webseiteninhalte die Möglichkeit eine neue Liste zu erstellen.
 
@@ -44,7 +44,7 @@ Für dieses Beispiel habe ch eine Liste "Planner-Ticketsystem-Referenz" mit folg
 
 {{< figure src="/images/Sharepoint-Liste Planner-Ticketsystem-Referenz.webp" alt="Sharepoint-Liste Sharepoint-Liste Planner-Ticketsystem-Referenz" caption="Spalten der Sharepoint-Liste." >}}
 
-# Anpassung Power Automate Flow "YT_Ticketsystem_neues_Ticket"
+## Anpassung Power Automate Flow "YT_Ticketsystem_neues_Ticket"
 Im letzten Teil wurde der Flow "YT_Ticketsystem_neues_Ticket" erstellt. Dieser wird nun ergänzt, um E-Mail (der Anforderer) sowie den letzten bekannten Status in die Referenzliste zu schreiben.
 
 Hierfür sinc folgende Tätigkeiten notwendig:
@@ -52,7 +52,7 @@ Hierfür sinc folgende Tätigkeiten notwendig:
 2. Ergänzen einer Aufgabe "Create Item" um die Referenzzeile in die SP-Liste zu schreiben
 
 
-## Aktion Create item
+### Aktion Create item
 Um die Neue Aktion anzulegen Suche den Connector "Sharepoint" und die Aktion "Create item" (deutsch: Element ersellen).
 
 Wählen Sie folgendes in der Aktion aus
@@ -75,13 +75,13 @@ Ein erster Eintrag in der Sp-Liste:
 
 {{< figure src="/images/Eintrag in der SP-Liste.webp" alt="Eintrag in der SP-Liste" caption="Ein erster Eintrag in der SP-Liste. Die Statusreferenz unbekannt ist so gewollt um einabweichen vom eigentlichen Status zu erkennen">}}
 
-# Anpassung Flow "YT Ticketsystem_Abschluss"
+## Anpassung Flow "YT Ticketsystem_Abschluss"
 Um im Rahmen des Abschlusses des Tickets (im Planner) an die Anforderer zu kommunizieren muss noch der Flow "YT Ticketsystem_Abschluss" angepasst werden:
 
 1. Ergänze eine Aktion "Get items"
 2. Referenziere für die Empfänger-E-Mail (Teams-Nachricht) das erste Element aus Get items
 
-## Aktion Get items
+### Aktion Get items
 
 Get items fragt die SP-Listenelemente aus der neu erstellten Liste ab. Um nur das eine relevante Listenelement zurückzubekommen muss ein OData Query-Filter ergänzt werden:
 
@@ -94,7 +94,7 @@ Title eq '@{outputs('Get_task_details')?['body/id']}'
 {{< figure src="/images/Aktion Get items.webp" alt="Aktion Get items" caption="Die neue Aktion 'get items'" >}}
 
 
-## Aktion "Get user profile (V2)"
+### Aktion "Get user profile (V2)"
 Die o.g. Aktion ruft den anforderndern Benutzer im Azur AD ab. Die Ermittelten Informationen (Anredename und E-Mail) werden darauf folgend genutzt, um eine Information an den anfordernden Nutzer zu senden.
 
 Um hier nun die E-Mail aus der Sharepoint-Liste zu referenzieren gib in der Aktion (Feld User (UPN)) folgenden Ausdruck ein:
@@ -109,12 +109,12 @@ Eingabe des Ausdrucks:
 
 {{< figure src="/images/Ausdruck für Get user profile.webp" alt="Ausdruck für die E-Mail" caption="Ausdruck zur Ermittlung der User-E-Mail ">}}
 
-# Zusammenfassung
+## Zusammenfassung
 Der zweite Teil der Serie zur erstellung eines einfachen Ticketsystems mit Microsoft 365 und Power Automate hat die Komponente Sharpoint bzw. eine Sharepoint-Liste ergänzt. Folgende Features werden damit unterstützt:
 - Die Checkliste in der Planner-Aufgabe kann wieder vollumfänglich genutzt werden.
 - Die Voraussetzung zur Überwachung der Statusänderung (z.B. wechsel von neues Ticket auf Ticket in Bearbeitung) ist gegeben.
 
-# Ausblick
+## Ausblick
 Im dritten Teil dieser Reihe wird die erwähnte Statusüberwachung implementiert. Damit können Anwender über Aktionen am Ticket (z.B. Ticket ist nun in Bearbeitung, es gibt Rückfragen zum Ticket, etc.) informiert werden.
 
 
