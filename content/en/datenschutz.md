@@ -3,7 +3,7 @@ title: "Privacy Policy"
 description: "Information on data processing according to the GDPR"
 url: "/en/datenschutz/"
 robots: "index,follow"
-draft: true
+draft: false
 ---
 
 ## 1. Controller

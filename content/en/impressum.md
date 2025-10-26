@@ -3,7 +3,7 @@ title: "Legal Notice"
 description: "Provider identification according to § 5 TMG and § 18 (2) MStV"
 url: "/en/impressum/"
 robots: "index,follow"
-draft: true
+draft: false
 ---
 
 ## Information According to § 5 TMG

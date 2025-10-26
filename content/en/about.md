@@ -5,7 +5,7 @@ aliases: ["ueber-mich", "about"]
 description: "Freelancer & Coach for the Microsoft Power Platform – from process consulting and Dataverse modeling to Power Apps, Power Automate, and Power BI."
 type: "about"
 date: 2025-10-01
-draft: true
+draft: false
 seo:
   title: "Freelancer & Coach – Microsoft Power Platform | About Me"
   description: "Consulting, coaching, and implementation around the Microsoft Power Platform. Focus: Dataverse, Power Apps (Model-Driven & Canvas), Power Automate, Power BI, Business Central, ALM & Test Management."

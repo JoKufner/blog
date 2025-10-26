@@ -105,3 +105,11 @@ refLinksError = true                    # Build bricht bei kaputten {{< ref >}} 
         name = "Contact"
         url = "/en/contact/"
         weight = 40
+      [[languages.en.menu.footer]]
+        name = "Imprint"
+        url = "/en/impressum/"
+        weight = 50
+      [[languages.en.menu.footer]]
+        name = "Data protection"
+        url = "/en/datenschutz/"
+        weight = 60
