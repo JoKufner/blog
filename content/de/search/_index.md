@@ -1,5 +1,5 @@
 ---
 title: "Suche"
 layout: "search"
-url: "/search/"
+url: "/de/search/"
 ---

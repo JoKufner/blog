@@ -4,8 +4,7 @@ date: '2025-10-13T13:29:30+02:00'
 description: "Willkommen auf meinem Blog"
 draft: false
 ---
-
-Herzlich Willkommen auf meinem Blog.
+# Hallo, schön, dass du hier bist.
 
 Hier geht es um meinen Lernprozess mit der Microsoft Power Platform. Ich werde den Blog als Wissens-Management-Tool für mich selbst verwenden. 
 

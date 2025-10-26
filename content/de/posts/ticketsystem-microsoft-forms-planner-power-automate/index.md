@@ -12,6 +12,8 @@ cover:
   alt: "Ticketsystem mit Microsoft 365 und Power Automate selbst erstellen."
   caption: "Tutorial zur Erstellung eines einfachen Ticketsystems mit Microsoft 365 und Power Automate"
   relative: true
+translationKey: "ticketsystem-microsoft-forms-planner-power-automate"
+
 
 
 # Optional theme params commonly supported:
