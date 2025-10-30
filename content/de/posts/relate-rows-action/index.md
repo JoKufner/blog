@@ -34,9 +34,12 @@ author: "Jonas Kufner"
 
 
 ## Das Beispiel
+
+> Die gewöhnungsbedürftige plurale Schreibweise "Albums" ist dem englischen Plural von Album geschuldet. Ich bitte dies zu entschuldigen. Gemeint sind natürlich Alben.
+
 Ich möchte die Funktion von Relate Rows an einem kleinen Beispiel aufzeigen:
 
-Es gibt zwei Tabellen "Albums" und "Songs", wobei Songs einen Lookup auf die Tabelle Albums hat:
+Es gibt zwei Tabellen Alben (bzw. "Albums" Vgl. Hinweis oben) und "Songs", wobei Songs einen Lookup auf die Tabelle Albums hat:
 
 {{< figure src="/images/album-song-relation.webp" alt="Microsoft Planner - Der Aufgabenplan für das M365 Ticketsystem" caption="Die Relation zwischen Album und Song" >}}
 
