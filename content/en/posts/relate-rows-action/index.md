@@ -3,7 +3,7 @@ title: "Relate Rows in Power Automate – Easily Link Dataverse Rows"
 slug: "relate-rows-power-automate"
 date: "2025-10-29T10:00:00+01:00"
 description: "Learn how to correctly link Dataverse rows using the Power Automate 'Relate rows' action – explained step by step with an example of songs and albums."
-draft: true
+draft: false
 categories:
   - Power Platform
   - Microsoft Dataverse

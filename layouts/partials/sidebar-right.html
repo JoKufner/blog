@@ -8,7 +8,6 @@
     {{- $searchPartial := "search.html" -}}
     {{- if templates.Exists (printf "partials/%s" $searchPartial) -}}
       {{ partial $searchPartial . }}
-
     {{- else -}}
       <!-- Fallback: einfaches Formular -->
       <form action="{{ "/search/" | relLangURL }}" method="get" role="search">
