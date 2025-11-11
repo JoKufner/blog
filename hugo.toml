@@ -67,6 +67,10 @@ refLinksError = true                    # Build bricht bei kaputten {{< ref >}} 
         name = "Kontakt"
         url = "/de/contact/"
         weight = 40
+      [[languages.de.menu.main]]
+        name = "Downloads"
+        url = "/de/downloads/"
+        weight = 45
 
       [[languages.de.menu.footer]]
         name = "Impressum"
@@ -105,6 +109,10 @@ refLinksError = true                    # Build bricht bei kaputten {{< ref >}} 
         name = "Contact"
         url = "/en/contact/"
         weight = 40
+      [[languages.en.menu.main]]
+        name = "Downloads"
+        url = "/en/downloads/"
+        weight = 45
       [[languages.en.menu.footer]]
         name = "Imprint"
         url = "/en/impressum/"
