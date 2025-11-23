@@ -6,7 +6,7 @@ description: "Ich möchte hier kurz erläutern, warum ich trotz deutschem Conten
 categories: ["Microsoft 365", "Power Platform"]
 tags: ["Settings", "Power Automate", "Power Apps"]
 keywords: ["Settings", "Power Automate", "Power Platform", "englische Einstellungen", "Übersetzung"]
-draft: false
+draft: true
 cover:
   image: "/images/Ticketsystem_Part2_Cover.webp"
   alt: "Coverbild für Ticketsystem-Serie – Teil 2"
