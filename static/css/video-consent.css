@@ -1,0 +1,60 @@
+
+
+/* Wrapper füllt immer die komplette Content-Spalte */
+.video-placeholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0;
+  background: #000;
+  overflow: hidden;
+}
+
+/* 16:9 Seitenverhältnis herstellen */
+.video-placeholder::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%; /* 9/16 */
+}
+
+/* Thumbnail und Iframe liegen deckungsgleich im Wrapper */
+.video-thumb,
+.video-placeholder iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Wichtig: Iframe immer volle Fläche, egal was das Theme sagt */
+.video-placeholder iframe {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  border: 0;
+}
+
+/* Bild im Thumbnail */
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Button zentriert */
+.video-consent-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hinweistext unter dem Player */
+.video-consent-hint {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}

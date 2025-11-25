@@ -1,0 +1,19 @@
+{{ $id := .Get "id" }}
+<div class="video-placeholder" data-youtube-id="{{ $id }}">
+  <div class="video-thumb">
+    <img
+      src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg"
+      alt="YouTube Video"
+      loading="lazy"
+      style="width:100%;height:100%;object-fit:cover;display:block;"
+    />
+    <button type="button" class="video-consent-button">
+      ▶ Video laden
+    </button>
+  </div>
+  <p class="video-consent-hint" style="font-size:0.85rem;margin-top:0.5rem;">
+    Durch Klick auf „Video laden“ wird eine Verbindung zu YouTube hergestellt.
+    Dabei können personenbezogene Daten übertragen werden.
+  </p>
+</div>
+

@@ -40,6 +40,8 @@
     </main>
 -->
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+<script src="{{ "js/video-consent.js" | relURL }}"></script>
 </body>
+
 
 </html>
