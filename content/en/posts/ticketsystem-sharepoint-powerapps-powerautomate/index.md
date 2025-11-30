@@ -1,7 +1,7 @@
 ---
 title: "Ticket System with SharePoint, Power Apps and Power Automate – incl. Automated Status Workflow"
 date: 2025-11-30T09:00:00+02:00
-draft: true
+draft: false
 slug: "ticketsystem-sharepoint-powerapps-powerautomate"
 description: "Build a flexible ticket system with SharePoint, Power Apps and Power Automate. Includes status model, module ownership, automated workflow, trigger conditions and form. Ideal for IT teams and internal services."
 categories: ["Power Platform", "Microsoft 365", "Tutorials"]
