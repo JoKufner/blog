@@ -1,6 +1,6 @@
 ---
 title: "Digital Vacation Planning with SharePoint, Power Apps & Power Automate – Complete Approval Process Step by Step"
-date: 2025-01-15T09:00:00+02:00
+date: 2025-11-20T09:00:00+02:00
 draft: false
 slug: "digital-vacation-planning-sharepoint-powerapps-approval-process"
 description: "Create a complete digital vacation planning solution, including approval workflow, using SharePoint, Power Apps, and Power Automate. Includes vacation overview, day calculation, calendar views, and automated approvals – ideal for IT departments and management."

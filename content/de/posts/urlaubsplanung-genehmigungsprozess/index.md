@@ -1,6 +1,6 @@
 ---
 title: "Digitale Urlaubsplanung mit SharePoint, Power Apps & Power Automate – kompletter Genehmigungsprozess Schritt für Schritt"
-date: 2025-01-15T09:00:00+02:00
+date: 2025-11-20T09:00:00+02:00
 draft: false
 slug: "digitale-urlaubsplanung-sharepoint-powerapps-genehmigungsprozess"
 description: "Erstelle eine vollständige digitale Urlaubsplanung inklusive Genehmigungsprozess mit SharePoint, Power Apps und Power Automate. Mit Urlaubsübersicht, Berechnung der Urlaubstage, Kalenderansichten und automatisierter Freigabe – ideal für IT-Abteilungen und Geschäftsführer."
@@ -103,7 +103,7 @@ Integrate → Power Apps → Create an app
 
 In der Status-Dropdown-Steuerung wird das DefaultSelectedItems-Property gesetzt auf:
 
-```powerfx
+```json
 [ { Value: "beantragt" } ]
 ```
 ---
