@@ -86,10 +86,42 @@ GoatCounter kann als gehosteter Dienst oder selbst gehostet betrieben werden; an
 **Weitere Informationen:**  
 Details zu Datenschutz und Technik (Pixel-Fallback, JavaScript-Einbindung) stellt der Anbieter in seiner Dokumentation bereit.
 
+---
+## 6. Einbindung von YouTube-Videos
+
+Auf dieser Website werden Videos der Plattform YouTube (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) eingebunden.
+
+Zum Schutz deiner personenbezogenen Daten sind YouTube-Videos nicht automatisch aktiviert. Beim Aufruf einer Seite mit eingebetteten Videos wird zunächst lediglich ein Platzhalter angezeigt. Erst wenn du das Video durch einen aktiven Klick lädst, wird eine Verbindung zu den Servern von YouTube hergestellt.
+
+### Datenverarbeitung erst nach Einwilligung
+
+Durch das Laden des Videos können insbesondere folgende Daten an YouTube übermittelt werden:
+
+- IP-Adresse
+- Informationen über den verwendeten Browser und das Endgerät
+- Datum und Uhrzeit des Zugriffs
+- Die zuvor besuchte Seite (Referrer)
+
+Die Einbindung erfolgt über die sogenannte „youtube-nocookie.com“-Domain, wodurch YouTube nach eigenen Angaben erst dann Cookies setzt, wenn das Video aktiv abgespielt wird. Dennoch kann nicht ausgeschlossen werden, dass Google personenbezogene Daten verarbeitet und diese auch in die USA überträgt.
+
+### Rechtsgrundlage
+
+Die Einbindung von YouTube-Videos erfolgt ausschließlich auf Grundlage deiner freiwilligen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO, die du durch das aktive Anklicken des Video-Platzhalters erteilst.
+
+Ohne deine Einwilligung findet keine Verbindung zu YouTube statt.
+
+### Widerruf der Einwilligung
+
+Du kannst deine Einwilligung jederzeit widerrufen, indem du die Seite neu lädst und das Video nicht erneut aktivierst bzw. vorhandene lokale Speicherungen in deinem Browser löschst.
+
+Weitere Informationen
+
+Weitere Informationen zur Datenverarbeitung durch YouTube findest du in der Datenschutzerklärung von Google:
+https://policies.google.com/privacy
 
 ---
 
-## 6. Ihre Rechte
+## 7. Ihre Rechte
 
 Sie haben nach der DSGVO folgende Rechte:  
 - Recht auf Auskunft (Art. 15 DSGVO)  
@@ -107,8 +139,8 @@ Promenade 18, 91522 Ansbach
 
 ---
 
-## 7. Änderungen dieser Datenschutzerklärung
+## 8. Änderungen dieser Datenschutzerklärung
 
 Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen.  
 
-Stand: Oktober 2025
+Stand: Dezember 2025

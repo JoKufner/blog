@@ -82,8 +82,44 @@ GoatCounter can be operated as a hosted service or self-hosted; this does not ch
 Details on privacy and technical implementation (pixel fallback, JavaScript integration) are available in the provider’s documentation.
 
 ---
+## 6. Embedding of YouTube Videos
 
-## 6. Your Rights
+This website embeds videos from the YouTube platform (provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland).
+
+To protect your personal data, YouTube videos are not activated automatically. When you access a page containing embedded videos, only a placeholder is displayed initially. A connection to YouTube’s servers is established only after you actively load the video by clicking on it.
+
+### Data processing only after consent
+
+When the video is loaded, the following data may in particular be transmitted to YouTube:
+
+- IP address
+
+- Information about the browser and end device used
+
+- Date and time of access
+
+- The previously visited page (referrer)
+
+The videos are embedded via the so-called “youtube-nocookie.com” domain, which, according to YouTube, means that cookies are only set once the video is actively played. Nevertheless, it cannot be ruled out that Google processes personal data and transfers it to the United States.
+
+### Legal basis
+
+YouTube videos are embedded exclusively on the basis of your voluntary consent pursuant to Art. 6(1)(a) GDPR, which you provide by actively clicking on the video placeholder.
+
+Without your consent, no connection to YouTube is established.
+
+### Withdrawal of consent
+
+You may withdraw your consent at any time by reloading the page and not activating the video again, or by deleting existing local storage data in your browser.
+
+Further information
+
+Further information on data processing by YouTube can be found in Google’s privacy policy:
+https://policies.google.com/privacy
+
+---
+
+## 7. Your Rights
 
 According to the GDPR, you have the following rights:  
 - Right of access (Art. 15 GDPR)  
@@ -101,8 +137,8 @@ Promenade 18, 91522 Ansbach
 
 ---
 
-## 7. Changes to This Privacy Policy
+## 8. Changes to This Privacy Policy
 
 We reserve the right to update this privacy policy to reflect changes in legal requirements or modifications to our services and data processing practices.  
 
-Last updated: October 2025
+Last updated: December 2025
