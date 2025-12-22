@@ -12,7 +12,7 @@ Hier geht es um meinen Lernprozess mit der Microsoft Power Platform. Ich werde d
 
 Falls du hier etwas für dich oder dein Unternehmen finden kannst - super!
 
-Falls du auf der Suche nach einen Microsoft 365 / Power Platform Consultant bist - lass uns sprechen..
+Falls du auf der Suche nach einen Microsoft 365 / Power Platform Consultant bist - lass uns sprechen.
 
 Hier habe ich ein paar Kanäle zur Kontaktaufnahme:
 
