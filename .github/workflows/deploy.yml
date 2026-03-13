@@ -27,6 +27,9 @@ jobs:
       - name: patch sitemap
         run: python patch_sitemap.py
 
+      - name: copy index to public
+        run: python copyStaticIndexToPublic.py
+
       - name: Deploy to jokufner.github.io
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -37,5 +40,4 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-      - name: copy index to public
-        run: python copyStaticIndexToPublic.py
+      
