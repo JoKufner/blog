@@ -87,7 +87,32 @@ GoatCounter kann als gehosteter Dienst oder selbst gehostet betrieben werden; an
 Details zu Datenschutz und Technik (Pixel-Fallback, JavaScript-Einbindung) stellt der Anbieter in seiner Dokumentation bereit.
 
 ---
-## 6. Einbindung von YouTube-Videos
+## 6. Google Tag zur Kampagnenmessung
+
+Auf dieser Website wird das **Google Tag** eingesetzt. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
+
+Das Google Tag wird verwendet, um die Leistung meiner **Google-Kampagnen** zu messen. Dabei kann insbesondere nachvollzogen werden, ob Besucher nach dem Klick auf eine Anzeige mit meiner Website interagieren, zum Beispiel durch den Aufruf bestimmter Seiten oder durch das Absenden einer Kontaktanfrage. Dies hilft mir, die Wirksamkeit meiner Werbemaßnahmen zu bewerten und mein Angebot gezielt zu verbessern.
+
+Das Google Tag wird auf dieser Website nur aktiviert, wenn Sie über das Cookie-Banner Ihre Einwilligung erteilen. Ohne Ihre Einwilligung bleiben die damit verbundene Speicherung und Auswertung deaktiviert. Ihre Einwilligung wird in Ihrem Browser gespeichert und kann jederzeit mit Wirkung für die Zukunft widerrufen werden.
+
+**Welche Daten koennen verarbeitet werden?**  
+- IP-Adresse  
+- technische Informationen zum Browser und Endgeraet  
+- aufgerufene Seiten und Interaktionen auf der Website  
+- Referrer-Informationen  
+- Zeitstempel von Seitenaufrufen und Aktionen  
+
+Es kann nicht ausgeschlossen werden, dass in diesem Zusammenhang auch personenbezogene Daten an Google-Server in den USA uebermittelt werden.
+
+**Rechtsgrundlage:**  
+Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+
+**Weitere Informationen:**  
+Weitere Informationen zur Datenverarbeitung durch Google finden Sie unter:  
+<https://policies.google.com/privacy>
+
+---
+## 7. Einbindung von YouTube-Videos
 
 Auf dieser Website werden Videos der Plattform YouTube (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) eingebunden.
 
@@ -121,7 +146,7 @@ https://policies.google.com/privacy
 
 ---
 
-## 7. Ihre Rechte
+## 8. Ihre Rechte
 
 Sie haben nach der DSGVO folgende Rechte:  
 - Recht auf Auskunft (Art. 15 DSGVO)  
@@ -139,7 +164,7 @@ Promenade 18, 91522 Ansbach
 
 ---
 
-## 8. Änderungen dieser Datenschutzerklärung
+## 9. Änderungen dieser Datenschutzerklärung
 
 Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes sowie der Datenverarbeitung anzupassen.  
 

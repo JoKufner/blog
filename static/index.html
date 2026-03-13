@@ -2,15 +2,90 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+      window.KUFNER_GOOGLE_TAG_ID = 'AW-17600911035';
+      window.KUFNER_CONSENT_STORAGE_KEY = 'kufner-consent-v1';
+      window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'AW-17600911035');
-</script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      function kufnerParseConsent(value) {
+        if (value === 'granted') {
+          return {
+            ad_storage: 'granted',
+            analytics_storage: 'granted',
+            ad_user_data: 'granted',
+            ad_personalization: 'granted'
+          };
+        }
+
+        return {
+          ad_storage: 'denied',
+          analytics_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        };
+      }
+
+      function kufnerApplyConsent(state) {
+        gtag('consent', 'update', state);
+        window.dispatchEvent(new CustomEvent('kufner:consent-changed', { detail: state }));
+      }
+
+      function kufnerSaveConsent(value) {
+        try {
+          localStorage.setItem(window.KUFNER_CONSENT_STORAGE_KEY, value);
+        } catch (error) {
+          console.warn('Consent storage unavailable.', error);
+        }
+      }
+
+      function kufnerReadConsent() {
+        try {
+          return localStorage.getItem(window.KUFNER_CONSENT_STORAGE_KEY);
+        } catch (error) {
+          return null;
+        }
+      }
+
+      window.KufnerConsent = {
+        acceptAll: function () {
+          var state = kufnerParseConsent('granted');
+          kufnerSaveConsent('granted');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        rejectAll: function () {
+          var state = kufnerParseConsent('denied');
+          kufnerSaveConsent('denied');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        getStoredChoice: kufnerReadConsent
+      };
+
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      gtag('js', new Date());
+      gtag('config', window.KUFNER_GOOGLE_TAG_ID);
+
+      (function () {
+        var storedChoice = kufnerReadConsent();
+        if (storedChoice === 'granted' || storedChoice === 'denied') {
+          kufnerApplyConsent(kufnerParseConsent(storedChoice));
+        } else {
+          document.documentElement.classList.add('consent-banner-open');
+        }
+      })();
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,9 +124,97 @@
         transition: stroke-dashoffset 1s ease;
         }  */}}
     </style>
+    <style>
+        .consent-banner {
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            z-index: 1200;
+            width: min(34rem, calc(100vw - 2rem));
+            padding: 1rem 1.1rem;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            border-radius: 1rem;
+            background: #fff;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+            display: none;
+        }
+
+        .consent-banner-open .consent-banner {
+            display: block;
+        }
+
+        .consent-banner__title {
+            margin: 0 0 0.45rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .consent-banner__text {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .consent-banner__text a {
+            color: inherit;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .consent-banner__actions {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 0.9rem;
+        }
+
+        .consent-banner__button {
+            border: 1px solid rgba(0, 0, 0, 0.18);
+            border-radius: 999px;
+            padding: 0.65rem 1rem;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            font: inherit;
+            font-size: 1rem;
+        }
+
+        .consent-banner__button--primary {
+            background: #FDC448;
+            border-color: #FDC448;
+            color: #111;
+        }
+
+        @media (max-width: 640px) {
+            .consent-banner {
+                right: 0.75rem;
+                bottom: 0.75rem;
+                width: calc(100vw - 1.5rem);
+            }
+
+            .consent-banner__actions {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body class="color-primary-3rd">
+    <div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie-Einwilligung">
+        <p class="consent-banner__title">Datenschutz-Einstellungen</p>
+        <p class="consent-banner__text">
+            Diese Website nutzt Google-Tags nur nach Ihrer Auswahl. Sie koennen der Messung zustimmen oder sie ablehnen.
+            Details finden Sie in der <a href="/de/datenschutz/">Datenschutzerklaerung</a>.
+        </p>
+        <div class="consent-banner__actions">
+            <button type="button" class="consent-banner__button consent-banner__button--primary" data-consent-accept>
+                Alle akzeptieren
+            </button>
+            <button type="button" class="consent-banner__button" data-consent-reject>
+                Ablehnen
+            </button>
+        </div>
+    </div>
 
 
     <!-- tpm-header-area start -->
@@ -1281,6 +1444,36 @@
     <script src="landing/assets/js/plugins/animation.js"></script>
     <script src="landing/assets/js/vendor/backtop.js"></script>
     <script src="landing/assets/js/plugins/text-type.js"></script>
+    <script>
+        (function () {
+            function wireConsentButtons(root) {
+                if (!root) {
+                    return;
+                }
+
+                var acceptButton = root.querySelector('[data-consent-accept]');
+                var rejectButton = root.querySelector('[data-consent-reject]');
+
+                if (acceptButton) {
+                    acceptButton.addEventListener('click', function () {
+                        if (window.KufnerConsent) {
+                            window.KufnerConsent.acceptAll();
+                        }
+                    });
+                }
+
+                if (rejectButton) {
+                    rejectButton.addEventListener('click', function () {
+                        if (window.KufnerConsent) {
+                            window.KufnerConsent.rejectAll();
+                        }
+                    });
+                }
+            }
+
+            wireConsentButtons(document);
+        })();
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var form = document.getElementById('contact-form');
