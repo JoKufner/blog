@@ -1,23 +1,24 @@
 ---
-title: "Custom Connector für OpenWeatherMap in der Power Platform (Power Apps & Power Automate)"
-slug: "custom-connector-openweathermap-power-platform"
-date: 2025-10-02T09:00:00+02:00
+---
+title: "Digitale Genehmigungsprozesse mit der Microsoft Power Platform"
+slug: "digitale-genehmigungsprozesse-power-platform"
+date: 2026-03-12T09:00:00+01:00
 draft: false
-description: "Schritt-für-Schritt-Anleitung: Erstelle einen benutzerdefinierten Connector für die OpenWeatherMap API, teste ihn mit Postman und nutze ihn in Power Automate und Power Apps (Canvas)."
-tags: ["Power Platform", "Power Apps", "Power Automate", "Custom Connector", "API", "OpenWeatherMap", "Power FX", "Postman"]
-categories: ["Tutorial"]
-keywords: ["benutzerdefinierter Connector", "Custom Connector Power Apps", "Power Automate Wetter", "OpenWeatherMap API Key", "Postman Test", "Swagger", "Canvas App", "Dataverse"]
+description: "Erfahren Sie, wie Unternehmen Genehmigungsprozesse mit der Microsoft Power Platform digitalisieren und automatisieren. Praxisnaher Use Case mit Power Apps und Power Automate."
+tags: ["Power Platform", "Power Apps", "Power Automate", "Genehmigungsprozess", "Workflow", "Prozessdigitalisierung"]
+categories: ["Use Case"]
+keywords: ["digitale Genehmigungsprozesse", "Genehmigungsworkflow Power Automate", "Power Apps Genehmigungsprozess", "Workflow Automatisierung Microsoft", "Power Platform Prozesse digitalisieren", "Genehmigungsprozess automatisieren"]
 toc: true
-canonicalURL: "https://jonaskufner.com/posts/custom-connector-openweathermap-power-platform/"
+canonicalURL: "https://jonaskufner.com/posts/digitale-genehmigungsprozesse-power-platform/"
 cover:
-  image: "/images/custom-connector-cover.webp"
-  alt: "Benutzerdefinierter OpenWeatherMap Connector in der Microsoft Power Platform"
-  caption: "Aus der Praxis: Wetterdaten via Custom Connector in Power Automate & Power Apps"
+  image: "/landing/images/usecases/Genehmigungsprozesse.png"
+  alt: "Digitaler Genehmigungsprozess mit Microsoft Power Platform"
+  caption: "Praxisbeispiel: Genehmigungsprozesse mit Power Apps und Power Automate digitalisieren"
   relative: true
-translationKey: "custom-connector-openweathermap-power-platform"
+translationKey: "digitale-genehmigungsprozesse-power-platform"
 
 aliases:
-  - /posts/custom-connector-openweathermap-power-platform/
+  - /posts/digitale-genehmigungsprozesse-power-platform/
 ---
 
 > **Video zum Blogpost:** 👉 [YouTube-Tutorial ansehen](https://www.youtube.com/watch?v=SPGXvE3D4cs)

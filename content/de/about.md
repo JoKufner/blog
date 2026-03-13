@@ -67,6 +67,8 @@ Mein Anspruch: **komplexe Aufgaben einfach nutzbar machen** – mit sauberem Dat
 - **Projektmanagement-Fachmann (GPM)® / IPMA Level D**  
 - **ISTQB® Certified Tester (Foundation Level)**  
 - **Diplom Betriebswirt (FH)** (Schwerpunkte: Controlling & IT)
+- **Microsoft Power Platform Functional Consultant** (PL-200)
+
 
 ---
 

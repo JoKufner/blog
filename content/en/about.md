@@ -68,6 +68,7 @@ My approach: **making complex tasks easy to use** – with a clean data model, i
 - **Project Management Professional (GPM)® / IPMA Level D**  
 - **ISTQB® Certified Tester (Foundation Level)**  
 - **Diploma in Business Administration (University of Applied Sciences)** (focus: Controlling & IT)
+- **Microsoft Power Platform Functional Consultant** (PL-200)
 
 ---
 
