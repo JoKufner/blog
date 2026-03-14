@@ -82,7 +82,32 @@ GoatCounter can be operated as a hosted service or self-hosted; this does not ch
 Details on privacy and technical implementation (pixel fallback, JavaScript integration) are available in the provider’s documentation.
 
 ---
-## 6. Embedding of YouTube Videos
+## 6. Google Tag for Campaign Measurement
+
+This website uses the **Google Tag**. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.
+
+The Google Tag is used to measure the performance of my **Google campaigns**. In particular, this makes it possible to understand whether visitors interact with my website after clicking on an ad, for example by visiting certain pages or by submitting a contact request. This helps me evaluate the effectiveness of my advertising measures and improve my offering in a targeted way.
+
+The Google Tag is only activated on this website if you provide your consent via the cookie banner. Without your consent, the related storage and analysis remain disabled. Your consent is stored in your browser and can be withdrawn at any time with effect for the future.
+
+**What data may be processed?**  
+- IP address  
+- technical information about the browser and device used  
+- pages visited and interactions on the website  
+- referrer information  
+- timestamps of page views and actions  
+
+It cannot be ruled out that personal data may also be transferred to Google servers in the United States in this context.
+
+**Legal basis:**  
+Art. 6 (1) lit. a GDPR (consent).
+
+**Further information:**  
+Further information about data processing by Google can be found at:  
+<https://policies.google.com/privacy>
+
+---
+## 7. Embedding of YouTube Videos
 
 This website embeds videos from the YouTube platform (provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland).
 
@@ -119,7 +144,7 @@ https://policies.google.com/privacy
 
 ---
 
-## 7. Your Rights
+## 8. Your Rights
 
 According to the GDPR, you have the following rights:  
 - Right of access (Art. 15 GDPR)  
@@ -137,7 +162,7 @@ Promenade 18, 91522 Ansbach
 
 ---
 
-## 8. Changes to This Privacy Policy
+## 9. Changes to This Privacy Policy
 
 We reserve the right to update this privacy policy to reflect changes in legal requirements or modifications to our services and data processing practices.  
 

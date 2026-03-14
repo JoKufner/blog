@@ -1,14 +1,18 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <sitemap>
-    <loc>https://jonaskufner.com/landing-sitemap.xml</loc>
+    <loc>http://localhost:1313/de/sitemap.xml</loc>
+    
+      <lastmod>2026-03-12T09:00:00+01:00</lastmod>
+    
   </sitemap>
+  
   <sitemap>
-    <loc>https://jonaskufner.com/de/sitemap.xml</loc>
-    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
+    
+      <lastmod>2025-12-14T14:00:00+02:00</lastmod>
+    
   </sitemap>
-  <sitemap>
-    <loc>https://jonaskufner.com/en/sitemap.xml</loc>
-    <lastmod>2025-12-14T14:00:00+02:00</lastmod>
-  </sitemap>
+  
 </sitemapindex>

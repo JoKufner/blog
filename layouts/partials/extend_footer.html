@@ -8,3 +8,50 @@
     <noscript><img src="https://{{ . }}/count?p={{ $.RelPermalink }}" alt="" /></noscript>
   {{- end -}}
 {{- end -}}
+
+<div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie-Einwilligung">
+  <p class="consent-banner__title">Datenschutz-Einstellungen</p>
+  <p class="consent-banner__text">
+    Diese Website nutzt Google-Tags nur nach Ihrer Auswahl. Sie können der Messung zustimmen oder sie ablehnen.
+    Details finden Sie in der <a href="/de/datenschutz/">Datenschutzerklärung</a>.
+  </p>
+  <div class="consent-banner__actions">
+    <button type="button" class="consent-banner__button consent-banner__button--primary" data-consent-accept>
+      Alle akzeptieren
+    </button>
+    <button type="button" class="consent-banner__button" data-consent-reject>
+      Ablehnen
+    </button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    function wireConsentButtons(root) {
+      if (!root) {
+        return;
+      }
+
+      var acceptButton = root.querySelector('[data-consent-accept]');
+      var rejectButton = root.querySelector('[data-consent-reject]');
+
+      if (acceptButton) {
+        acceptButton.addEventListener('click', function () {
+          if (window.KufnerConsent) {
+            window.KufnerConsent.acceptAll();
+          }
+        });
+      }
+
+      if (rejectButton) {
+        rejectButton.addEventListener('click', function () {
+          if (window.KufnerConsent) {
+            window.KufnerConsent.rejectAll();
+          }
+        });
+      }
+    }
+
+    wireConsentButtons(document);
+  })();
+</script>

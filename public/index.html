@@ -1,10 +1,1569 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <title>http://localhost:1313/de/</title>
-    <link rel="canonical" href="http://localhost:1313/de/">
-    <meta name="robots" content="noindex">
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=http://localhost:1313/de/">
-  </head>
+
+<html lang="en">
+
+<head>
+    <script>
+      window.KUFNER_GOOGLE_TAG_ID = 'AW-17600911035';
+      window.KUFNER_CONSENT_STORAGE_KEY = 'kufner-consent-v1';
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      function kufnerParseConsent(value) {
+        if (value === 'granted') {
+          return {
+            ad_storage: 'granted',
+            analytics_storage: 'granted',
+            ad_user_data: 'granted',
+            ad_personalization: 'granted'
+          };
+        }
+
+        return {
+          ad_storage: 'denied',
+          analytics_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        };
+      }
+
+      function kufnerApplyConsent(state) {
+        gtag('consent', 'update', state);
+        window.dispatchEvent(new CustomEvent('kufner:consent-changed', { detail: state }));
+      }
+
+      function kufnerSaveConsent(value) {
+        try {
+          localStorage.setItem(window.KUFNER_CONSENT_STORAGE_KEY, value);
+        } catch (error) {
+          console.warn('Consent storage unavailable.', error);
+        }
+      }
+
+      function kufnerReadConsent() {
+        try {
+          return localStorage.getItem(window.KUFNER_CONSENT_STORAGE_KEY);
+        } catch (error) {
+          return null;
+        }
+      }
+
+      window.KufnerConsent = {
+        acceptAll: function () {
+          var state = kufnerParseConsent('granted');
+          kufnerSaveConsent('granted');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        rejectAll: function () {
+          var state = kufnerParseConsent('denied');
+          kufnerSaveConsent('denied');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        getStoredChoice: kufnerReadConsent
+      };
+
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      gtag('js', new Date());
+      gtag('config', window.KUFNER_GOOGLE_TAG_ID);
+
+      (function () {
+        var storedChoice = kufnerReadConsent();
+        if (storedChoice === 'granted' || storedChoice === 'denied') {
+          kufnerApplyConsent(kufnerParseConsent(storedChoice));
+        } else {
+          document.documentElement.classList.add('consent-banner-open');
+        }
+      })();
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reeni is a modern personal portfolio template for designers, developers, content writer, cleaner, programmer, fashion designer, model, Influencer and freelancers. Fully responsive, SEO-friendly, Bootstrap and easy to customize.">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg">
+    <title>Power Platform Freelancer | Power Apps, Power Automate, Dataverse für Unternehmen</title>
+    <!-- Bootstrap min css -->
+    <link rel="stylesheet" href="landing/assets/css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="landing/assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="landing/assets/css/plugins/odometer.css">
+    <link rel="stylesheet" href="landing/assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="landing/assets/css/vendor/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="landing/assets/css/style.css">
+    <style>
+        .roundedImg {
+            border-radius: 50%;
+        }
+        .SEO-Title {
+            display: none;
+        }
+
+        {{/*  .radial-progress circle {
+        fill: none;
+        stroke-width: 5;
+        }
+
+        .bar-static {
+        stroke: #333;
+        }
+
+        .bar--animated {
+        stroke: #ffc107;
+        transform: rotate(-90deg);
+        transform-origin: center;
+        transition: stroke-dashoffset 1s ease;
+        }  */}}
+    </style>
+    <style>
+        .consent-banner {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1200;
+            width: 100%;
+            min-height: 88px;
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.14);
+            background: #fff;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+            display: none;
+            align-items: center;
+        }
+
+        .consent-banner-open .consent-banner {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.25rem;
+        }
+
+        .consent-banner__title {
+            margin: 0 0 0.45rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .consent-banner__text {
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            flex: 1 1 auto;
+        }
+
+        .consent-banner__text a {
+            color: inherit;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .consent-banner__actions {
+            display: flex;
+            gap: 0.75rem;
+            flex: 0 0 auto;
+            align-items: center;
+        }
+
+        .consent-banner__button {
+            border: 1px solid rgba(0, 0, 0, 0.18);
+            border-radius: 999px;
+            padding: 0.65rem 1rem;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            font: inherit;
+            font-size: 1.5rem;
+        }
+
+        .consent-banner__button--primary {
+            background: #FDC448;
+            border-color: #FDC448;
+            color: #111;
+        }
+
+        @media (max-width: 640px) {
+            .consent-banner {
+                min-height: 0;
+                padding: 1rem;
+            }
+
+            .consent-banner__actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .consent-banner-open .consent-banner {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+
+<body class="color-primary-3rd">
+    <div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie-Einwilligung">
+        <p class="consent-banner__title">Datenschutz-Einstellungen</p>
+        <p class="consent-banner__text">
+            Diese Website verwendet <strong>Analyse-Cookies</strong>, um zu verstehen, welche Inhalte für Besucher besonders hilfreich sind und wie gut meine Kampagnen funktionieren. So kann ich meine Inhalte und Angebote kontinuierlich <strong>verbessern</strong>. Google-Tags werden <strong>nur mit Ihrer Zustimmung</strong> gesetzt. Sie können der Analyse <strong>zustimmen oder sie ablehnen</strong>. Details finden Sie in der <a href="/de/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+        <div class="consent-banner__actions">
+            <button type="button" class="consent-banner__button consent-banner__button--primary" data-consent-accept>
+                Analyse Cookie akzeptieren
+            </button>
+            <button type="button" class="consent-banner__button" data-consent-reject>
+                Ablehnen
+            </button>
+        </div>
+    </div>
+
+
+    <!-- tpm-header-area start -->
+    <header id="home" class="tmp-header-area-start header-one header--sticky header--transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-content">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img class="logo-dark" src="landing/assets/images/logo/Logo_Jonas Kufner.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                                <img class="logo-white" src="landing/assets/images/logo/Logo_Jonas Kufner.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                            </a>
+                        </div>
+                        <nav class="tmp-mainmenu-nav d-none d-xl-block">
+                            <ul class="tmp-mainmenu">
+                                <li>
+                                    <a class="smoth-animation" href="#">Home
+                                    </a>
+                                </li>
+                                <li class="onepage">
+                                    <a class="smoth-animation" href="#challenges">Herausforderungen</a>
+                                </li>
+                                <li class="onepage">
+                                    <a class="smoth-animation" href="#solutions">Lösungen </a>
+                                </li>
+                                <li class="onepage">
+                                    <a class="smoth-animation" href="#usecases">Use-Cases </a>
+                                </li>
+                                <li class="onepage">
+                                    <a class="smoth-animation"href="#process">Ablauf </a>
+                                </li>
+                                <li class="onepage">
+                                    <a class="smoth-animation" href="#aboutme">Über mich </a>
+                                </li>
+                                <li class="onepage">
+                                    <a class="smoth-animation"  href="#contact">Kontakt </a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                        <div class="tmp-header-right">
+                            <div class="social-share-wrapper d-none d-md-block">
+                                <div class="social-link">
+                                    <a href="https://www.linkedin.com/in/jonas-kufner-972b7064/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.youtube.com/@JonasKufner"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <!--<a class="tmp-btn btn-border btn-sm radius-round d-none d-md-inline-flex" href="tel:+4917624893789">+49 176 24893789</a>-->
+                            <div class="actions-area">
+                                <div class="tmp-side-collups-area d-none d-xl-block">
+                                    <button class="tmp-menu-bars tmp_button_active"><i class="fa-regular fa-bars-staggered"></i></button>
+                                </div>
+                                <div class="tmp-side-collups-area d-block d-xl-none">
+                                    <button class="tmp-menu-bars humberger_menu_active"><i class="fa-regular fa-bars-staggered"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- tpm-header-area end -->
+
+    <div class="d-none d-xl-block">
+        <div class="tmp-sidebar-area tmp_side_bar">
+            <div class="inner">
+                <div class="top-area">
+                    <a href="index.html" class="logo">
+                        <img class="logo-dark" src="landing/assets/images/logo/Logo_Jonas Kufner.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                        <img class="logo-white" src="landing/assets/images/logo/Logo_Jonas Kufner.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                    </a>
+                    <div class="close-icon-area">
+                        <button class="tmp-round-action-btn close_side_menu_active">
+                            <i class="fa-sharp fa-light fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="image-area-feature">
+                        <a href="index.html">
+                            <img class="roundedImg" src="landing/assets/images/services/loesungen_jonas.png" alt="personal-logo">
+                        </a>
+                    </div>
+                    <h5 class="title mt--30">Jonas Kufner<br/>Zertifizierter Experte für die Microsoft Power Platform</h5>
+                    <p class="disc">Ich bin ein zertifizierter Freiberufler. Spezialisiert auf die Konzeption und Entwicklung unternehmenskritischen Power Platform Lösungen.
+                    </p>
+                    <div class="short-contact-area">
+                        <!-- single contact information -->
+                        <div class="single-contact">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="information tmp-link-animation">
+                                <span>Rufen Sie mich an</span>
+                                <a href="#" class="number">+49 176 24893789</a>
+                            </div>
+                        </div>
+                        <!-- single contact information end -->
+
+                        <!-- single contact information -->
+                        <div class="single-contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="information tmp-link-animation">
+                                <span>Schreiben Sie mir</span>
+                                <a href="#" class="number">kontakt@kufner-solutions.com</a>
+                            </div>
+                        </div>
+                        <!-- single contact information end -->
+
+                        <!-- single contact information -->
+                        <div class="single-contact">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <div class="information tmp-link-animation">
+                                <span>Standort</span>
+                                <span class="number">München</span>
+                            </div>
+                        </div>
+                        <!-- single contact information end -->
+                    </div>
+                    <!-- social area start -->
+                    <div class="social-wrapper mt--20">
+                        <span class="subtitle">Sie finden mich auch hier</span>
+                        <div class="social-link">
+                            <a href="https://www.linkedin.com/in/jonas-kufner-972b7064/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.youtube.com/@JonasKufner"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <!-- social area end -->
+                </div>
+            </div>
+        </div>
+        <a class="overlay_close_side_menu close_side_menu_active" href="javascript:void(0);"></a>
+    </div>
+
+    <div class="d-block d-xl-none">
+        <div class="tmp-popup-mobile-menu">
+            <div class="inner">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html" class="logo-area">
+                            <img class="logo-dark" src="landing/assets/images/logo/Logo_Jonas Kufner.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                            <img class="logo-white" src="landing/assets/images/logo/Logo_Jonas Kufner.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                        </a>
+
+                    </div>
+                    <div class="close-menu">
+                        <button class="close-button tmp-round-action-btn">
+                            <i class="fa-sharp fa-light fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="tmp-mainmenu onepagenav-click">
+                    <li>
+                        <a href="#">Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#challenges">Herausforderungen</a>
+                    </li>
+                    <li>
+                        <a href="#solutions">Lösungen</a>
+                    </li>
+                    <li>
+                        <a href="#use-cases">Use Cases</a>
+                    </li>
+                    <li>
+                        <a href="#process">Ablauf</a>
+                    </li>
+                    <li>
+                        <a href="#aboutme">Über mich</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakt</a>
+                    </li>
+                    
+                </ul>
+
+
+                <div class="social-wrapper mt--40">
+                    <span class="subtitle">Weitere Kanäle</span>
+                    <div class="social-link">
+                        <a href="https://www.linkedin.com/in/jonas-kufner-972b7064/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@JonasKufner"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- social area end -->
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- tmp banner area start -->
+    <div class="rpp-banner-four-area">
+        <div class="container">
+            <div class="banner-four-main-wrapper">
+                <div class="bg-benner-img-four">
+                    <img class="tmp-scroll-trigger tmp-zoom-in animation-order-1" src="landing/assets/images/banner/Banner_Jonas_Kufner.png" alt="banner-img-3">
+                </div>
+                <div class="banner-four-right-bg-img">
+                    <img src="landing/assets/images/banner/banner-four-right-bg-img.png" alt="banner-img-3">
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="inner">
+                            <span class="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">Power Platform | Consultant | Developer |  Freelancer</span>
+                            <h1 class="title tmp-scroll-trigger tmp-fade-in animation-order-2">Jonas Kufner</h1>
+                            <!--
+                            <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3"> Outsourcing can provide corporate businesses with several
+                                advantages, incl b usinesses Outsourcing can provide usinesses Outsourcing can provide
+                            </p>-->
+                            
+                            <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3"> Geschäftsprozesse digitalisieren. Effizienz steigern.
+                            </p>
+                            <div class="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                <a class="tmp-btn hover-icon-reverse radius-round smoth-animation" href="#contact">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">Unverbindliches Erstgespräch</span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    </span>
+                                </a>
+                            </div>
+                            <br/>
+                            <div class="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                <a class="tmp-btn hover-icon-reverse radius-round smoth-animation" href="#usecases">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">Use-Cases ansehen</span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                    </span>
+                                </a>
+                            </div>
+                            <br/>
+                            <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3"> Oder rufen Sie direkt an: <a href="tel:+4917624893789" class="hero-phone-link">+49 176 24893789</a> </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="banner-right-content tmp-scroll-trigger tmp-fade-in animation-order-5">
+                            <div class="year-expariance-wrap">
+                                <!-- <h3 class="title "><span class="counter">25</span></h3> -->
+                                <h3 class="counter title"><span class="odometer" data-count="16">00</span>
+                                </h3>
+                                <p class="para">Jahre<br>Erfahrung</p>
+                            </div>
+                            <div class="find-me-on">
+                                <h2 class="find-me-on-title">Folgen Sie mir auf</h2>
+                                <div class="social-link banner">
+                                    <a href="https://www.linkedin.com/in/jonas-kufner-972b7064/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.youtube.com/@JonasKufner"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-four-left-bg-img">
+            <img src="landing/assets/images/banner/banner-four-left-bg-img.png" alt="banner-img-3">
+        </div>
+    </div>
+    <!-- tmp banner area end -->
+
+    
+
+
+<!-- herausforderungen Start -->
+    <section class="education-experience tmp-section-gapTop" id="challenges">
+        <div class="container">
+            <div class="section-head mb--50">
+                <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <span class="subtitle">Herausforderungen</span>
+                </div>
+                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Typische Herausforderungen in Unternehmen
+                </h2>
+                <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">Viele Teams arbeiten noch mit manuellen Schritten, Excel-Inselloesungen und Medienbrüchen. Genau dort setzt die Power Platform mit schnell nutzbaren Lösungen an.</p>
+            </div>
+            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Herausforderungen <span><img
+                        src="landing/assets/images/custom-line/custom-line.png" alt="custom-line"></span>
+            </h2>
+            <div class="row g-5">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        <h4 class="edu-sub-title">Manuelle Prozesse</h4>
+                        <p class="edu-para">Wiederkehrende Aufgaben werden per E-Mail oder Dateiablage gesteuert und kosten taeglich Zeit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                        <h4 class="edu-sub-title">Excel-basierte Abläufe</h4>
+                        <p class="edu-para">Mehrere Versionen, unklare Verantwortlichkeiten und fehlende Nachvollziehbarkeit erschweren Entscheidungen.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                        <h4 class="edu-sub-title">Medienbrüche</h4>
+                        <p class="edu-para">Daten werden zwischen Formularen, E-Mails und Drittsystemen manuell uebertragen.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                        <h4 class="edu-sub-title">Zu wenig Transparenz</h4>
+                        <p class="edu-para">Status von Vorgaengen und Freigaben ist nicht zentral sichtbar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                        <h4 class="edu-sub-title">Wartezeiten auf IT</h4>
+                        <p class="edu-para">Fachabteilungen warten lange auf priorisierte Umsetzungen und verlieren Tempo im Tagesgeschaeft.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="education-experience-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                        <h4 class="edu-sub-title">Ungenutzte Lizenzen</h4>
+                        <p class="edu-para">Microsoft-365- und Power-Platform-Potenziale bleiben im Unternehmen ungenutzt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- herausforderungen End -->
+
+    <!-- tmp text para start -->
+    <div class="container tmp-section-gap">
+        <div class="text-para-doc-wrap">
+            <h2 class="text-para-documents tmp-scroll-trigger tmp-fade-in animation-order-1 inv-title-animation-wrap">Herausforderungen sind keine Hindernisse, <br/>
+                sondern  <span>Chancen für bessere Prozesse</span>. <br/>
+                Mit der richtigen <span>Expertise</span> und bewährten Lösungsansätzen lassen sich daraus effiziente <span>digitale Lösungen</span> entwickeln.</h2>
+            <div class="right-bg-text-para">
+                <img src="landing/assets/images/banner/right-bg-text-para-doc.png" alt="">
+            </div>
+            <div class="left-bg-text-para">
+                <img src="landing/assets/images/banner/left-bg-text-para-doc.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- tmp text para end -->
+
+    <!-- Call to Action Start -->
+    <section class="tmp-section-gapTop">
+        <div class="container tmp-scroll-trigger tmp-fade-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="p-4 p-lg-5 rounded-4 text-center shadow-sm">
+                        <!--<span class="section-sub-title justify-content-center mb-3">
+                            <span class="subtitle">Projektstart</span>
+                        </span>-->
+                        <h2 class="mb-3">Lassen Sie uns gemeinsam prüfen, welche Lösung zu Ihren Prozessen passt.</h2>
+                        <!--<p class="mb-4">
+                            Ob erste Konzeptphase oder konkretes Vorhaben: Gemeinsam klaeren wir die naechsten
+                            Schritte und schaffen eine Loesung, die technisch sauber und im Alltag nutzbar ist.
+                        </p>-->
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation" >
+                            <span class="icon-reverse-wrapper">
+                                <span class="btn-text">Potentiale besprechen</span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Call to Action Ende -->
+
+    <!-- Lösungen Start -->
+    <section class="latest-service-area tmp-section-gapTop" id="solutions">
+        <div class="container">
+            <div class="section-head mb--60">
+                <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <span class="subtitle">Lösungen</span>
+                </div>
+                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Digitale Lösungen für Ihre Geschäftsprozesse</h2>
+                <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3"> Mit Microsoft Power Platform entwickeln wir Anwendungen und Automatisierungen, die Ihre Prozesse effizienter, transparenter und skalierbarer machen.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        <h2 class="service-card-num"><span>01.</span>Individuelle Power Apps Entwicklung</h2>
+                        <p class="service-para">Entwicklung individueller Power Apps Anwendungen für Ihre Geschäftsprozesse. Maßgeschneiderte Business-Apps unterstützen Mitarbeitende im Arbeitsalltag und ersetzen manuelle oder Excel-basierte Abläufe durch effiziente digitale Lösungen.</p>
+                    </div>
+                    <div class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                        <h2 class="service-card-num"><span>02.</span>Automatisierungen mit Power Automate</h2>
+                        <p class="service-para">Automatisierung von Geschäftsprozessen mit Microsoft Power Automate. Wiederkehrende Aufgaben, Genehmigungen und Benachrichtigungen werden automatisch ausgeführt und sorgen für schnellere, transparente und zuverlässige Abläufe.</p>
+                    </div>
+                    <div class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                        <h2 class="service-card-num"><span>03.</span>Strukturierte Datenhaltung mit Dataverse</h2>
+                        <p class="service-para">Mit Microsoft Dataverse entsteht eine zentrale und strukturierte Datenbasis für Ihre Anwendungen. Einheitliche Datenmodelle schaffen die Grundlage für stabile Power Apps Lösungen und eine konsistente Datenverwaltung.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card-user-image">
+                        <img class="roundedImg" src="landing/assets/images/services/loesungen_jonas.png" alt="latest-user-image">
+                    
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="service-card-user-image">
+                        <img src="landing/assets/images/services/PowerPlatform.png" alt="latest-user-image">
+                    
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                        <h2 class="service-card-num"><span>04.</span>Integration in Microsoft 365 und bestehende Systeme</h2>
+                        <p class="service-para">Integration der Microsoft Power Platform in bestehende Systeme wie Microsoft 365, SharePoint, Teams oder Dynamics. Anwendungen greifen auf vorhandene Daten und Prozesse zu und erweitern Ihre bestehende IT-Landschaft sinnvoll.</p>
+                    </div>
+                    <div class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                        <h2 class="service-card-num"><span>05.</span>Power Platform Beratung und Analyse</h2>
+                        <p class="service-para">Strategische Power Platform Beratung zur Identifikation sinnvoller Einsatzszenarien. Geschäftsprozesse werden analysiert und konkrete Möglichkeiten für Power Apps, Power Automate und Dataverse Lösungen aufgezeigt.</p>
+                    </div>
+                    <div class="service-card-v2 tmponhover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                        <h2 class="service-card-num"><span>06.</span>Von der Idee zur produktiven Power Platform Lösung</h2>
+                        <p class="service-para">Begleitung des gesamten Projekts – von der ersten Idee über Prototypen bis zur produktiven Umsetzung. Power Platform Lösungen werden strukturiert entwickelt, getestet und nachhaltig in Ihre Prozesse integriert.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-6">
+                    <div class="service-card-user-image">
+                        <img class="roundedImg" src="landing/assets/images/services/loesungen_jonas.png" alt="latest-user-image">
+                    
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lösungen Ende -->
+
+     <!-- Call to Action Start -->
+    <section class="tmp-section-gapTop">
+        <div class="container tmp-scroll-trigger tmp-fade-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="p-4 p-lg-5 rounded-4 text-center shadow-sm">
+                        <!--<span class="section-sub-title justify-content-center mb-3">
+                            <span class="subtitle">Projektstart</span>
+                        </span>-->
+                        <h2 class="mb-3">Sie möchten einen dieser Ansätze in Ihrem Unternehmen umsetzen?</h2>
+                        <p class="mb-4">
+                            Ich unterstütze Sie dabei, passende Power Platform Lösungen für Ihre Prozesse zu identifizieren und pragmatisch umzusetzen.
+                        </p>
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation">
+                            <span class="icon-reverse-wrapper">
+                                <span class="btn-text">Projekt besprechen</span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Call to Action Ende -->
+
+    <!-- Start Use Cases -->
+    <section class="tmp-portfolio-area tmp-section-gap" id="usecases">
+        <div class="container">
+            <div class="section-head mb--60">
+                <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <span class="subtitle">Use-Cases</span>
+                </div>
+                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2"> Typische Einsatzszenarien der Power Platform </h2>
+                <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">Von digitalen Genehmigungsprozessen bis zur mobilen Datenerfassung – entdecken Sie Beispiele, wie Unternehmen ihre Prozesse mit Power Apps und Power Automate optimieren.</p>
+            </div>
+            <div class="latest-portfolio-tabs-area">
+                <!-- <nav>
+                    <ul class="nav nav-tabs tmp-scroll-trigger tmp-fade-in animation-order-4" id="nav-tab" role="tablist">
+                        <li>
+                            <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab" data-bs-target="#nav-branding" type="button" role="tab" aria-controls="nav-branding" aria-selected="false">Branding</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="false">Design</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-content-writing-tab" data-bs-toggle="tab" data-bs-target="#nav-content-writing" type="button" role="tab" aria-controls="nav-content-writing" aria-selected="false">Content writing</button>
+                        </li>
+                        <li>
+                            <button class="nav-link" id="nav-marketing-tab" data-bs-toggle="tab" data-bs-target="#nav-marketing" type="button" role="tab" aria-controls="nav-marketing" aria-selected="false">Marketing</button>
+                        </li>
+                    </ul>
+                </nav> -->
+                <div class="tab-content bg-blur-style-three" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="tmp-portfolio tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <img src="landing/assets/images/usecases/Genehmigungsprozesse.png" alt="tab-image">
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <!-- <p class="portfoli-card-para">Development</p> -->
+                                            <h2 class="SEO-Title">Digitale Genehmigungsprozesse mit Power Automate</h2>
+                                            <h3 class="portfolio-card-title animated fadeIn"><a href="/de/posts/digitale-genehmigungsprozesse-power-platform/">Digitale Freigabe- und Genehmigungs-prozesse</a></h3>
+                                            <!--<p class="portfolio-card-title animated fadeIn">Schlank. Teilautomatisiert. Performant. Revisionssicher</p> -->
+                                        </div>
+                                        <div class="portfolio-btn">
+                                            <a href="/de/posts/digitale-genehmigungsprozesse-power-platform/" class="tmp-arrow-icon-btn">
+                                                <div class="btn-inner">
+                                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="project-details.html" class="over_link"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="tmp-portfolio tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <img src="landing/assets/images/usecases/Mobile-Datenerfassung.png" alt="tab-image">
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <!-- <p class="portfoli-card-para">Development</p> -->
+                                            <h2 class="SEO-Title">Mobile Datenerfassung mit Power Apps</h2>
+                                            <h3 class="portfolio-card-title animated fadeIn"><a href="/de/posts/mobile-datenerfassung-power-apps/">Mobile Datenerfassung im Außendienst</a></h3>
+                                            <!--<p class="portfolio-card-title animated fadeIn">Erfassen Sie Daten direkt vor Ort mit mobilen Power Apps Anwendungen für Außendienst, Produktion oder Service – schnell, strukturiert und ohne Papier.</p>-->
+                                        </div>
+                                        <div class="portfolio-btn">
+                                            <a href="/de/posts/mobile-datenerfassung-power-apps/" class="tmp-arrow-icon-btn">
+                                                <div class="btn-inner">
+                                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="project-details.html" class="over_link"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="tmp-portfolio tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <img src="landing/assets/images/usecases/Automatisierung.png" alt="tab-image">
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <!-- <p class="portfoli-card-para">Development</p> -->
+                                            <h2 class="SEO-Title">Automatisierung von Geschäftsprozessen mit Power Automate</h2>
+                                            <h3 class="portfolio-card-title animated fadeIn"><a href="/de/posts/automatisierung-wiederkehrender-aufgaben-power-automate/">Automatisierung wiederkehrender Aufgaben</a></h3>
+                                            <!--<p class="portfolio-card-title animated fadeIn">Automatisieren Sie wiederkehrende Aufgaben, Benachrichtigungen und Workflows mit Microsoft Power Automate und reduzieren Sie manuelle Arbeitsschritte.</p>-->
+                                        </div>
+                                        <div class="portfolio-btn">
+                                            <a href="/de/posts/automatisierung-wiederkehrender-aufgaben-power-automate/" class="tmp-arrow-icon-btn">
+                                                <div class="btn-inner">
+                                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="project-details.html" class="over_link"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="tmp-portfolio tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <img src="landing/assets/images/usecases/Aufgabenverwaltung.png" alt="tab-image">
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <!-- <p class="portfoli-card-para">Development</p> -->
+                                            <h2 class="SEO-Title">Zentrale Verwaltung von Vorgängen mit Power Platform</h2>
+                                            <h3 class="portfolio-card-title animated fadeIn"><a href="/de/posts/zentrale-verwaltung-vorgaenge-anfragen-power-platform/">Zentrale Verwaltung von Vorgängen oder Anfragen</a></h3>
+                                            <!--<p class="portfolio-card-title animated fadeIn">Verwalten Sie Anfragen, Vorgänge und Aufgaben zentral in einer digitalen Anwendung und schaffen Sie Transparenz in Ihren Geschäftsprozessen.</p>-->
+                                        </div>
+                                        <div class="portfolio-btn">
+                                            <a href="/de/posts/zentrale-verwaltung-vorgaenge-anfragen-power-platform/" class="tmp-arrow-icon-btn">
+                                                <div class="btn-inner">
+                                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="project-details.html" class="over_link"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="tmp-portfolio tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <img src="landing/assets/images/usecases/Business-Apps-statt-Excel-Inselloesungen.png" alt="tab-image">
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <!-- <p class="portfoli-card-para">Development</p> -->
+                                            <h2 class="SEO-Title">Individuelle Business Apps statt Excel-Insellösungen</h2>
+                                            <h3 class="portfolio-card-title animated fadeIn"><a href="/de/posts/fachbereichsloesungen-statt-excel-inselloesungen-power-platform/">Individuelle Fachbereichslösungen statt Excel-Insellösungen</a></h3>
+                                            <!--<p class="portfolio-card-title animated fadeIn">Ersetzen Sie isolierte Excel-Listen durch strukturierte Power Apps Anwendungen und digitalisieren Sie Ihre Fachbereichsprozesse nachhaltig.</p>-->
+                                        </div>
+                                        <div class="portfolio-btn">
+                                            <a href="/de/posts/fachbereichsloesungen-statt-excel-inselloesungen-power-platform/" class="tmp-arrow-icon-btn">
+                                                <div class="btn-inner">
+                                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="project-details.html" class="over_link"></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="tmp-portfolio tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <img src="landing/assets/images/usecases/Digitale-Formulare.png" alt="tab-image">
+                                    <div class="portfolio-card-content-wrap">
+                                        <div class="content-left">
+                                            <!-- <p class="portfoli-card-para">Development</p> -->
+                                            <h2 class="SEO-Title">Digitale Formulare mit Power Apps und Dataverse</h2>
+                                            <h3 class="portfolio-card-title animated fadeIn"><a href="/de/posts/digitale-formulare-strukturierte-datenerfassung-power-platform/">Digitale Formulare und strukturierte Datenerfassung</a></h3>
+                                            <!--<p class="portfolio-card-title animated fadeIn">Ersetzen Sie Papierformulare und Excel-Listen durch digitale Formulare mit strukturierter Datenerfassung in der Microsoft Power Platform.</p>-->
+                                        </div>
+                                        <div class="portfolio-btn">
+                                            <a href="/de/posts/digitale-formulare-strukturierte-datenerfassung-power-platform/" class="tmp-arrow-icon-btn">
+                                                <div class="btn-inner">
+                                                    <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
+                                                    <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="project-details.html" class="over_link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Ende Use Cases -->
+
+     <!-- Call to Action Start -->
+    <section class="tmp-section-gapTop">
+        <div class="container tmp-scroll-trigger tmp-fade-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="p-4 p-lg-5 rounded-4 text-center shadow-sm">
+                        <!--<span class="section-sub-title justify-content-center mb-3">
+                            <span class="subtitle">Projektstart</span>
+                        </span>-->
+                        <h2 class="mb-3">Klingt nach einem ähnlichen Anwendungsfall in Ihrem Unternehmen??</h2>
+                        <p class="mb-4">
+                           Lassen Sie uns gemeinsam prüfen, wie sich ein passender Use Case mit Power Apps, Power Automate oder Dataverse für Ihre Anforderungen umsetzen lässt.
+                        </p>
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation">
+                            <span class="icon-reverse-wrapper">
+                                <span class="btn-text">Anwendungsfall besprechen</span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Call to Action Ende -->
+
+
+    <!-- Start Ablauf -->
+    <section class="my-expertise-area tpm-custom-box-bg" id="process">
+        <div class="container">
+            <div class="header-top-inner">
+                <div class="section-head text-align-left">
+                    <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        <span class="subtitle">Ablauf</span>
+                    </div>
+                    <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Typische Zusammenarbeit</h2>
+                </div>
+                <div class="discription-area tmp-scroll-trigger tmp-fade-in animation-order-3">
+                    <p class="description"> Zusammenarbeit auf Augenhöhe – flexibel, transparent und konsequent am Kunden ausgerichtet.
+                    </p>
+                </div>
+            </div>
+            <div class="services-widget v4">
+                <div class="service-item current tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <div class="my-expertise-card-wrap">
+                        <div class="expertise-card-left">
+                            <div class="expertise-card-logo">
+                                <!-- <img src="landing/assets/images/my-expertise/logo-4.svg" alt="logo"> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-icon lucide-message-circle"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
+                            </div>
+                            <h3 class="title">Unverbindliches Erstgespräch</h3>
+                        </div>
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
+    <svg class="radial-progress" data-countervalue="10" viewBox="0 0 80 80">
+                                <circle class="bar-static" cx="40" cy="40" r="35"></circle>
+                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">30%</text>
+                            </svg>
+</div>
+                        <p class="para">In einem kurzen Gespräch besprechen wir Ihre aktuelle Situation, Ihre Ziele und mögliche Ansatzpunkte für eine digitale Lösung.</p>
+                    </div>
+                    <button class="service-link modal-popup"></button>
+                </div>
+                <div class="service-item tmp-scroll-trigger tmp-fade-in animation-order-2">
+                    <div class="my-expertise-card-wrap">
+                        <div class="expertise-card-left">
+                            <div class="expertise-card-logo">
+                                <!--<img src="landing/assets/images/my-expertise/logo-5.svg" alt="logo">-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-check-icon lucide-search-check"><path d="m8 11 2 2 4-4"/><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            </div>
+                            <h3 class="title">Analyse Ihrer Anforderungen</h3>
+                        </div>
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
+                            <svg class="radial-progress" data-countervalue="40" viewBox="0 0 80 80">
+                                <circle class="bar-static" cx="40" cy="40" r="35"></circle>
+                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">30%</text>
+                            </svg>
+                        </div>
+                        <p class="para">Gemeinsam analysieren wir Ihre bestehenden Prozesse und identifizieren konkrete Anforderungen sowie sinnvolle Einsatzmöglichkeiten der Power Platform.</p>
+                    </div>
+                    <button class="service-link modal-popup"></button>
+                </div>
+                <div class="service-item tmp-scroll-trigger tmp-fade-in animation-order-3">
+                    <div class="my-expertise-card-wrap">
+                        <div class="expertise-card-left">
+                            <div class="expertise-card-logo">
+                                <!--<img src="landing/assets/images/my-expertise/logo-6.svg" alt="logo">  */}}-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-checks-icon lucide-list-checks"><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/></svg>
+                            </div>
+                            <h3 class="title">Konzept und Aufwandsschätzung</h3>
+                        </div>
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
+                            <svg class="radial-progress" data-countervalue="50" viewBox="0 0 80 80">
+                                <circle class="bar-static" cx="40" cy="40" r="35"></circle>
+                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">50%</text>
+                            </svg>
+                        </div>
+                        <p class="para">Auf Basis der Anforderungen erstelle ich ein strukturiertes Lösungskonzept und eine transparente Einschätzung von Aufwand und Umsetzung.</p>
+                    </div>
+                    <button class="service-link modal-popup"></button>
+                </div>
+                <div class="service-item tmp-scroll-trigger tmp-fade-in animation-order-3">
+                    <div class="my-expertise-card-wrap">
+                        <div class="expertise-card-left">
+                            <div class="expertise-card-logo">
+                                <!--<img src="landing/assets/images/my-expertise/logo-6.svg" alt="logo">-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-icon lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+                            </div>
+                            <h3 class="title">Umsetzung der Lösung</h3>
+                        </div>
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
+                            <svg class="radial-progress" data-countervalue="80" viewBox="0 0 80 80">
+                                <circle class="bar-static" cx="40" cy="40" r="35"></circle>
+                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                            </svg>
+                        </div>
+                        <p class="para">Die Lösung wird schrittweise entwickelt, getestet und kontinuierlich mit Ihnen abgestimmt, damit sie optimal zu Ihren Prozessen passt.</p>
+                    </div>
+                    <button class="service-link modal-popup"></button>
+                </div>
+                <div class="service-item tmp-scroll-trigger tmp-fade-in animation-order-3">
+                    <div class="my-expertise-card-wrap">
+                        <div class="expertise-card-left">
+                            <div class="expertise-card-logo">
+                                <!--<img src="landing/assets/images/my-expertise/logo-6.svg" alt="logo">-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big-icon lucide-circle-check-big"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+                            </div>
+                            <h3 class="title">Einführung und Übergabe</h3>
+                        </div>
+                        <div class="single-progress-circle sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="1000">
+                            <svg class="radial-progress" data-countervalue="100" viewBox="0 0 80 80">
+                                <circle class="bar-static" cx="40" cy="40" r="35"></circle>
+                                <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 131.947px;"></circle>
+                                <text class="countervalue" x="50%" y="55%" transform="matrix(0, 1, -1, 0, 80, 0)">100%</text>
+                            </svg>
+                        </div>
+                        <p class="para">Nach erfolgreicher Umsetzung wird die Lösung produktiv eingeführt und an Ihr Team übergeben, inklusive Einweisung und Unterstützung bei den ersten Schritten.</p>
+                    </div>
+                    <button class="service-link modal-popup"></button>
+                </div>
+                <div class="active-bg v2 wow fadeInUp mleave"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ende Ablauf -->
+
+<!-- Call to Action Start -->
+    <section class="tmp-section-gapTop">
+        <div class="container tmp-scroll-trigger tmp-fade-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="p-4 p-lg-5 rounded-4 text-center shadow-sm">
+                        <!--<span class="section-sub-title justify-content-center mb-3">
+                            <span class="subtitle">Projektstart</span>
+                        </span>-->
+                        <h2 class="mb-3">Der erste Schritt ist unkompliziert.</h2>
+                        <p class="mb-4">
+                           In einem unverbindlichen Erstgespräch klären wir Ihre Ausgangssituation, Ihre Ziele und mögliche nächste Schritte.
+                        </p>
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation">
+                            <span class="icon-reverse-wrapper">
+                                <span class="btn-text">Erstgespräch vereinbaren</span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Call to Action Ende -->
+
+    <!-- tmp About Me Start -->
+    <section class="about-us-area" id="aboutme">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-us-left-content-wrap bg-vactor-one">
+                        <div class="years-of-experience-card tmp-scroll-trigger tmp-fade-in animation-order-1">
+                            <h2 class="counter card-title"><span class="odometer" data-count="16">00</span>+
+                            </h2>
+                            <p class="card-para">Jahre IT-Erfahrung</p>
+                        </div>
+                        <div class="design-card tmp-scroll-trigger tmp-fade-in animation-order-2">
+                            <div class="design-card-img">
+                                <div class="icon">
+                                    <!--<i class="fa-sharp fa-thin fa-lock"></i>-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award-icon lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                                </div>
+
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Zertifiziertes Power Platform Wissen</h3>
+                                <p class="card-para">Power Platform Functional Consultant Associate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-us-right-content-wrap">
+                        <div class="section-head text-align-left mb--50">
+                            <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <span class="subtitle">Über mich</span>
+                            </div>
+                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Effiziente Geschäftslösungen mit Microsoft Power Platform <br> Solutions with Us</h2>
+                            <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Ich unterstütze Unternehmen dabei, Geschäftsprozesse effizient zu digitalisieren – mit pragmatischen Lösungen auf Basis der Microsoft Power Platform und moderner Cloud-Technologien.</p>
+                        </div>
+                        <div class="about-us-section-card row g-5">
+
+                            
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
+                                    <div class="card-head">
+                                        <div class="logo-img">
+                                            <!--<img src="landing/assets/images/about/logo-2.svg" alt="logo">-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
+                                         </div>
+                                        <h3 class="card-title">Analytisch</h3>
+                                    </div>
+                                    <p class="card-para">Komplexe Geschäftsprozesse schnell verstehen und strukturierte, nachhaltige Lösungen entwickeln.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
+                                    <div class="card-head">
+                                        <div class="logo-img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                                        </div>
+                                        <h3 class="card-title">Zuverlässig</h3>
+                                    </div>
+                                    <p class="card-para">Verbindliche Kommunikation, transparente Zusammenarbeit und eine zuverlässige Umsetzung vereinbarter Lösungen.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
+                                    <div class="card-head">
+                                        <div class="logo-img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
+                                        </div>
+                                        <h3 class="card-title">Praxixorientiert</h3>
+                                    </div>
+                                    <p class="card-para">Fokus auf pragmatische und umsetzbare Lösungen, die echten Mehrwert für Geschäftsprozesse schaffen.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                                    <div class="card-head">
+                                        <div class="logo-img">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-icon lucide-message-square"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg>
+                                        </div>
+                                        <h3 class="card-title">Klare Kommunikation</h3>
+                                    </div>
+                                    <p class="card-para">Technische Zusammenhänge verständlich erklären und eine effektive Zusammenarbeit zwischen Fachbereichen und IT ermöglichen.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="/de/about/">
+                                <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Mehr über mich</span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
+                            <a class="tmp-btn hover-icon-reverse radius-round" href="#contact">
+                                <span class="icon-reverse-wrapper">
+                        <span class="btn-text">Oder direkt Kontakt aufnehmen</span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tmp About Me end -->
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Tpm Get In touch start -->
+    <section class="get-in-touch-area tmp-section-gapTop" id="contact">
+        <div class="container">
+            <div class="get-in-touch-wrapper tmponhover">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="contact-inner">
+                            <div class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <span class="title-left">Ich freue mich auf Ihren Kontakt</span>
+                            </div>
+                            <ul class="ft-link v2">
+                                <li class="tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-link-animation">
+                                    <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span>
+                                    <div class="ft-link-wrap">
+                                        <h4 class="link-title">E-mail:</h4>
+                                        <a href="mailto:kontakt@kufner-solutions.com">kontakt@kufner-solutions.com</a>
+                                    </div>
+                                </li>
+                                <li class="tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                    <div class="ft-link-wrap">
+                                        <h4 class="link-title">Standort:</h4>
+                                        <div>81379 München</div>
+                                    </div>
+                                </li>
+                                <li class="tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
+                                    <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                    <div class="ft-link-wrap">
+                                        <h4 class="link-title">Telefon:</h4>
+                                        <a href="tel:+4917624893789" class="hero-phone-link">+49 176 24893789</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contact-inner">
+                            <div class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <span class="title">KONTAKT</span>
+                            </div>
+                            <div class="contact-form">
+                                <div id="form-messages" class="error" aria-live="polite"></div>
+                                <form class="tmp-dynamic-form" id="contact-form" method="POST" action="https://default7ef035b6dba54828a65abcd5260dec.1b.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/0545c096a36c41638c9625bce63a3918/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=QSUjzoXQPyxJRbRvm1DQzC4mnIQQMPsu-z49lbgFh8g">
+                                    <div class="contact-form-wrapper row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input class="input-field" name="name" id="contact-name" placeholder="Ihr Name" type="text" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input class="input-field" name="phone" id="contact-phone" placeholder="Telefonnummer (optional)" type="tel" >
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input class="input-field" id="contact-email" name="email" placeholder="Ihre Email" type="email" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input class="input-field" type="text" id="subject" name="subject" placeholder="Betreff (optional)">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <textarea class="input-field" placeholder="Ihre Nachricht" name="message" id="contact-message" required></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <input type="checkbox" id="privacy-consent" name="privacy_consent" required>
+                                                <label for="privacy-consent">Ich akzeptiere die Verarbeitung der Formulardaten gemaess der <a href="datenschutz.html">Datenschutzerklaerung</a>.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="tmp-button-here">
+                                                <button class="tmp-btn hover-icon-reverse radius-round w-100" name="submit" type="submit" id="submit">
+                                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">Senden</span>
+                                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                    <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tpm Get In touch End -->
+    <br/>
+    <!-- Start Footer Area  -->
+    <footer class="footer-area footer-style-two-wrapper bg-color-footer bg_images tmp-section-gap">
+        <div class="container">
+            <div class="footer-main footer-style-two">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-wrapper border-right mr--20">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="landing/assets/images/logo/Logo_Jonas Kufner.png" alt="Jonas Kufner - Power Platform Consultant">
+                                </a>
+                            </div>
+                            <p class="description">Folgen Sie mir auf LinkedIn oder YouTube</p>
+                            <div class="social-link footer">
+                                <a href="https://www.linkedin.com/in/jonas-kufner-972b7064/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.youtube.com/@JonasKufner"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="quick-link-wrap">
+                            <h5 class="ft-title">Quick Link</h5>
+                            <ul class="ft-link tmp-scroll-trigger animation-order-1 tmp-link-animation">
+                                <li>
+                                    <a href="/de/about/">About Me</a>
+                                </li>
+                                <li>
+                                    <a href="/de/impressum/">Impresum</a>
+                                </li>
+                                <li>
+                                    <a href="/de/datenschutz/">Datenschutz</a>
+                                </li>
+                                <li>
+                                    <a href="/de/posts/">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-wrapper contact-wrap">
+                            <h5 class="ft-title">Kontakt </h5>
+                            <ul class="ft-link tmp-scroll-trigger animation-order-1 tmp-link-animation">
+                                <li><span class="ft-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+4917624893789" class="hero-phone-link">+49 176 24893789</a></li>
+                                <li><span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>München</li>
+                                <li><span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:kontakt@kufner-solutions.com">kontakt@kufner-solutions.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="newslatter tmp-scroll-trigger animation-order-1">
+                            <h3 class="title">Newslatter</h3>
+                            <p class="para">The personal portfolio categor includes the a websites or representation</p>
+                            <form action="#" class="newsletter-form-1">
+                                <input type="email" placeholder="Your e-mail">
+                                <span>
+                                <a href="#" class="form-icon"><i class="fa-solid fa-arrow-right"></i></a>
+                            </span>
+                            </form>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-area-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-wrapper tmp-scroll-trigger animation-order-1">
+                        <p class="copy-right-para">© Jonas Kufner <script>
+                                document.write(new Date().getFullYear())
+                            </script> | All Rights Reserved</p>
+                            <!--
+                        <ul class="tmp-link-animation">
+                            <li><a href="#">Trams & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area  -->
+
+
+    <!-- ready chatting option via email -->
+    <!--
+    <div class="ready-chatting-option tmp-ready-chat">
+        <input type="checkbox" id="click">
+        <label for="click">
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <div class="wrapper">
+            <div class="head-text">
+                Let's chat with me? - Online
+            </div>
+            <div class="chat-box">
+                <div class="desc-text">
+                    Please fill out the form below to start chatting with me directly.
+                </div>
+                <form class="tmp-dynamic-form" action="#">
+                    <div class="field">
+                        <input class="input-field" name="name" placeholder="Your Name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <input class="input-field" name="email" placeholder="Your Email" type="email" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea class="input-field" placeholder="Your Message" name="message" required></textarea>
+                    </div>
+                    <div class="field">
+                        <button name="submit" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>-->
+    <!-- ready chatting option via email end -->
+    <!-- progress area start -->
+    <div class="scrollToTop" style="display: block;">
+        <div class="arrowUp">
+            <i class="fa-light fa-arrow-up"></i>
+        </div>
+        <div class="water" style="transform: translate(0px, 87%);">
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 560 20" style="display: none;">
+                <symbol id="wave">
+                    <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z" fill="#"></path>
+                    <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z" fill="#"></path>
+                    <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z" fill="#"></path>
+                    <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z" fill="#"></path>
+                </symbol>
+            </svg>
+
+        </div>
+    </div>
+    <!-- progress area end -->
+    <!-- <div class="tmp-right-demo">
+    <button class="demo-button">
+        <p class="mb--0">48</p>
+        <span class="text">Demos</span>
+    </button>
+</div> -->
+
+
+
+   
+
+    <script src="landing/assets/js/vendor/jquery.js"></script>
+    <script src="landing/assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="landing/assets/js/vendor/waypoints.min.js"></script>
+
+    <script src="landing/assets/js/plugins/odometer.js"></script>
+    <script src="landing/assets/js/vendor/appear.js"></script>
+
+
+    <script src="landing/assets/js/vendor/jquery-one-page-nav.js"></script>
+    <script src="landing/assets/js/plugins/swiper.js"></script>
+
+    <script src="landing/assets/js/plugins/gsap.js"></script>
+    <script src="landing/assets/js/plugins/splittext.js"></script>
+    <script src="landing/assets/js/plugins/scrolltigger.js"></script>
+    <script src="landing/assets/js/plugins/scrolltoplugins.js"></script>
+    <script src="landing/assets/js/plugins/smoothscroll.js"></script>
+    <!-- bootstrap Js-->
+    <script src="landing/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="landing/assets/js/vendor/waw.js"></script>
+    <script src="landing/assets/js/plugins/isotop.js"></script>
+    <script src="landing/assets/js/plugins/animation.js"></script>
+    <script src="landing/assets/js/vendor/backtop.js"></script>
+    <script src="landing/assets/js/plugins/text-type.js"></script>
+    <script>
+        (function () {
+            function wireConsentButtons(root) {
+                if (!root) {
+                    return;
+                }
+
+                var acceptButton = root.querySelector('[data-consent-accept]');
+                var rejectButton = root.querySelector('[data-consent-reject]');
+
+                if (acceptButton) {
+                    acceptButton.addEventListener('click', function () {
+                        if (window.KufnerConsent) {
+                            window.KufnerConsent.acceptAll();
+                        }
+                    });
+                }
+
+                if (rejectButton) {
+                    rejectButton.addEventListener('click', function () {
+                        if (window.KufnerConsent) {
+                            window.KufnerConsent.rejectAll();
+                        }
+                    });
+                }
+            }
+
+            wireConsentButtons(document);
+        })();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('contact-form');
+            var formMessages = document.getElementById('form-messages');
+            var submitButton = document.getElementById('submit');
+
+            if (!form || !formMessages) {
+                return;
+            }
+
+            function showFormMessage(type, message) {
+                formMessages.classList.remove('error', 'success');
+
+                if (type) {
+                    formMessages.classList.add(type);
+                }
+
+                formMessages.textContent = message;
+            }
+
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
+
+                if (!form.reportValidity()) {
+                    return;
+                }
+
+                var originalButtonText = submitButton ? submitButton.querySelector('.btn-text').textContent : '';
+                var payload = {
+                    name: document.getElementById('contact-name').value,
+                    phone: document.getElementById('contact-phone').value,
+                    email: document.getElementById('contact-email').value,
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('contact-message').value,
+                    privacy_consent: document.getElementById('privacy-consent').checked
+                };
+
+                showFormMessage('', '');
+
+                if (submitButton) {
+                    submitButton.disabled = true;
+                    submitButton.querySelector('.btn-text').textContent = 'Wird gesendet...';
+                }
+
+                try {
+                    var response = await fetch(form.action, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.status === 200) {
+                        showFormMessage('success', 'Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.');
+                        form.reset();
+                    } else {
+                        showFormMessage('error', 'Bitte entschuldigen Sie. Beim Senden ist ein Fehler aufgetreten. Bitte Kontaktieren Sie mich per E-Mail (kontakt@kufner-solutions.com) oder telefonisch (+49 176 24893789).');
+                    }
+                } catch (error) {
+                    showFormMessage('error', 'Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
+                } finally {
+                    if (submitButton) {
+                        submitButton.disabled = false;
+                        submitButton.querySelector('.btn-text').textContent = originalButtonText;
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- custom Js -->
+    <script src="landing/assets/js/main.js"></script>
+
+
+</body>
+
+>>>>>>> feature/consent-mode
 </html>

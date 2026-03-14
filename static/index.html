@@ -2,15 +2,90 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+      window.KUFNER_GOOGLE_TAG_ID = 'AW-17600911035';
+      window.KUFNER_CONSENT_STORAGE_KEY = 'kufner-consent-v1';
+      window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'AW-17600911035');
-</script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      function kufnerParseConsent(value) {
+        if (value === 'granted') {
+          return {
+            ad_storage: 'granted',
+            analytics_storage: 'granted',
+            ad_user_data: 'granted',
+            ad_personalization: 'granted'
+          };
+        }
+
+        return {
+          ad_storage: 'denied',
+          analytics_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        };
+      }
+
+      function kufnerApplyConsent(state) {
+        gtag('consent', 'update', state);
+        window.dispatchEvent(new CustomEvent('kufner:consent-changed', { detail: state }));
+      }
+
+      function kufnerSaveConsent(value) {
+        try {
+          localStorage.setItem(window.KUFNER_CONSENT_STORAGE_KEY, value);
+        } catch (error) {
+          console.warn('Consent storage unavailable.', error);
+        }
+      }
+
+      function kufnerReadConsent() {
+        try {
+          return localStorage.getItem(window.KUFNER_CONSENT_STORAGE_KEY);
+        } catch (error) {
+          return null;
+        }
+      }
+
+      window.KufnerConsent = {
+        acceptAll: function () {
+          var state = kufnerParseConsent('granted');
+          kufnerSaveConsent('granted');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        rejectAll: function () {
+          var state = kufnerParseConsent('denied');
+          kufnerSaveConsent('denied');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        getStoredChoice: kufnerReadConsent
+      };
+
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      gtag('js', new Date());
+      gtag('config', window.KUFNER_GOOGLE_TAG_ID);
+
+      (function () {
+        var storedChoice = kufnerReadConsent();
+        if (storedChoice === 'granted' || storedChoice === 'denied') {
+          kufnerApplyConsent(kufnerParseConsent(storedChoice));
+        } else {
+          document.documentElement.classList.add('consent-banner-open');
+        }
+      })();
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,9 +124,106 @@
         transition: stroke-dashoffset 1s ease;
         }  */}}
     </style>
+    <style>
+        .consent-banner {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1200;
+            width: 100%;
+            min-height: 88px;
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.14);
+            background: #fff;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+            display: none;
+            align-items: center;
+        }
+
+        .consent-banner-open .consent-banner {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.25rem;
+        }
+
+        .consent-banner__title {
+            margin: 0 0 0.45rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .consent-banner__text {
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            flex: 1 1 auto;
+        }
+
+        .consent-banner__text a {
+            color: inherit;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .consent-banner__actions {
+            display: flex;
+            gap: 0.75rem;
+            flex: 0 0 auto;
+            align-items: center;
+        }
+
+        .consent-banner__button {
+            border: 1px solid rgba(0, 0, 0, 0.18);
+            border-radius: 999px;
+            padding: 0.65rem 1rem;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            font: inherit;
+            font-size: 1.5rem;
+        }
+
+        .consent-banner__button--primary {
+            background: #FDC448;
+            border-color: #FDC448;
+            color: #111;
+        }
+
+        @media (max-width: 640px) {
+            .consent-banner {
+                min-height: 0;
+                padding: 1rem;
+            }
+
+            .consent-banner__actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .consent-banner-open .consent-banner {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
 </head>
 
 <body class="color-primary-3rd">
+    <div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie-Einwilligung">
+        <p class="consent-banner__title">Datenschutz-Einstellungen</p>
+        <p class="consent-banner__text">
+            Diese Website verwendet <strong>Analyse-Cookies</strong>, um zu verstehen, welche Inhalte für Besucher besonders hilfreich sind und wie gut meine Kampagnen funktionieren. So kann ich meine Inhalte und Angebote kontinuierlich <strong>verbessern</strong>. Google-Tags werden <strong>nur mit Ihrer Zustimmung</strong> gesetzt. Sie können der Analyse <strong>zustimmen oder sie ablehnen</strong>. Details finden Sie in der <a href="/de/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+        <div class="consent-banner__actions">
+            <button type="button" class="consent-banner__button consent-banner__button--primary" data-consent-accept>
+                Analyse Cookie akzeptieren
+            </button>
+            <button type="button" class="consent-banner__button" data-consent-reject>
+                Ablehnen
+            </button>
+        </div>
+    </div>
 
 
     <!-- tpm-header-area start -->
@@ -269,7 +441,7 @@
                             <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3"> Geschäftsprozesse digitalisieren. Effizienz steigern.
                             </p>
                             <div class="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                <a class="tmp-btn hover-icon-reverse radius-round" href="#contact">
+                                <a class="tmp-btn hover-icon-reverse radius-round smoth-animation" href="#contact">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Unverbindliches Erstgespräch</span>
                                     <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -279,7 +451,7 @@
                             </div>
                             <br/>
                             <div class="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
-                                <a class="tmp-btn hover-icon-reverse radius-round" href="#usecases">
+                                <a class="tmp-btn hover-icon-reverse radius-round smoth-animation" href="#usecases">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Use-Cases ansehen</span>
                                     <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
@@ -406,7 +578,7 @@
                             Ob erste Konzeptphase oder konkretes Vorhaben: Gemeinsam klaeren wir die naechsten
                             Schritte und schaffen eine Loesung, die technisch sauber und im Alltag nutzbar ist.
                         </p>-->
-                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round">
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation" >
                             <span class="icon-reverse-wrapper">
                                 <span class="btn-text">Potentiale besprechen</span>
                                 <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
@@ -500,7 +672,7 @@
                         <p class="mb-4">
                             Ich unterstütze Sie dabei, passende Power Platform Lösungen für Ihre Prozesse zu identifizieren und pragmatisch umzusetzen.
                         </p>
-                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round">
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation">
                             <span class="icon-reverse-wrapper">
                                 <span class="btn-text">Projekt besprechen</span>
                                 <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
@@ -710,7 +882,7 @@
                         <p class="mb-4">
                            Lassen Sie uns gemeinsam prüfen, wie sich ein passender Use Case mit Power Apps, Power Automate oder Dataverse für Ihre Anforderungen umsetzen lässt.
                         </p>
-                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round">
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation">
                             <span class="icon-reverse-wrapper">
                                 <span class="btn-text">Anwendungsfall besprechen</span>
                                 <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
@@ -861,7 +1033,7 @@
                         <p class="mb-4">
                            In einem unverbindlichen Erstgespräch klären wir Ihre Ausgangssituation, Ihre Ziele und mögliche nächste Schritte.
                         </p>
-                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round">
+                        <a href="#contact" class="tmp-btn hover-icon-reverse radius-round smoth-animation">
                             <span class="icon-reverse-wrapper">
                                 <span class="btn-text">Erstgespräch vereinbaren</span>
                                 <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
@@ -888,7 +1060,11 @@
                         </div>
                         <div class="design-card tmp-scroll-trigger tmp-fade-in animation-order-2">
                             <div class="design-card-img">
-                                <div class="icon"><i class="fa-sharp fa-thin fa-lock"></i></div>
+                                <div class="icon">
+                                    <!--<i class="fa-sharp fa-thin fa-lock"></i>-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award-icon lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+                                </div>
+
                             </div>
                             <div class="card-info">
                                 <h3 class="card-title">Zertifiziertes Power Platform Wissen</h3>
@@ -914,8 +1090,9 @@
                                 <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
                                     <div class="card-head">
                                         <div class="logo-img">
-                                            <img src="landing/assets/images/about/logo-2.svg" alt="logo">
-                                        </div>
+                                            <!--<img src="landing/assets/images/about/logo-2.svg" alt="logo">-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
+                                         </div>
                                         <h3 class="card-title">Analytisch</h3>
                                     </div>
                                     <p class="card-para">Komplexe Geschäftsprozesse schnell verstehen und strukturierte, nachhaltige Lösungen entwickeln.
@@ -927,7 +1104,7 @@
                                 <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
                                     <div class="card-head">
                                         <div class="logo-img">
-                                            <img src="landing/assets/images/about/logo-2.svg" alt="logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
                                         </div>
                                         <h3 class="card-title">Zuverlässig</h3>
                                     </div>
@@ -940,7 +1117,7 @@
                                 <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-5">
                                     <div class="card-head">
                                         <div class="logo-img">
-                                            <img src="landing/assets/images/about/logo-2.svg" alt="logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
                                         </div>
                                         <h3 class="card-title">Praxixorientiert</h3>
                                     </div>
@@ -953,7 +1130,7 @@
                                 <div class="about-us-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-4">
                                     <div class="card-head">
                                         <div class="logo-img">
-                                            <img src="landing/assets/images/about/logo-1.svg" alt="logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-icon lucide-message-square"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg>
                                         </div>
                                         <h3 class="card-title">Klare Kommunikation</h3>
                                     </div>
@@ -1014,7 +1191,7 @@
                                     <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span>
                                     <div class="ft-link-wrap">
                                         <h4 class="link-title">E-mail:</h4>
-                                        <a href="#">kontakt@kufner-solutions.com</a>
+                                        <a href="mailto:kontakt@kufner-solutions.com">kontakt@kufner-solutions.com</a>
                                     </div>
                                 </li>
                                 <li class="tmp-scroll-trigger tmp-fade-in animation-order-2">
@@ -1147,7 +1324,7 @@
                             <ul class="ft-link tmp-scroll-trigger animation-order-1 tmp-link-animation">
                                 <li><span class="ft-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+4917624893789" class="hero-phone-link">+49 176 24893789</a></li>
                                 <li><span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>München</li>
-                                <li><span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="#">kontakt@kufner-solutions.com</a></li>
+                                <li><span class="ft-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:kontakt@kufner-solutions.com">kontakt@kufner-solutions.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1281,6 +1458,36 @@
     <script src="landing/assets/js/plugins/animation.js"></script>
     <script src="landing/assets/js/vendor/backtop.js"></script>
     <script src="landing/assets/js/plugins/text-type.js"></script>
+    <script>
+        (function () {
+            function wireConsentButtons(root) {
+                if (!root) {
+                    return;
+                }
+
+                var acceptButton = root.querySelector('[data-consent-accept]');
+                var rejectButton = root.querySelector('[data-consent-reject]');
+
+                if (acceptButton) {
+                    acceptButton.addEventListener('click', function () {
+                        if (window.KufnerConsent) {
+                            window.KufnerConsent.acceptAll();
+                        }
+                    });
+                }
+
+                if (rejectButton) {
+                    rejectButton.addEventListener('click', function () {
+                        if (window.KufnerConsent) {
+                            window.KufnerConsent.rejectAll();
+                        }
+                    });
+                }
+            }
+
+            wireConsentButtons(document);
+        })();
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var form = document.getElementById('contact-form');
