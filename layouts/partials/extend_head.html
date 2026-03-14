@@ -87,20 +87,24 @@
 <style>
   .consent-banner {
     position: fixed;
-    right: 1rem;
-    bottom: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1200;
-    width: min(34rem, calc(100vw - 2rem));
-    padding: 1rem 1.1rem;
-    border: 1px solid var(--border, rgba(0, 0, 0, 0.14));
-    border-radius: 1rem;
+    width: 100%;
+    min-height: 88px;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border, rgba(0, 0, 0, 0.14));
     background: var(--theme, #fff);
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
     display: none;
+    align-items: center;
   }
 
   .consent-banner-open .consent-banner {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
   }
 
   .consent-banner__title {
@@ -113,6 +117,7 @@
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
+    flex: 1 1 auto;
   }
 
   .consent-banner__text a {
@@ -124,8 +129,8 @@
   .consent-banner__actions {
     display: flex;
     gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-top: 0.9rem;
+    flex: 0 0 auto;
+    align-items: center;
   }
 
   .consent-banner__button {
@@ -147,13 +152,18 @@
 
   @media (max-width: 640px) {
     .consent-banner {
-      right: 0.75rem;
-      bottom: 0.75rem;
-      width: calc(100vw - 1.5rem);
+      min-height: 0;
+      padding: 1rem;
     }
 
     .consent-banner__actions {
       flex-direction: column;
+      align-items: stretch;
+    }
+
+    .consent-banner-open .consent-banner {
+      flex-direction: column;
+      align-items: stretch;
     }
   }
 </style>
