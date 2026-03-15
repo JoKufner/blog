@@ -65,7 +65,7 @@ refLinksError = true                    # Build bricht bei kaputten {{< ref >}} 
         weight = 30
       [[languages.de.menu.main]]
         name = "Kontakt"
-        url = "/de/contact/"
+        url = "/#contact"
         weight = 40
       [[languages.de.menu.main]]
         name = "Downloads"
