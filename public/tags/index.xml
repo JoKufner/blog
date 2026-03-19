@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< HEAD
     <title>Tags on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</title>
     <link>https://jonaskufner.com/tags/</link>
     <description>Recent content in Tags on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
@@ -8,25 +9,216 @@
     <language>de-de</language>
     <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jonaskufner.com/tags/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <title>Tags on Jonas Kufner – Power Platform Blog</title>
+    <link>http://localhost:60903/tags/</link>
+    <description>Recent content in Tags on Jonas Kufner – Power Platform Blog</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 14 Oct 2025 21:13:42 +0200</lastBuildDate>
+    <atom:link href="http://localhost:60903/tags/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     <item>
-      <title>Best Practice</title>
-      <link>https://jonaskufner.com/tags/best-practice/</link>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/tags/best-practice/</guid>
+      <title>Create Item</title>
+      <link>http://localhost:60903/tags/create-item/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/create-item/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forms</title>
+      <link>http://localhost:60903/tags/forms/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/forms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Get Items</title>
+      <link>http://localhost:60903/tags/get-items/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/get-items/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OData</title>
+      <link>http://localhost:60903/tags/odata/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/odata/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planner</title>
+      <link>http://localhost:60903/tags/planner/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/planner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Automate Flow</title>
+      <link>http://localhost:60903/tags/power-automate-flow/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/power-automate-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SharePoint-Liste</title>
+      <link>http://localhost:60903/tags/sharepoint-liste/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/sharepoint-liste/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ticketsystem</title>
+      <link>http://localhost:60903/tags/ticketsystem/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/ticketsystem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>User Profile (V2)</title>
+      <link>http://localhost:60903/tags/user-profile-v2/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/tags/user-profile-v2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatisierung</title>
+      <link>http://localhost:60903/tags/automatisierung/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/automatisierung/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Best Practices</title>
+      <link>http://localhost:60903/tags/best-practices/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/best-practices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT-Support</title>
+      <link>http://localhost:60903/tags/it-support/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/it-support/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Low-Code</title>
+      <link>http://localhost:60903/tags/low-code/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/low-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft 365</title>
+      <link>http://localhost:60903/tags/microsoft-365/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/microsoft-365/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Forms</title>
+      <link>http://localhost:60903/tags/microsoft-forms/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/microsoft-forms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Planner</title>
+      <link>http://localhost:60903/tags/microsoft-planner/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/microsoft-planner/</guid>
       <description></description>
     </item>
     <item>
       <title>Power Automate</title>
-      <link>https://jonaskufner.com/tags/power-automate/</link>
+      <link>http://localhost:60903/tags/power-automate/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/power-automate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Platform</title>
+      <link>http://localhost:60903/tags/power-platform/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/power-platform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Teams</title>
+      <link>http://localhost:60903/tags/teams/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/teams/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:60903/tags/tutorial/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workflow</title>
+      <link>http://localhost:60903/tags/workflow/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/workflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API</title>
+      <link>http://localhost:60903/tags/api/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Custom Connector</title>
+      <link>http://localhost:60903/tags/custom-connector/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/custom-connector/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenWeatherMap</title>
+      <link>http://localhost:60903/tags/openweathermap/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/openweathermap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postman</title>
+      <link>http://localhost:60903/tags/postman/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/postman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Apps</title>
+      <link>http://localhost:60903/tags/power-apps/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/power-apps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power FX</title>
+      <link>http://localhost:60903/tags/power-fx/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/tags/power-fx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Best Practice</title>
+      <link>http://localhost:60903/tags/best-practice/</link>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/tags/power-automate/</guid>
+      <guid>http://localhost:60903/tags/best-practice/</guid>
       <description></description>
     </item>
     <item>
       <title>SharePoint</title>
-      <link>https://jonaskufner.com/tags/sharepoint/</link>
+      <link>http://localhost:60903/tags/sharepoint/</link>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://jonaskufner.com/tags/sharepoint/</guid>
+      <guid>http://localhost:60903/tags/sharepoint/</guid>
       <description></description>
     </item>
   </channel>

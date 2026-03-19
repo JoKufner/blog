@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< HEAD
     <title>Best Practice on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</title>
     <link>https://jonaskufner.com/tags/best-practice/</link>
     <description>Recent content in Best Practice on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
     <generator>Hugo</generator>
     <language>de-de</language>
+=======
+    <title>Best Practice on Jonas Kufner – Power Platform Blog</title>
+    <link>http://localhost:60903/tags/best-practice/</link>
+    <description>Recent content in Best Practice on Jonas Kufner – Power Platform Blog</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>de</language>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jonaskufner.com/tags/best-practice/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:60903/tags/best-practice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Genehmigungs-Flow in Power Automate: Best Practices</title>
-      <link>https://jonaskufner.com/posts/power-automate-approval/</link>
+      <link>http://localhost:60903/posts/power-automate-approval/</link>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
       <guid>https://jonaskufner.com/posts/power-automate-approval/</guid>
       <description>&lt;p&gt;Das ist nur eine Testseite. Echter Content wird die nächsten Tage, Wochen und Monate folgen&amp;hellip;&lt;/p&gt;</description>
+=======
+      <guid>http://localhost:60903/posts/power-automate-approval/</guid>
+      <description>So baust du robuste Genehmigungs-Workflows mit Dataverse und Adaptive Cards.</description>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     </item>
   </channel>
 </rss>

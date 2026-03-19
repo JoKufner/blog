@@ -1,0 +1,50 @@
+{{- /* layouts/partials/sidebar-right.html */ -}}
+<aside class="sidebar-right-inner">
+
+  <!-- Suche -->
+  <section class="sb-widget">
+    <h3 class="sb-title">Suche</h3>
+
+    {{- $searchPartial := "search.html" -}}
+    {{- if templates.Exists (printf "partials/%s" $searchPartial) -}}
+      {{ partial $searchPartial . }}
+    {{- else -}}
+      <!-- Fallback: einfaches Formular -->
+      <form action="{{ "/search/" | relLangURL }}" method="get" role="search">
+        <input
+          type="search"
+          name="q"
+          placeholder="Suche…"
+          aria-label="Search"
+          class="sb-input"
+        />
+        <button type="submit" class="sb-btn">Suchen</button>
+      </form>
+      <p class="sb-hint">
+        (Formular öffnet die Suchseite)
+      </p>
+    {{- end -}}
+  </section>
+
+  <!-- Tags -->
+  <section class="sb-widget">
+    <h3 class="sb-title">Tags</h3>
+
+    {{- $tags := .Site.Taxonomies.tags -}}
+    {{- if $tags -}}
+      <ul class="sb-taglist">
+        {{- range $term := $tags.ByCount -}}
+          <li>
+            <a href='{{ (printf "/tags/%s/" ($term.Name | urlize)) | relLangURL }}' class="sb-tag">
+              <span class="name">{{ $term.Name }}</span>
+              <span class="count">{{ $term.Count }}</span>
+            </a>
+          </li>
+        {{- end -}}
+      </ul>
+    {{- else -}}
+      <p class="sb-empty">Noch keine Tags vorhanden.</p>
+    {{- end -}}
+  </section>
+
+</aside>

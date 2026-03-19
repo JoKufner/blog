@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< HEAD
     <title>Home on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</title>
     <link>https://jonaskufner.com/</link>
     <description>Recent content in Home on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
@@ -8,31 +9,91 @@
     <language>de-de</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jonaskufner.com/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <title>Home on Jonas Kufner – Power Platform Blog</title>
+    <link>http://localhost:60903/</link>
+    <description>Recent content in Home on Jonas Kufner – Power Platform Blog</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 14 Oct 2025 23:28:19 +0200</lastBuildDate>
+    <atom:link href="http://localhost:60903/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Human Made Content</title>
+      <link>http://localhost:60903/posts/human-made-content/</link>
+      <pubDate>Tue, 14 Oct 2025 23:28:19 +0200</pubDate>
+      <guid>http://localhost:60903/posts/human-made-content/</guid>
+      <description>&lt;p&gt;todo erläuterung zu Motivationetc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ticketsystem mit Microsoft 365 – Teil 2: SharePoint-Referenzliste &amp; Statusbenachrichtigungen</title>
+      <link>http://localhost:60903/posts/ticketsystem-microsoft-365-sharepoint-referenzliste-statusbenachrichtigungen/</link>
+      <pubDate>Tue, 14 Oct 2025 21:13:42 +0200</pubDate>
+      <guid>http://localhost:60903/posts/ticketsystem-microsoft-365-sharepoint-referenzliste-statusbenachrichtigungen/</guid>
+      <description>Zweiter Teil der Reihe zum Ticketsystem mit Microsoft 365 und Power Automate. Wir ergänzen eine SharePoint-Liste, um E-Mail des Anforderers und Statusreferenzen zu speichern – für volle Checklisten-Nutzung und automatische Status-Updates.</description>
+    </item>
+    <item>
+      <title>Kontakt</title>
+      <link>http://localhost:60903/de/contact/</link>
+      <pubDate>Mon, 13 Oct 2025 13:56:30 +0200</pubDate>
+      <guid>http://localhost:60903/de/contact/</guid>
+      <description>Kontakt zu Jonas Kufner</description>
+    </item>
+    <item>
+      <title>Einfaches Ticketsystem mit Microsoft Forms, Planner &amp; Power Automate – Schritt-für-Schritt zur schnellen Ticketlösung in Microsoft 365</title>
+      <link>http://localhost:60903/posts/ticketsystem-microsoft-forms-planner-power-automate/</link>
+      <pubDate>Sat, 04 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/posts/ticketsystem-microsoft-forms-planner-power-automate/</guid>
+      <description>Bauen Sie in &amp;lt; 60 Minuten ein schlankes Ticketsystem auf Basis von Microsoft 365: Formular in Forms, Aufgaben in Planner, Automatisierung mit Power Automate – inkl. Benachrichtigungen in Teams und Abschluss-Workflow. Anleitung mit Ausdrücken &amp;amp; Best Practices.</description>
+    </item>
+    <item>
+      <title>Custom Connector für OpenWeatherMap in der Power Platform (Power Apps &amp; Power Automate)</title>
+      <link>http://localhost:60903/posts/custom-connector-openweathermap-power-platform/</link>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0200</pubDate>
+      <guid>http://localhost:60903/posts/custom-connector-openweathermap-power-platform/</guid>
+      <description>Schritt-für-Schritt-Anleitung: Erstelle einen benutzerdefinierten Connector für die OpenWeatherMap API, teste ihn mit Postman und nutze ihn in Power Automate und Power Apps (Canvas).</description>
+    </item>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     <item>
       <title>Über mich</title>
-      <link>https://jonaskufner.com/about/</link>
+      <link>http://localhost:60903/de/about/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
       <guid>https://jonaskufner.com/about/</guid>
       <description>&lt;h2 id=&#34;kurzprofil&#34;&gt;Kurzprofil&lt;/h2&gt;&#xA;&lt;p&gt;Ich unterstütze Unternehmen dabei, mit der &lt;strong&gt;Microsoft Power Platform&lt;/strong&gt; messbar schneller von der Idee zur produktiven Lösung zu kommen – pragmatisch, strukturiert und nah an den Prozessen. Mein Hintergrund liegt in &lt;strong&gt;Betriebswirtschaft&lt;/strong&gt; und &lt;strong&gt;IT-Projektarbeit&lt;/strong&gt; (seit 2010 freiberuflich), kombiniert mit &lt;strong&gt;Projekt- und Testmanagement&lt;/strong&gt;.&lt;br&gt;&#xA;Seit 07/2018 arbeite ich zusätzlich als Projektmanager bei der &lt;strong&gt;GSD mbH&lt;/strong&gt;. Früher habe ich u. a. die Web-to-Print-Plattform &lt;strong&gt;myTriPic&lt;/strong&gt; mit aufgebaut.&lt;/p&gt;&#xA;&lt;p&gt;Mein Anspruch: &lt;strong&gt;komplexe Aufgaben einfach nutzbar machen&lt;/strong&gt; – mit sauberem Datenmodell, iterativem Vorgehen und stabilem Betrieb.&lt;/p&gt;</description>
+=======
+      <guid>http://localhost:60903/de/about/</guid>
+      <description>Freiberufler &amp;amp; Coach für die Microsoft Power Platform – von Prozessberatung über Dataverse-Modellierung bis hin zu Power Apps, Power Automate und Power BI.</description>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     </item>
     <item>
       <title>Genehmigungs-Flow in Power Automate: Best Practices</title>
-      <link>https://jonaskufner.com/posts/power-automate-approval/</link>
+      <link>http://localhost:60903/posts/power-automate-approval/</link>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
       <guid>https://jonaskufner.com/posts/power-automate-approval/</guid>
       <description>&lt;p&gt;Das ist nur eine Testseite. Echter Content wird die nächsten Tage, Wochen und Monate folgen&amp;hellip;&lt;/p&gt;</description>
+=======
+      <guid>http://localhost:60903/posts/power-automate-approval/</guid>
+      <description>So baust du robuste Genehmigungs-Workflows mit Dataverse und Adaptive Cards.</description>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     </item>
     <item>
       <title>Datenschutzerklärung</title>
-      <link>https://jonaskufner.com/datenschutz/</link>
+      <link>http://localhost:60903/de/datenschutz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
       <guid>https://jonaskufner.com/datenschutz/</guid>
       <description>&lt;h2 id=&#34;1-verantwortlicher&#34;&gt;1. Verantwortlicher&lt;/h2&gt;&#xA;&lt;p&gt;Jonas Kufner Unternehmensberatung&lt;br&gt;&#xA;Freiberufler: Jonas Kufner&lt;br&gt;&#xA;Murnauer Str. 266&lt;br&gt;&#xA;81379 München&lt;br&gt;&#xA;Deutschland&lt;/p&gt;&#xA;&lt;p&gt;E-Mail: &lt;a href=&#34;mailto:info@kufner-solutions.com&#34;&gt;info@kufner-solutions.com&lt;/a&gt;&lt;br&gt;&#xA;Telefon: +49 176 24893789&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-allgemeine-hinweise-zur-datenverarbeitung&#34;&gt;2. Allgemeine Hinweise zur Datenverarbeitung&lt;/h2&gt;&#xA;&lt;p&gt;Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.&lt;/p&gt;&#xA;&lt;p&gt;Beim Besuch dieser Website werden personenbezogene Daten verarbeitet. Dazu zählen z. B. die IP-Adresse, die automatisch vom Browser an den Server übermittelt wird, sowie weitere technische Daten (Datum, Uhrzeit, Browsertyp, Betriebssystem, Referrer-URL).&lt;/p&gt;</description>
+=======
+      <guid>http://localhost:60903/de/datenschutz/</guid>
+      <description>Informationen zur Datenverarbeitung nach DSGVO</description>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     </item>
     <item>
       <title>Impressum</title>
-      <link>https://jonaskufner.com/impressum/</link>
+      <link>http://localhost:60903/de/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
       <guid>https://jonaskufner.com/impressum/</guid>
       <description>&lt;h2 id=&#34;angaben-gemäß--5-tmg&#34;&gt;Angaben gemäß § 5 TMG&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Name / Firma:&lt;/strong&gt;&lt;br&gt;&#xA;Jonas Kufner Unternehmensberatung&lt;br&gt;&#xA;Freiberufler: Jonas Kufner&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Anschrift:&lt;/strong&gt;&lt;br&gt;&#xA;Murnauer Str. 266&lt;br&gt;&#xA;81379 München&lt;br&gt;&#xA;Deutschland&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Kontakt:&lt;/strong&gt;&lt;br&gt;&#xA;E-Mail: &lt;a href=&#34;mailto:info@kufner-solutions.com&#34;&gt;info@kufner-solutions.com&lt;/a&gt;&lt;br&gt;&#xA;Telefon: +49 176 24893789&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Wirtschafts-Identifikationsnummer:&lt;/strong&gt; DE271561728&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;verantwortlich-für-den-inhalt-nach--18-abs-2-mstv&#34;&gt;Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV&lt;/h2&gt;&#xA;&lt;p&gt;Jonas Kufner&lt;br&gt;&#xA;Murnauer Str. 266&lt;br&gt;&#xA;81379 München&lt;br&gt;&#xA;Deutschland&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;haftung-für-inhalte&#34;&gt;Haftung für Inhalte&lt;/h2&gt;&#xA;&lt;p&gt;Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.&lt;br&gt;&#xA;Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;/p&gt;</description>
     </item>
@@ -43,5 +104,10 @@
       <guid>https://jonaskufner.com/contact/</guid>
       <description>&lt;iframe width=&#34;640px&#34; height=&#34;1500px&#34; src=&#34;https://forms.office.com/Pages/ResponsePage.aspx?id=tjXwfqXbKEimWrzVJg3sG_wnWSd2U1pJrsi4NiwnEHlUMjNPRlhZQzdUVURQWFNLUExYMTYwUzY5Ny4u&amp;embed=true&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; style=&#34;border: none; max-width:100%; max-height:100vh&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen&gt; &lt;/iframe&gt;</description>
     </item>
+=======
+      <guid>http://localhost:60903/de/impressum/</guid>
+      <description>Anbieterkennzeichnung nach § 5 TMG und § 18 Abs. 2 MStV</description>
+    </item>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
   </channel>
 </rss>
