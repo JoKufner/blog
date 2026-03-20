@@ -21982,6 +21982,11 @@ body.loaded {
   color: var(--color-primary);
   font-size: 40px;
 }
+.about-us-left-content-wrap .design-card .design-card-img .certification-badge {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
 @media only screen and (max-width: 767px) {
   .about-us-left-content-wrap .design-card .design-card-img i {
     font-size: 26px;

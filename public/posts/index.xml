@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< HEAD
+    <title>Posts on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</title>
+    <link>https://jonaskufner.com/posts/</link>
+    <description>Recent content in Posts on Jonas Kufner | M365 &amp; Power Platform | Tutorials - Coaching - Freelancing</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jonaskufner.com/posts/index.xml" rel="self" type="application/rss+xml" />
+=======
     <title>Posts on Jonas Kufner – Power Platform Blog</title>
     <link>http://localhost:60903/posts/</link>
     <description>Recent content in Posts on Jonas Kufner – Power Platform Blog</description>
@@ -36,12 +45,18 @@
       <guid>http://localhost:60903/posts/custom-connector-openweathermap-power-platform/</guid>
       <description>Schritt-für-Schritt-Anleitung: Erstelle einen benutzerdefinierten Connector für die OpenWeatherMap API, teste ihn mit Postman und nutze ihn in Power Automate und Power Apps (Canvas).</description>
     </item>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     <item>
       <title>Genehmigungs-Flow in Power Automate: Best Practices</title>
       <link>http://localhost:60903/posts/power-automate-approval/</link>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+<<<<<<< HEAD
+      <guid>https://jonaskufner.com/posts/power-automate-approval/</guid>
+      <description>&lt;p&gt;Das ist nur eine Testseite. Echter Content wird die nächsten Tage, Wochen und Monate folgen&amp;hellip;&lt;/p&gt;</description>
+=======
       <guid>http://localhost:60903/posts/power-automate-approval/</guid>
       <description>So baust du robuste Genehmigungs-Workflows mit Dataverse und Adaptive Cards.</description>
+>>>>>>> 177a7a495a85d04f2eb1779a6dd45bd76e44beba
     </item>
   </channel>
 </rss>
