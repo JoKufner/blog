@@ -73,6 +73,8 @@
         ad_personalization: 'denied',
         wait_for_update: 500
       });
+      gtag('js', new Date());
+      gtag('config', window.KUFNER_GOOGLE_TAG_ID);
       (function () {
         var storedChoice = kufnerReadConsent();
         if (storedChoice === 'granted' || storedChoice === 'denied') {
@@ -84,6 +86,7 @@
     </script>
 
     <link rel="apple-touch-icon" href="/landing/assets/images/logo/appleTouchIcon.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1509,33 +1512,11 @@
                 formMessages.textContent = message;
             }
 
-            function loadGoogleAdsTag() {
-                if (window.kufnerGoogleAdsLoadPromise) {
-                    return window.kufnerGoogleAdsLoadPromise;
-                }
-
-                window.kufnerGoogleAdsLoadPromise = new Promise(function (resolve, reject) {
-                    var script = document.createElement('script');
-                    script.async = true;
-                    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(window.KUFNER_GOOGLE_TAG_ID);
-                    script.onload = function () {
-                        gtag('js', new Date());
-                        gtag('config', window.KUFNER_GOOGLE_TAG_ID);
-                        resolve();
-                    };
-                    script.onerror = reject;
-                    document.head.appendChild(script);
-                });
-
-                return window.kufnerGoogleAdsLoadPromise;
-            }
-
-            async function fireAdsContactConversion() {
+            function fireAdsContactConversion() {
                 if (!window.KufnerConsent || window.KufnerConsent.getStoredChoice() !== 'granted') {
                     return;
                 }
 
-                await loadGoogleAdsTag();
                 gtag('event', 'conversion', {
                     'send_to': 'AW-17600911035/m8ZMCLbagokcELut4shB',
                     'value': 300.0,
@@ -1578,7 +1559,7 @@
 
                     if (response.status === 200) {
                         showFormMessage('success', 'Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.');
-                        await fireAdsContactConversion();
+                        fireAdsContactConversion();
                         form.reset();
                     } else {
                         showFormMessage('error', 'Bitte entschuldigen Sie. Beim Senden ist ein Fehler aufgetreten. Bitte Kontaktieren Sie mich per E-Mail (kontakt@kufner-solutions.com) oder telefonisch (+49 89 55059799).');
