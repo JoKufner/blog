@@ -1517,10 +1517,16 @@
                     return;
                 }
 
-                gtag('event', 'conversion', {
+                {{/*  gtag('event', 'conversion', {
                     'send_to': 'AW-17600911035/m8ZMCLbagokcELut4shB',
                     'value': 300.0,
                     'currency': 'EUR'
+                });  */}}
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-18029647508/craLCNLInpAcEJStmpVD',
+                    'value': 300.0,
+                    'currency': 'EUR',
+                    'event_callback': callback
                 });
             }
 
