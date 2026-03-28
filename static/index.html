@@ -3,8 +3,17 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17600911035');
 </script>
+
     <script>
       window.KUFNER_GOOGLE_TAG_ID = 'AW-17600911035';
       window.KUFNER_GOOGLE_ADS_CONVERSION_ID = 'AW-18029647508';
@@ -1516,16 +1525,31 @@
                 formMessages.textContent = message;
             }
 
-            function fireAdsContactConversion() {
+            {{/*  function fireAdsContactConversion() {
                 if (!window.KufnerConsent || window.KufnerConsent.getStoredChoice() !== 'granted') {
                     return;
                 }
 
                 gtag('event', 'conversion', {
                     'send_to': 'AW-18029647508/craLCNLInpAcEJStmpVD',
-                    'value': 300.0,
+                    'value': 100.0,
                     'currency': 'EUR'
                 });
+            }  */}}
+
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof(url) != 'undefined') {
+                    window.location = url;
+                    }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-18029647508/craLCNLInpAcEJStmpVD',
+                    'value': 100.0,
+                    'currency': 'EUR',
+                    'event_callback': callback
+                });
+                return false;
             }
 
             form.addEventListener('submit', async function (event) {
@@ -1563,7 +1587,8 @@
 
                     if (response.status === 200) {
                         showFormMessage('success', 'Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.');
-                        fireAdsContactConversion();
+                        //fireAdsContactConversion();
+                        gtag_report_conversion();
                         form.reset();
                     } else {
                         showFormMessage('error', 'Bitte entschuldigen Sie. Beim Senden ist ein Fehler aufgetreten. Bitte Kontaktieren Sie mich per E-Mail (kontakt@kufner-solutions.com) oder telefonisch (+49 89 55059799).');
