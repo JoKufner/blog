@@ -13,7 +13,7 @@
   gtag('config', 'AW-18029647508');
 </script>
     <script>
-      window.KUFNER_GOOGLE_TAG_ID = 'AW-17600911035';
+      window.KUFNER_GOOGLE_TAG_ID = 'AW-18029647508';
       window.KUFNER_CONSENT_STORAGE_KEY = 'kufner-consent-v1';
       window.dataLayer = window.dataLayer || [];
 
@@ -96,7 +96,6 @@
     </script>
 
     <link rel="apple-touch-icon" href="/landing/assets/images/logo/appleTouchIcon.png">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -398,7 +397,7 @@
                         <a href="#solutions">Lösungen</a>
                     </li>
                     <li>
-                        <a href="#use-cases">Use Cases</a>
+                        <a href="#usecases">Use Cases</a>
                     </li>
                     <li>
                         <a href="#process">Ablauf</a>
@@ -1527,16 +1526,10 @@
                     return;
                 }
 
-                {{/*  gtag('event', 'conversion', {
-                    'send_to': 'AW-17600911035/m8ZMCLbagokcELut4shB',
-                    'value': 300.0,
-                    'currency': 'EUR'
-                });  */}}
                 gtag('event', 'conversion', {
                     'send_to': 'AW-18029647508/craLCNLInpAcEJStmpVD',
                     'value': 300.0,
-                    'currency': 'EUR',
-                    'event_callback': callback
+                    'currency': 'EUR'
                 });
             }
 
@@ -1581,6 +1574,7 @@
                         showFormMessage('error', 'Bitte entschuldigen Sie. Beim Senden ist ein Fehler aufgetreten. Bitte Kontaktieren Sie mich per E-Mail (kontakt@kufner-solutions.com) oder telefonisch (+49 89 55059799).');
                     }
                 } catch (error) {
+                    console.log(error);
                     showFormMessage('error', 'Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
                 } finally {
                     if (submitButton) {
