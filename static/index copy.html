@@ -2,47 +2,102 @@
 <html lang="de">
 
 <head>
-<!-- 1) Define dataLayer + gtag, then set Consent Mode defaults FIRST -->
+    <!-- Google tag (gtag.js) -->
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17600911035"></script>
 <script>
-window.KUFNER_CONSENT_STORAGE_KEY = 'kufner-consent-v1';
-window.dataLayer = window.dataLayer || [];
-function gtag(){ dataLayer.push(arguments); }
-// Consent defaults must run before config/event calls
-gtag('consent', 'default', {
-ad_storage: 'denied',
-analytics_storage: 'denied',
-ad_user_data: 'denied',
-ad_personalization: 'denied',
-wait_for_update: 500
-});
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17600911035');
 </script>
 
-<!-- 2) Load gtag.js ONCE (use either AW-180... or AW-176...; pick one as the 
-loader ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?
-id=AW-18029647508"></script>
-<!-- 3) Initialize once; call config once per destination -->
-<script>
-gtag('js', new Date());
-// Primary Ads destination (must match your conversion action's AW- id)
-gtag('config', 'AW-18029647508');
+    <script>
+      window.KUFNER_GOOGLE_TAG_ID = 'AW-17600911035';
+      window.KUFNER_GOOGLE_ADS_CONVERSION_ID = 'AW-18029647508';
+      window.KUFNER_CONSENT_STORAGE_KEY = 'kufner-consent-v1';
+      window.dataLayer = window.dataLayer || [];
 
-// Optional: only if you truly need the second destination
-// gtag('config', 'AW-17600911035');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-</script>
-<!-- 4) Put the conversion function somewhere after initialization (head is 
-fine) -->
-<script>
-function kufner_ads_lead_conversion() {
-gtag('event', 'conversion', {
-send_to: 'AW-18029647508/craLCNLInpAcEJStmpVD',
-value: 100.0,
-currency: 'EUR',
-event_timeout: 2000
-});
-}
-</script>
+      function kufnerParseConsent(value) {
+        if (value === 'granted') {
+          return {
+            ad_storage: 'granted',
+            analytics_storage: 'granted',
+            ad_user_data: 'granted',
+            ad_personalization: 'granted'
+          };
+        }
+
+        return {
+          ad_storage: 'denied',
+          analytics_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        };
+      }
+
+      function kufnerApplyConsent(state) {
+        gtag('consent', 'update', state);
+        window.dispatchEvent(new CustomEvent('kufner:consent-changed', { detail: state }));
+      }
+
+      function kufnerSaveConsent(value) {
+        try {
+          localStorage.setItem(window.KUFNER_CONSENT_STORAGE_KEY, value);
+        } catch (error) {
+          console.warn('Consent storage unavailable.', error);
+        }
+      }
+
+      function kufnerReadConsent() {
+        try {
+          return localStorage.getItem(window.KUFNER_CONSENT_STORAGE_KEY);
+        } catch (error) {
+          return null;
+        }
+      }
+
+      window.KufnerConsent = {
+        acceptAll: function () {
+          var state = kufnerParseConsent('granted');
+          kufnerSaveConsent('granted');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        rejectAll: function () {
+          var state = kufnerParseConsent('denied');
+          kufnerSaveConsent('denied');
+          kufnerApplyConsent(state);
+          document.documentElement.classList.remove('consent-banner-open');
+        },
+        getStoredChoice: kufnerReadConsent
+      };
+
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      gtag('js', new Date());
+      gtag('config', window.KUFNER_GOOGLE_TAG_ID);
+      gtag('config', window.KUFNER_GOOGLE_ADS_CONVERSION_ID);
+      (function () {
+        var storedChoice = kufnerReadConsent();
+        if (storedChoice === 'granted' || storedChoice === 'denied') {
+          kufnerApplyConsent(kufnerParseConsent(storedChoice));
+        } else {
+          document.documentElement.classList.add('consent-banner-open');
+        }
+      })();
+    </script>
 
     <link rel="apple-touch-icon" href="/landing/assets/images/logo/appleTouchIcon.png">
     <meta charset="UTF-8">
@@ -1533,12 +1588,7 @@ event_timeout: 2000
                     if (response.status === 200) {
                         showFormMessage('success', 'Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.');
                         //fireAdsContactConversion();
-                        if (window.KufnerConsent && window.KufnerConsent.getStoredChoice() !==
-                        'granted') {
-                            return;
-                        }
-                        kufner_ads_lead_conversion();
-                        //gtag_report_conversion();
+                        gtag_report_conversion();
                         form.reset();
                     } else {
                         showFormMessage('error', 'Bitte entschuldigen Sie. Beim Senden ist ein Fehler aufgetreten. Bitte Kontaktieren Sie mich per E-Mail (kontakt@kufner-solutions.com) oder telefonisch (+49 89 55059799).');
